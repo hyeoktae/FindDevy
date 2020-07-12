@@ -107,10 +107,10 @@ extension AppDelegate {
     let status = CLLocationManager.authorizationStatus()
     guard status == .authorizedAlways || status == .authorizedWhenInUse, CLLocationManager.locationServicesEnabled() else { return }
     locaManager?.delegate = self
-    locaManager?.pausesLocationUpdatesAutomatically = false
-    locaManager?.desiredAccuracy = kCLLocationAccuracyBest // 정확도
+    locaManager?.pausesLocationUpdatesAutomatically = true
+    locaManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters // 정확도
     locaManager?.allowsBackgroundLocationUpdates = true
-    locaManager?.distanceFilter = 50 // x 미터마다 체크 5미터 마다 위치 업데이트
+    locaManager?.distanceFilter = 100 // x 미터마다 체크 5미터 마다 위치 업데이트
     locaManager?.activityType = .other
     locaManager?.startUpdatingLocation()
     locaManager?.startMonitoringSignificantLocationChanges()
@@ -120,19 +120,44 @@ extension AppDelegate {
 }
 
 extension AppDelegate: CLLocationManagerDelegate {
+  func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+    guard let center = manager.location?.coordinate else { return }
+    let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
+    region.notifyOnExit = true
+    region.notifyOnEntry = false
+    let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
+    
+    let content = UNMutableNotificationContent()
+    content.title = "움직였네?"
+    content.body = "이거 눌러라"
+    content.sound = UNNotificationSound.default
+    
+    let request = UNNotificationRequest(identifier: "lastLoc", content: content, trigger: trigger)
+    
+    let noti = UNUserNotificationCenter.current()
+    noti.add(request, withCompletionHandler: { (error) in
+         if let error = error {
+              self.ref?.child(self.myKey ?? "err").child("notiError").setValue(error)
+         } else {
+          self.ref?.child(self.myKey ?? "err").child("notiSuccess").setValue(request)
+         }
+    })
+    
+  }
+  
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
     guard let temp = locations.first else { return }
-//    let dist = CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp)
-//    let eFormatter = DateFormatter()
-//    eFormatter.dateFormat = "HHmmss"
-//    self.ref?.child(self.myKey ?? "err").child("dist").child(eFormatter.string(from: temp.timestamp)).setValue(dist)
+    let dist = CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp)
+    let eFormatter = DateFormatter()
+    eFormatter.dateFormat = "HHmmss"
+    self.ref?.child(self.myKey ?? "err").child("dist").child(eFormatter.string(from: temp.timestamp)).setValue(dist)
     
     guard lastLocation != nil else {
       self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       saveLocationToServer(temp)
       return }
-    guard CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp).magnitude > 50.0 else {
+    guard CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp).magnitude > 100.0 else {
       self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       return }
     saveLocationToServer(temp)
