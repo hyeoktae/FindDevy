@@ -12,6 +12,7 @@
 		526EA3BE24BA05F50044EBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3BD24BA05F50044EBE2 /* Assets.xcassets */; };
 		526EA3C124BA05F50044EBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */; };
 		526EA3C924BA08FD0044EBE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */; };
+		526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EA3CB24BB5B320044EBE2 /* UserDefault.swift */; };
 		6CE42853BFFE701B58C79D54 /* Pods_FindDevy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		526EA3C024BA05F50044EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526EA3C224BA05F50044EBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		526EA3CB24BB5B320044EBE2 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		556ABD857C85CF309C0B9454 /* Pods-FindDevy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.debug.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.debug.xcconfig"; sourceTree = "<group>"; };
 		AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDevy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89664CB803BACDB191844CB /* Pods-FindDevy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.release.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,8 +69,17 @@
 				526EA3BD24BA05F50044EBE2 /* Assets.xcassets */,
 				526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */,
 				526EA3C224BA05F50044EBE2 /* Info.plist */,
+				526EA3CA24BB5B150044EBE2 /* Extension */,
 			);
 			path = FindDevy;
+			sourceTree = "<group>";
+		};
+		526EA3CA24BB5B150044EBE2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				526EA3CB24BB5B320044EBE2 /* UserDefault.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7D39D378DE2607C5393C3D2E /* Pods */ = {
@@ -205,6 +216,7 @@
 			files = (
 				526EA3B924BA05F40044EBE2 /* ViewController.swift in Sources */,
 				526EA3B524BA05F40044EBE2 /* AppDelegate.swift in Sources */,
+				526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

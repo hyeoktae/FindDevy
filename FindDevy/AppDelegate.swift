@@ -19,13 +19,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var locaManager: CLLocationManager?
   var ref: DatabaseReference?
-  var lastLocation: CLLocation?
+  var lastLocation: [Double]? {
+    get {
+      autoreleasepool {
+        UserDefaults.standard.object(forKey: "loc") as? [Double]
+      }
+    }
+    set {
+      autoreleasepool {
+        UserDefaults.standard.set(newValue, forKey: "loc")
+      }
+    }
+  }
+  var myKey: String? {
+    get {
+      autoreleasepool {
+        UserDefaults.standard.string(forKey: "key")
+      }
+    }
+    set {
+      autoreleasepool {
+        UserDefaults.standard.set(newValue, forKey: "key")
+      }
+    }
+  }
   
   func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-    locaManager = CLLocationManager()
-    locaManager?.delegate = self
-    checkAuthorizationStatus()
+    guard myKey == nil else { return true }
+    myKey = UUID.init().uuidString
     return true
   }
   
@@ -33,10 +55,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     ref = Database.database().reference()
     
+    let eFormatter = DateFormatter()
+    eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    self.ref?.child(self.myKey ?? "err").child("optionDid").child(eFormatter.string(from: Date())).setValue(launchOptions)
     
+    locaManager = CLLocationManager()
     
+    checkAuthorizationStatus()
     
     return true
+  }
+  
+  func applicationDidBecomeActive(_ application: UIApplication) {
+    self.ref?.child(self.myKey ?? "err").child("terminated").setValue(false)
+  }
+  
+  func applicationWillTerminate(_ application: UIApplication) {
+    self.ref?.child(self.myKey ?? "err").child("terminated").setValue(true)
   }
   
   
@@ -71,12 +106,15 @@ extension AppDelegate {
   func startUpdatingLocation() {
     let status = CLLocationManager.authorizationStatus()
     guard status == .authorizedAlways || status == .authorizedWhenInUse, CLLocationManager.locationServicesEnabled() else { return }
-    
-    locaManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters // 정확도
+    locaManager?.delegate = self
+    locaManager?.pausesLocationUpdatesAutomatically = false
+    locaManager?.desiredAccuracy = kCLLocationAccuracyBest // 정확도
     locaManager?.allowsBackgroundLocationUpdates = true
-    locaManager?.distanceFilter = 30 // x 미터마다 체크 5미터 마다 위치 업데이트
+    locaManager?.distanceFilter = 50 // x 미터마다 체크 5미터 마다 위치 업데이트
     locaManager?.activityType = .other
+    locaManager?.startUpdatingLocation()
     locaManager?.startMonitoringSignificantLocationChanges()
+    
   }
   
 }
@@ -85,25 +123,28 @@ extension AppDelegate: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
     guard let temp = locations.first else { return }
-    print(1)
+//    let dist = CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp)
+//    let eFormatter = DateFormatter()
+//    eFormatter.dateFormat = "HHmmss"
+//    self.ref?.child(self.myKey ?? "err").child("dist").child(eFormatter.string(from: temp.timestamp)).setValue(dist)
+    
     guard lastLocation != nil else {
-      self.lastLocation = temp
+      self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       saveLocationToServer(temp)
-      print(2)
       return }
-    guard lastLocation?.distance(from: temp).magnitude ?? 0 > 20.0 else {
-      self.lastLocation = temp
-      print(3)
+    guard CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp).magnitude > 50.0 else {
+      self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       return }
-    print(4)
     saveLocationToServer(temp)
   }
   
   private func saveLocationToServer(_ temp: CLLocation) {
-    print(5)
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyyMMddHHmmss"
-    let currentTime = dateFormatter.string(from: temp.timestamp)
+    let dayFormatter = DateFormatter()
+    dayFormatter.dateFormat = "yyyyMMdd"
+    let hourFormatter = DateFormatter()
+    hourFormatter.dateFormat = "HHmmss"
+    let currentDay = dayFormatter.string(from: temp.timestamp)
+    let currentHour = hourFormatter.string(from: temp.timestamp)
     
     let param = [
       "lat": temp.coordinate.latitude,
@@ -114,7 +155,7 @@ extension AppDelegate: CLLocationManagerDelegate {
       "accuracy": temp.horizontalAccuracy
     ]
     
-    self.ref?.child("devy").child(currentTime).setValue(param)
+    self.ref?.child(self.myKey ?? "err").child("loc").child(currentDay).child(currentHour).setValue(param)
   }
 }
 
