@@ -121,6 +121,9 @@ extension AppDelegate {
 
 extension AppDelegate: CLLocationManagerDelegate {
   func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+    let eFormatter = DateFormatter()
+    eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    self.ref?.child(self.myKey ?? "err").child("paused").child(eFormatter.string(from: Date())).setValue(true)
     guard let center = manager.location?.coordinate else { return }
     let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
     region.notifyOnExit = true
@@ -150,7 +153,8 @@ extension AppDelegate: CLLocationManagerDelegate {
     guard let temp = locations.first else { return }
     let dist = CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp)
     let eFormatter = DateFormatter()
-    eFormatter.dateFormat = "HHmmss"
+    eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    self.ref?.child(self.myKey ?? "err").child("paused").child(eFormatter.string(from: Date())).setValue(false)
     self.ref?.child(self.myKey ?? "err").child("dist").child(eFormatter.string(from: temp.timestamp)).setValue(dist)
     
     guard lastLocation != nil else {
