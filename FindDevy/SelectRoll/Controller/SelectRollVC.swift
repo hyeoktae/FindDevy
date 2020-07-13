@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import SnapKit
 
 class SelectRollVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  let selectRollView = SelectRollView()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.view.addSubview(selectRollView)
+    selectRollView.snp.makeConstraints {
+      $0.top.leading.bottom.trailing.equalToSuperview()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    selectRollView.yesBtn.addTarget(self, action: #selector(didTapBtns(_:)), for: .touchUpInside)
+    selectRollView.noBtn.addTarget(self, action: #selector(didTapBtns(_:)), for: .touchUpInside)
+  }
+  
+  @objc private func didTapBtns(_ sender: UIButton) {
+    switch sender.tag {
+    case 1:
+      UserDefaults.standard.setValue("devy", forKey: "roll")
+    case 2:
+      UserDefaults.standard.setValue("tass", forKey: "roll")
+    default:
+      break
     }
-    */
-
+    self.dismiss(animated: true) {
+      AppDelegate.instance.setupWindow()
+    }
+  }
+  
 }

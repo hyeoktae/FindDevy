@@ -10,13 +10,21 @@ import UIKit
 import Firebase
 import CoreLocation
 
+protocol LocalDelegate: class {
+  func viewDidEnterBackground()
+  func viewDidBecomeActive()
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+  
+  var window: UIWindow?
   
   static var instance: AppDelegate {
     return (UIApplication.shared.delegate as! AppDelegate)
   }
   
+  var delegate: LocalDelegate?
   var locaManager: CLLocationManager?
   var ref: DatabaseReference?
   var lastLocation: [Double]? {
@@ -43,9 +51,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
     }
   }
+  var roll: String? {
+    autoreleasepool {
+      UserDefaults.standard.string(forKey: "roll")
+    }
+  }
   
   func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+    CLLocationManager.authorizationStatus()
     guard myKey == nil else { return true }
     myKey = UUID.init().uuidString
     return true
@@ -59,15 +73,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     self.ref?.child(self.myKey ?? "err").child("optionDid").child(eFormatter.string(from: Date())).setValue(launchOptions)
     
-    locaManager = CLLocationManager()
+    setupWindow()
     
-    checkAuthorizationStatus()
+    if roll == "devy" {
+      locaManager = CLLocationManager()
+      checkAuthorizationStatus()
+    }
     
     return true
   }
   
+  func setupWindow() {
+    window = UIWindow()
+    let vc = roll == nil ? SelectRollVC() : (roll == "devy" ? ChildVC() : FinderVC())
+    window?.rootViewController = vc
+    window?.makeKeyAndVisible()
+  }
+  
   func applicationDidBecomeActive(_ application: UIApplication) {
     self.ref?.child(self.myKey ?? "err").child("terminated").setValue(false)
+    delegate?.viewDidBecomeActive()
+  }
+  
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    delegate?.viewDidEnterBackground()
   }
   
   func applicationWillTerminate(_ application: UIApplication) {
