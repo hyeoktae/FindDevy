@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		526EA3B524BA05F40044EBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EA3B424BA05F40044EBE2 /* AppDelegate.swift */; };
-		526EA3B924BA05F40044EBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EA3B824BA05F40044EBE2 /* ViewController.swift */; };
 		526EA3BE24BA05F50044EBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3BD24BA05F50044EBE2 /* Assets.xcassets */; };
 		526EA3C124BA05F50044EBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */; };
 		526EA3C924BA08FD0044EBE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */; };
 		526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EA3CB24BB5B320044EBE2 /* UserDefault.swift */; };
+		52C7C6D024BCA408004A49EA /* SelectRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6CF24BCA408004A49EA /* SelectRollVC.swift */; };
+		52C7C6D224BCA41E004A49EA /* SelectRollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6D124BCA41E004A49EA /* SelectRollView.swift */; };
 		6CE42853BFFE701B58C79D54 /* Pods_FindDevy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		526EA3B124BA05F40044EBE2 /* FindDevy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDevy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526EA3B424BA05F40044EBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		526EA3B824BA05F40044EBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		526EA3BD24BA05F50044EBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526EA3C024BA05F50044EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526EA3C224BA05F50044EBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		526EA3CB24BB5B320044EBE2 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		52C7C6CF24BCA408004A49EA /* SelectRollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRollVC.swift; sourceTree = "<group>"; };
+		52C7C6D124BCA41E004A49EA /* SelectRollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRollView.swift; sourceTree = "<group>"; };
 		556ABD857C85CF309C0B9454 /* Pods-FindDevy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.debug.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.debug.xcconfig"; sourceTree = "<group>"; };
 		AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDevy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89664CB803BACDB191844CB /* Pods-FindDevy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.release.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,9 +65,9 @@
 		526EA3B324BA05F40044EBE2 /* FindDevy */ = {
 			isa = PBXGroup;
 			children = (
+				528E8FF724BCA3AB008D37D4 /* SelectRoll */,
 				526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */,
 				526EA3B424BA05F40044EBE2 /* AppDelegate.swift */,
-				526EA3B824BA05F40044EBE2 /* ViewController.swift */,
 				526EA3BD24BA05F50044EBE2 /* Assets.xcassets */,
 				526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */,
 				526EA3C224BA05F50044EBE2 /* Info.plist */,
@@ -80,6 +82,31 @@
 				526EA3CB24BB5B320044EBE2 /* UserDefault.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		528E8FF724BCA3AB008D37D4 /* SelectRoll */ = {
+			isa = PBXGroup;
+			children = (
+				528E8FF924BCA3BD008D37D4 /* View */,
+				528E8FF824BCA3B7008D37D4 /* Controller */,
+			);
+			path = SelectRoll;
+			sourceTree = "<group>";
+		};
+		528E8FF824BCA3B7008D37D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52C7C6CF24BCA408004A49EA /* SelectRollVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		528E8FF924BCA3BD008D37D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52C7C6D124BCA41E004A49EA /* SelectRollView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7D39D378DE2607C5393C3D2E /* Pods */ = {
@@ -214,9 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526EA3B924BA05F40044EBE2 /* ViewController.swift in Sources */,
 				526EA3B524BA05F40044EBE2 /* AppDelegate.swift in Sources */,
+				52C7C6D024BCA408004A49EA /* SelectRollVC.swift in Sources */,
 				526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */,
+				52C7C6D224BCA41E004A49EA /* SelectRollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
