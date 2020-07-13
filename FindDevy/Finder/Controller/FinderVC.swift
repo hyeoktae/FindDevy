@@ -40,6 +40,8 @@ class FinderVC: UIViewController {
 extension FinderVC: LocalDelegate {
   func viewDidEnterBackground() {
     db.removeObserver()
+    self.finderView.mapView.removeAnnotations(self.model.annotations)
+    self.model.annotations = []
   }
   
   func viewDidBecomeActive() {
