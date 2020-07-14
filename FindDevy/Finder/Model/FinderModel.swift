@@ -12,4 +12,5 @@ import MapKit
 struct FinderModel {
   var todayData: [String: [String: Any]] = [:]
   var annotations: [MKPointAnnotation] = []
+  var currentAnnotation: MKPointAnnotation = MKPointAnnotation()
 }
