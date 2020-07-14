@@ -6,6 +6,8 @@ target 'FindDevy' do
   use_frameworks!
 
 pod 'Firebase/Database'
+pod 'Firebase/Firestore'
+pod 'Firebase/Messaging'
 pod 'SnapKit'
 
   # Pods for FindDevy
