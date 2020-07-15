@@ -88,6 +88,9 @@ class FinderVC: UIViewController {
     if let tempCode = self.finderView.dateTextField.text {
       if tempCode.count > 20 {
         UserDefaults.otherKey = tempCode
+        self.finderView.dateTextField.text = Date().toYear()
+        db.getTodayLocations()
+        getTargetLoc(date: Date().toYear())
         Isaac.toast("코드 등록 완료!")
         return
       }
