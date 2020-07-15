@@ -64,9 +64,10 @@ class FinderVC: UIViewController {
   }
   
   private func removeOverlays() {
-    self.finderView.mapView.removeOverlay(self.model.lastLine)
+    self.finderView.mapView.removeOverlays(self.model.lineArr)
     self.finderView.mapView.removeAnnotations(self.model.annotations)
     self.model.annotations = []
+    self.model.lineArr = []
   }
   
   private func setRegion(point: CLLocationCoordinate2D) {
@@ -79,8 +80,9 @@ class FinderVC: UIViewController {
     DispatchQueue.main.async {
       self.finderView.mapView.addAnnotations(annotations)
       let points = annotations.map{$0.coordinate}
-      self.model.lastLine = MKPolyline(coordinates: points, count: points.count)
-      self.finderView.mapView.addOverlay(self.model.lastLine)
+      let line = MKPolyline(coordinates: points, count: points.count)
+      self.model.lineArr.append(line)
+      self.finderView.mapView.addOverlay(line)
     }
   }
   
@@ -125,13 +127,24 @@ extension FinderVC: DBDelegate {
   func changeTodayValue(loc: LocData, terminated: Bool, paused: Bool) {
     guard loc.isEnable else { return }
     
-    let annotaion = MKPointAnnotation()
-    annotaion.title = loc.at
-    annotaion.coordinate = CLLocationCoordinate2D(latitude: loc.coor.0, longitude: loc.coor.1)
+    let lastPoint = self.model.currentAnnotation.coordinate
+    let currentPoint = CLLocationCoordinate2D(latitude: loc.coor.0, longitude: loc.coor.1)
+    let points: [CLLocationCoordinate2D] = [lastPoint, currentPoint]
+    let line = MKPolyline(coordinates: points, count: points.count)
+    
+    let beforeAnnotation = MKPointAnnotation()
+    beforeAnnotation.title = "\(self.model.annotations.count + 1)"
+    beforeAnnotation.coordinate = lastPoint
+    
+    let lastAnnotaion = MKPointAnnotation()
+    lastAnnotaion.title = loc.at
+    lastAnnotaion.coordinate = currentPoint
     DispatchQueue.main.async {
+      self.model.lineArr.append(line)
+      self.finderView.mapView.addOverlay(line)
       self.finderView.mapView.removeAnnotation(self.model.currentAnnotation)
-      self.finderView.mapView.addAnnotation(annotaion)
-      self.model.currentAnnotation = annotaion
+      self.finderView.mapView.addAnnotations([beforeAnnotation, lastAnnotaion])
+      self.model.currentAnnotation = lastAnnotaion
     }
     
   }

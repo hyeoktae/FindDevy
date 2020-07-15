@@ -18,6 +18,13 @@ class ChildView: UIView {
     return label
   }()
   
+  var copyBtn: UIButton = {
+    let btn = UIButton()
+    btn.setTitle("나의 키 복사", for: .normal)
+    btn.setTitleColor(.black, for: .normal)
+    return btn
+  }()
+  
   override func didMoveToSuperview() {
     super.didMoveToSuperview()
     self.backgroundColor = .white
@@ -25,9 +32,15 @@ class ChildView: UIView {
 
   override func layoutSubviews() {
     super.layoutSubviews()
-    self.addSubview(title)
+    [title, copyBtn].forEach{self.addSubview($0)}
+    
     title.snp.makeConstraints {
       $0.center.equalToSuperview()
+    }
+    
+    copyBtn.snp.makeConstraints {
+      $0.centerX.equalToSuperview()
+      $0.bottom.equalToSuperview().offset(-100)
     }
   }
   

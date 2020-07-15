@@ -20,5 +20,17 @@ class ChildVC: UIViewController {
       $0.leading.top.bottom.trailing.equalToSuperview()
     }
     
+    childView.copyBtn.addTarget(self, action: #selector(didTapCopyBtn(_:)), for: .touchUpInside)
+    
   }
+  
+  @objc private func didTapCopyBtn(_ sender: UIButton) {
+    guard let key = UserDefaults.myKey else {
+      Isaac.toast("키 복사 실패했어요!")
+      return }
+    UIPasteboard.general.string = key
+    Isaac.toast("키 복사 완료했어요!")
+    
+  }
+  
 }
