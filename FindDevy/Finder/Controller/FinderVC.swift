@@ -85,6 +85,13 @@ class FinderVC: UIViewController {
   }
   
   @objc private func didTapSearchBtn(_ sender: UIButton) {
+    if let tempCode = self.finderView.dateTextField.text {
+      if tempCode.count > 20 {
+        UserDefaults.otherKey = tempCode
+        Isaac.toast("코드 등록 완료!")
+        return
+      }
+    }
     guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
       Isaac.toast("날짜를 확인해주세요!")
       return }
