@@ -29,57 +29,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var ref: DatabaseReference?
   var fs: Firestore?
   
-  var lastLocation: [Double]? {
-    get {
-      autoreleasepool {
-        UserDefaults.standard.object(forKey: "loc") as? [Double]
-      }
-    }
-    set {
-      autoreleasepool {
-        UserDefaults.standard.set(newValue, forKey: "loc")
-      }
-    }
-  }
-  var myKey: String? {
-    get {
-      autoreleasepool {
-        UserDefaults.standard.string(forKey: "key")
-      }
-    }
-    set {
-      autoreleasepool {
-        UserDefaults.standard.set(newValue, forKey: "key")
-      }
-    }
-  }
-  var roll: String? {
-    autoreleasepool {
-      UserDefaults.standard.string(forKey: "roll")
-    }
-  }
-  
   func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
     CLLocationManager.authorizationStatus()
-    guard myKey == nil else { return true }
-    myKey = UUID.init().uuidString
+    guard UserDefaults.myKey == nil else { return true }
+    UserDefaults.myKey = UUID.init().uuidString
     return true
   }
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
     ref = Database.database().reference()
     fs = Firestore.firestore()
-//    UserDefaults.standard.removeObject(forKey: "roll")
-    
-//    let eFormatter = DateFormatter()
-//    eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//    self.ref?.child(self.myKey ?? "err").child("optionDid").child(eFormatter.string(from: Date())).setValue(launchOptions)
     
     setupWindow()
     
-    if roll == "devy" {
+    if UserDefaults.roll == "devy" {
       locaManager = CLLocationManager()
       checkAuthorizationStatus()
     }
@@ -89,13 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func setupWindow() {
     window = UIWindow()
-    let vc = roll == nil ? SelectRollVC() : (roll == "devy" ? ChildVC() : FinderVC())
+    let vc = UserDefaults.roll == nil ? SelectRollVC() : (UserDefaults.roll == "devy" ? ChildVC() : FinderVC())
     window?.rootViewController = vc
     window?.makeKeyAndVisible()
   }
   
   func applicationDidBecomeActive(_ application: UIApplication) {
-    self.ref?.child(self.myKey ?? "err").child("terminated").setValue(false)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(false)
     delegate?.viewDidBecomeActive()
   }
   
@@ -104,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func applicationWillTerminate(_ application: UIApplication) {
-    self.ref?.child(self.myKey ?? "err").child("terminated").setValue(true)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(true)
   }
   
   
@@ -154,7 +119,7 @@ extension AppDelegate {
 
 extension AppDelegate: CLLocationManagerDelegate {
   func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-    self.ref?.child(self.myKey ?? "err").child("paused").setValue(true)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true)
     guard let center = manager.location?.coordinate else { return }
     let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
     region.notifyOnExit = true
@@ -171,9 +136,9 @@ extension AppDelegate: CLLocationManagerDelegate {
     let noti = UNUserNotificationCenter.current()
     noti.add(request, withCompletionHandler: { (error) in
          if let error = error {
-              self.ref?.child(self.myKey ?? "err").child("notiError").setValue(error)
+              self.ref?.child(UserDefaults.myKey ?? "err").child("notiError").setValue(error)
          } else {
-          self.ref?.child(self.myKey ?? "err").child("notiSuccess").setValue(request)
+          self.ref?.child(UserDefaults.myKey ?? "err").child("notiSuccess").setValue(request)
          }
     })
     
@@ -182,30 +147,20 @@ extension AppDelegate: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
     guard let temp = locations.first else { return }
-//    let dist = CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp)
-//    let eFormatter = DateFormatter()
-//    eFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    self.ref?.child(self.myKey ?? "err").child("paused").setValue(false)
-//    self.ref?.child(self.myKey ?? "err").child("dist").child(eFormatter.string(from: temp.timestamp)).setValue(dist)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false)
     
-    guard lastLocation != nil else {
-      self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
+    guard UserDefaults.lastLocation != nil else {
+      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       saveLocationToServer(temp)
       return }
-    guard CLLocation(latitude: lastLocation?[0] ?? 0, longitude: lastLocation?[1] ?? 0).distance(from: temp).magnitude > 500.0 else {
-      self.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
+    guard CLLocation(latitude: UserDefaults.lastLocation?[0] ?? 0, longitude: UserDefaults.lastLocation?[1] ?? 0).distance(from: temp).magnitude > 500.0 else {
+      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
       return }
     saveLocationToServer(temp)
   }
   
   private func saveLocationToServer(_ temp: CLLocation) {
-    let dayFormatter = DateFormatter()
-    dayFormatter.dateFormat = "yyyyMMdd"
-    let hourFormatter = DateFormatter()
-    hourFormatter.dateFormat = "HHmmss"
-    let currentDay = dayFormatter.string(from: temp.timestamp)
-    let currentHour = hourFormatter.string(from: temp.timestamp)
-    
+    let currentHour = temp.timestamp.toHour()
     var param = [
       "at": currentHour,
       "lat": temp.coordinate.latitude,
@@ -216,10 +171,10 @@ extension AppDelegate: CLLocationManagerDelegate {
       "accuracy": Int(temp.horizontalAccuracy)
       ] as [String : Any]
     
-    self.ref?.child(self.myKey ?? "err").child("currentLoc").setValue(param)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").setValue(param)
     
     param.updateValue(temp.timestamp, forKey: "date")
-    self.fs?.collection("Location").document(self.myKey ?? "err").collection(currentDay).document(currentHour).setData(param)
+    self.fs?.collection("Location").document(UserDefaults.myKey ?? "err").collection(temp.timestamp.toYear()).document(currentHour).setData(param)
   }
 }
 

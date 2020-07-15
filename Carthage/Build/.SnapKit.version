@@ -2,7 +2,7 @@
   "commitish" : "5.0.1",
   "iOS" : [
     {
-      "hash" : "3e735a4862146fb99c2c39d9aac78b28714d23a20bd1128f223589ada926f454",
+      "hash" : "343fc0d1a3153d28ae72a93b7ccdb8565cf499c33544260b33d7f16405c10155",
       "name" : "SnapKit",
       "linking" : "dynamic",
       "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"

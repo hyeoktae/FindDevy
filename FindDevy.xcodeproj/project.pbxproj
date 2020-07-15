@@ -23,6 +23,10 @@
 		52C7C6ED24BE008E004A49EA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C7C6EC24BE008E004A49EA /* SnapKit.framework */; };
 		52C7C6EF24BE00A2004A49EA /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C7C6EE24BE00A2004A49EA /* Lottie.framework */; };
 		52C7C6F524BE1232004A49EA /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6F424BE1232004A49EA /* LocationModel.swift */; };
+		52C7C6F724BF33C3004A49EA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6F624BF33C3004A49EA /* DateExtension.swift */; };
+		52C7C6F924BF3675004A49EA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6F824BF3675004A49EA /* StringExtension.swift */; };
+		52C7C6FB24BF3F8A004A49EA /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */; };
+		52C7C6FD24BF3FB5004A49EA /* Issac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6FC24BF3FB5004A49EA /* Issac.swift */; };
 		6CE42853BFFE701B58C79D54 /* Pods_FindDevy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		52C7C6EE24BE00A2004A49EA /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		52C7C6F124BE0310004A49EA /* FindDevy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindDevy.entitlements; sourceTree = "<group>"; };
 		52C7C6F424BE1232004A49EA /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		52C7C6F624BF33C3004A49EA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		52C7C6F824BF3675004A49EA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
+		52C7C6FC24BF3FB5004A49EA /* Issac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issac.swift; sourceTree = "<group>"; };
 		556ABD857C85CF309C0B9454 /* Pods-FindDevy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.debug.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.debug.xcconfig"; sourceTree = "<group>"; };
 		AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDevy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89664CB803BACDB191844CB /* Pods-FindDevy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.release.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C7C6FB24BF3F8A004A49EA /* ToastSwiftFramework.framework in Frameworks */,
 				52C7C6EF24BE00A2004A49EA /* Lottie.framework in Frameworks */,
 				52C7C6ED24BE008E004A49EA /* SnapKit.framework in Frameworks */,
 				6CE42853BFFE701B58C79D54 /* Pods_FindDevy.framework in Frameworks */,
@@ -107,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				526EA3CB24BB5B320044EBE2 /* UserDefault.swift */,
+				52C7C6F624BF33C3004A49EA /* DateExtension.swift */,
+				52C7C6F824BF3675004A49EA /* StringExtension.swift */,
+				52C7C6FC24BF3FB5004A49EA /* Issac.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -254,6 +266,7 @@
 		A05697E3AC64F2A19FC856AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */,
 				52C7C6EE24BE00A2004A49EA /* Lottie.framework */,
 				52C7C6EC24BE008E004A49EA /* SnapKit.framework */,
 				AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */,
@@ -341,6 +354,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
 			);
 			name = "Carthage Run Script";
 			outputFileListPaths = (
@@ -404,9 +418,12 @@
 				52C7C6DE24BCA6F9004A49EA /* ChildVC.swift in Sources */,
 				52C7C6F524BE1232004A49EA /* LocationModel.swift in Sources */,
 				526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */,
+				52C7C6FD24BF3FB5004A49EA /* Issac.swift in Sources */,
 				52C7C6E124BCA991004A49EA /* ChildView.swift in Sources */,
+				52C7C6F724BF33C3004A49EA /* DateExtension.swift in Sources */,
 				52C7C6E824BCAB54004A49EA /* DB.swift in Sources */,
 				52C7C6E424BCAAEB004A49EA /* FinderView.swift in Sources */,
+				52C7C6F924BF3675004A49EA /* StringExtension.swift in Sources */,
 				52C7C6D224BCA41E004A49EA /* SelectRollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

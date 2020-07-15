@@ -15,12 +15,6 @@ class FinderVC: UIViewController {
   var model = FinderModel()
   let finderView = FinderView()
   let db = DB()
-  var today: String {
-    let dayFormatter = DateFormatter()
-    dayFormatter.dateFormat = "yyyyMMdd"
-    dayFormatter.locale = Locale(identifier: "ko")
-    return dayFormatter.string(from: Date())
-  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,56 +23,90 @@ class FinderVC: UIViewController {
       $0.top.leading.trailing.bottom.equalToSuperview()
     }
     
-    finderView.dateTextField.text = today
+    finderView.dateTextField.text = Date().toYear()
+    finderView.searchBtn.addTarget(self, action: #selector(didTapSearchBtn(_:)), for: .touchUpInside)
     db.delegate = self
     AppDelegate.instance.delegate = self
     self.finderView.mapView.delegate = self
     
     db.getTodayLocations()
-    db.getTargetLocation(date: "20200715") {
+    getTargetLoc(date: Date().toYear())
+    
+    
+    
+  }
+  
+  private func getTargetLoc(date: String) {
+    self.removeOverlays()
+    db.getTargetLocation(date: date) {
       var locs = $0.enumerated().map{ (i, l) -> MKPointAnnotation in
         let anno = MKPointAnnotation()
         anno.coordinate = CLLocationCoordinate2D(latitude: l.coor.0, longitude: l.coor.1)
-        if i == 0 {
-          anno.title = "s"
-        }
+        anno.title = "\(i + 1)"
         return anno
       }
       
       let last = locs.removeLast()
-      let span = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
-      let currentRegion = MKCoordinateRegion(center: last.coordinate, span: span)
-      self.finderView.mapView.setRegion(currentRegion, animated: true)
+      self.setRegion(point: last.coordinate)
       
       self.model.annotations = locs
-      DispatchQueue.main.async {
-        self.finderView.mapView.addAnnotations(locs)
-        let points = locs.map{$0.coordinate}
-        let line = MKPolyline(coordinates: points, count: points.count)
-        self.finderView.mapView.addOverlay(line)
-      }
       
+      self.setOverlays(annotations: locs)
     }
   }
+  
+  private func removeOverlays() {
+    self.finderView.mapView.removeOverlay(self.model.lastLine)
+    self.finderView.mapView.removeAnnotations(self.model.annotations)
+    self.model.annotations = []
+  }
+  
+  private func setRegion(point: CLLocationCoordinate2D) {
+    let span = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
+    let currentRegion = MKCoordinateRegion(center: point, span: span)
+    self.finderView.mapView.setRegion(currentRegion, animated: true)
+  }
+  
+  private func setOverlays(annotations: [MKPointAnnotation]) {
+    DispatchQueue.main.async {
+      self.finderView.mapView.addAnnotations(annotations)
+      let points = annotations.map{$0.coordinate}
+      self.model.lastLine = MKPolyline(coordinates: points, count: points.count)
+      self.finderView.mapView.addOverlay(self.model.lastLine)
+    }
+  }
+  
+  @objc private func didTapSearchBtn(_ sender: UIButton) {
+    guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
+      Isaac.toast("날짜를 확인해주세요!")
+      return }
+    now == Date().toYear() ? db.getTodayLocations() : ()
+    getTargetLoc(date: now)
+  }
+  
 }
 
 extension FinderVC: LocalDelegate {
   func viewDidEnterBackground() {
     db.removeObserver()
-    self.finderView.mapView.removeAnnotations(self.model.annotations)
-    self.model.annotations = []
+    self.removeOverlays()
   }
   
   func viewDidBecomeActive() {
-    db.getTodayLocations()
+    guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
+      db.getTodayLocations()
+      getTargetLoc(date: Date().toYear())
+      return }
+    now == Date().toYear() ? db.getTodayLocations() : ()
+    getTargetLoc(date: now)
   }
-  
   
 }
 
 extension FinderVC: DBDelegate {
   func changeTodayValue(loc: LocData, terminated: Bool, paused: Bool) {
     guard loc.isEnable else { return }
+    
     let annotaion = MKPointAnnotation()
     annotaion.title = loc.at
     annotaion.coordinate = CLLocationCoordinate2D(latitude: loc.coor.0, longitude: loc.coor.1)
@@ -89,38 +117,6 @@ extension FinderVC: DBDelegate {
     }
     
   }
-  
-//  func changeTodayValue(value: [String : [String : Any]]) {
-//    value.forEach { (key, value) in
-//      self.model.todayData.updateValue(value, forKey: key)
-//    }
-//
-//    let temp = self.model.todayData.values.compactMap { value -> MKPointAnnotation? in
-//      if let lat = value["lat"] as? Double, let lng = value["lng"] as? Double {
-//        let annotaion = MKPointAnnotation()
-//        annotaion.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lng)
-//        return annotaion
-//      } else {
-//        return nil
-//      }
-//    }
-//
-//    self.model.annotations.append(contentsOf: temp)
-//
-//    if finderView.dateTextField.text == today {
-//      self.finderView.mapView.addAnnotations(self.model.annotations)
-//      print(self.model.annotations.count)
-////      let annotation: MKPointAnnotation = {
-////        let a = MKPointAnnotation()
-////        a.title = "\(mapView.annotations.count+1)번째 행선지"
-////        a.subtitle = "\(mapView.annotations.count+1)"
-////        a.coordinate = center
-////        return a
-////      }()
-//    }
-//
-//  }
-  
   
 }
 

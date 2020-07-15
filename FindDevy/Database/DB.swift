@@ -20,10 +20,12 @@ class DB {
   
   init() {
     self.ref = Database.database().reference()
+    UserDefaults.otherKey = "3492414B-B182-4F9F-A77A-4C2568763D5F"
   }
   
   func getTodayLocations() {
-    ref?.child("3492414B-B182-4F9F-A77A-4C2568763D5F").observe(.value, with: {
+    guard let key = UserDefaults.otherKey else { return }
+    ref?.child(key).observe(.value, with: {
       guard let value = $0.value as? [String: Any] else { return }
       guard let terminated = value["terminated"] as? Bool, let paused = value["paused"] as? Bool, let loc = value["currentLoc"] as? [String: Any] else { return }
       self.delegate?.changeTodayValue(loc: LocData(data: loc), terminated: terminated, paused: paused)
@@ -31,7 +33,8 @@ class DB {
   }
   
   func getTargetLocation(date: String, completion: @escaping ([LocData]) -> ()) {
-    fs.collection("Location").document("3492414B-B182-4F9F-A77A-4C2568763D5F").collection(date).getDocuments { (snap, err) in
+    guard let key = UserDefaults.otherKey else { return }
+    fs.collection("Location").document(key).collection(date).getDocuments { (snap, err) in
       guard err == nil else {
         completion([])
         return }
@@ -44,7 +47,8 @@ class DB {
   }
   
   func removeObserver() {
-    ref?.child("3492414B-B182-4F9F-A77A-4C2568763D5F").removeAllObservers()
+    guard let key = UserDefaults.otherKey else { return }
+    ref?.child(key).removeAllObservers()
   }
   
   
