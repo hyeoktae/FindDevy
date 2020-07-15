@@ -32,13 +32,21 @@ class FinderVC: UIViewController {
     db.getTodayLocations()
     getTargetLoc(date: Date().toYear())
     
-    
-    
+    self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(_:))))
+  }
+  
+  @objc func handleTap(_ sender: UITapGestureRecognizer) {
+    if sender.state == .ended {
+      self.view.endEditing(true)
+    }
+    sender.cancelsTouchesInView = false
   }
   
   private func getTargetLoc(date: String) {
     self.removeOverlays()
     db.getTargetLocation(date: date) {
+      guard $0.count != 0 else { return }
+      
       var locs = $0.enumerated().map{ (i, l) -> MKPointAnnotation in
         let anno = MKPointAnnotation()
         anno.coordinate = CLLocationCoordinate2D(latitude: l.coor.0, longitude: l.coor.1)
