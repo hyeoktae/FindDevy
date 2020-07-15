@@ -149,13 +149,13 @@ extension AppDelegate: CLLocationManagerDelegate {
     guard let temp = locations.first else { return }
     self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false)
     
-    guard UserDefaults.lastLocation != nil else {
-      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
-      saveLocationToServer(temp)
-      return }
-    guard CLLocation(latitude: UserDefaults.lastLocation?[0] ?? 0, longitude: UserDefaults.lastLocation?[1] ?? 0).distance(from: temp).magnitude > 500.0 else {
-      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
-      return }
+//    guard UserDefaults.lastLocation != nil else {
+//      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
+//      saveLocationToServer(temp)
+//      return }
+//    guard CLLocation(latitude: UserDefaults.lastLocation?[0] ?? 0, longitude: UserDefaults.lastLocation?[1] ?? 0).distance(from: temp).magnitude > 500.0 else {
+//      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
+//      return }
     saveLocationToServer(temp)
   }
   

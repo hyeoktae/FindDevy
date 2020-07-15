@@ -22,18 +22,18 @@ extension UserDefaults {
     }
   }
   
-  static var lastLocation: [Double]? {
-    get {
-      autoreleasepool {
-        self.standard.object(forKey: "loc") as? [Double]
-      }
-    }
-    set {
-      autoreleasepool {
-        self.standard.set(newValue, forKey: "loc")
-      }
-    }
-  }
+//  static var lastLocation: [Double]? {
+//    get {
+//      autoreleasepool {
+//        self.standard.object(forKey: "loc") as? [Double]
+//      }
+//    }
+//    set {
+//      autoreleasepool {
+//        self.standard.set(newValue, forKey: "loc")
+//      }
+//    }
+//  }
   
   static var myKey: String? {
     get {
