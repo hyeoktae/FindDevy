@@ -13,7 +13,8 @@ class ChildView: UIView {
 
   let title: UILabel = {
     let label = UILabel()
-    label.text = "나는 비데~\n위치 전송중"
+    label.text = "나는 비데~\n위치 전송중..."
+    label.numberOfLines = 2
     return label
   }()
   
