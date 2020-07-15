@@ -1,3 +1,4 @@
 github "SnapKit/SnapKit" 
 github "airbnb/lottie-ios" "master"
 github "scalessec/Toast-Swift"
+github "TakeScoop/SwiftyRSA"

@@ -12,6 +12,7 @@
 		526EA3C124BA05F50044EBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */; };
 		526EA3C924BA08FD0044EBE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */; };
 		526EA3CC24BB5B320044EBE2 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EA3CB24BB5B320044EBE2 /* UserDefault.swift */; };
+		529B916A24BF722500B2EE03 /* SwiftyRSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529B916924BF722500B2EE03 /* SwiftyRSA.framework */; };
 		52C7C6D024BCA408004A49EA /* SelectRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6CF24BCA408004A49EA /* SelectRollVC.swift */; };
 		52C7C6D224BCA41E004A49EA /* SelectRollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6D124BCA41E004A49EA /* SelectRollView.swift */; };
 		52C7C6DA24BCA61F004A49EA /* FinderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6D924BCA61F004A49EA /* FinderVC.swift */; };
@@ -38,6 +39,7 @@
 		526EA3C224BA05F50044EBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526EA3C824BA08FD0044EBE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		526EA3CB24BB5B320044EBE2 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		529B916924BF722500B2EE03 /* SwiftyRSA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyRSA.framework; path = Carthage/Build/iOS/SwiftyRSA.framework; sourceTree = "<group>"; };
 		52C7C6CF24BCA408004A49EA /* SelectRollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRollVC.swift; sourceTree = "<group>"; };
 		52C7C6D124BCA41E004A49EA /* SelectRollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRollView.swift; sourceTree = "<group>"; };
 		52C7C6D924BCA61F004A49EA /* FinderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderVC.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529B916A24BF722500B2EE03 /* SwiftyRSA.framework in Frameworks */,
 				52C7C6FB24BF3F8A004A49EA /* ToastSwiftFramework.framework in Frameworks */,
 				52C7C6EF24BE00A2004A49EA /* Lottie.framework in Frameworks */,
 				52C7C6ED24BE008E004A49EA /* SnapKit.framework in Frameworks */,
@@ -266,6 +269,7 @@
 		A05697E3AC64F2A19FC856AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				529B916924BF722500B2EE03 /* SwiftyRSA.framework */,
 				52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */,
 				52C7C6EE24BE00A2004A49EA /* Lottie.framework */,
 				52C7C6EC24BE008E004A49EA /* SnapKit.framework */,
@@ -355,6 +359,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyRSA.framework",
 			);
 			name = "Carthage Run Script";
 			outputFileListPaths = (
@@ -563,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FindDevy/FindDevy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.2;
+				CURRENT_PROJECT_VERSION = 0.0.3;
 				DEVELOPMENT_TEAM = 5W72YMDK56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,7 +580,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -590,7 +595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FindDevy/FindDevy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.2;
+				CURRENT_PROJECT_VERSION = 0.0.3;
 				DEVELOPMENT_TEAM = 5W72YMDK56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,7 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
