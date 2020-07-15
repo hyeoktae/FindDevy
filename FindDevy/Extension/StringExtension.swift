@@ -12,14 +12,14 @@ extension String {
   func toYear() -> Date? {
     let dayFormatter = DateFormatter()
     dayFormatter.dateFormat = "yyyyMMdd"
-    dayFormatter.locale = Locale(identifier: "ko")
+    dayFormatter.locale = Locale(identifier: localeID)
     return dayFormatter.date(from: self)
   }
   
   func toHour() -> Date? {
     let hourFormatter = DateFormatter()
     hourFormatter.dateFormat = "HHmmss"
-    hourFormatter.locale = Locale(identifier: "ko")
+    hourFormatter.locale = Locale(identifier: localeID)
     return hourFormatter.date(from: self)
   }
   

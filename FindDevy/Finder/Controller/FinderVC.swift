@@ -127,10 +127,13 @@ extension FinderVC: DBDelegate {
   func changeTodayValue(loc: LocData, terminated: Bool, paused: Bool) {
     guard loc.isEnable else { return }
     
-    let lastPoint = self.model.currentAnnotation.coordinate
+    let state = self.model.currentAnnotation.coordinate.latitude != CLLocationCoordinate2D().latitude
+    
     let currentPoint = CLLocationCoordinate2D(latitude: loc.coor.0, longitude: loc.coor.1)
+    let lastPoint = self.model.currentAnnotation.coordinate
     let points: [CLLocationCoordinate2D] = [lastPoint, currentPoint]
     let line = MKPolyline(coordinates: points, count: points.count)
+    
     
     let beforeAnnotation = MKPointAnnotation()
     beforeAnnotation.title = "\(self.model.annotations.count + 1)"
@@ -140,10 +143,13 @@ extension FinderVC: DBDelegate {
     lastAnnotaion.title = loc.at
     lastAnnotaion.coordinate = currentPoint
     DispatchQueue.main.async {
-      self.model.lineArr.append(line)
-      self.finderView.mapView.addOverlay(line)
-      self.finderView.mapView.removeAnnotation(self.model.currentAnnotation)
-      self.finderView.mapView.addAnnotations([beforeAnnotation, lastAnnotaion])
+      if state {
+        self.model.lineArr.append(line)
+        self.finderView.mapView.addOverlay(line)
+        self.finderView.mapView.removeAnnotation(self.model.currentAnnotation)
+        self.finderView.mapView.addAnnotation(beforeAnnotation)
+      }
+      self.finderView.mapView.addAnnotation(lastAnnotaion)
       self.model.currentAnnotation = lastAnnotaion
     }
     

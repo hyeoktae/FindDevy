@@ -106,7 +106,7 @@ extension AppDelegate {
     guard status == .authorizedAlways || status == .authorizedWhenInUse, CLLocationManager.locationServicesEnabled() else { return }
     locaManager?.delegate = self
     locaManager?.pausesLocationUpdatesAutomatically = true
-    locaManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters // 정확도
+    locaManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters // 정확도
     locaManager?.allowsBackgroundLocationUpdates = true
     locaManager?.distanceFilter = 500 // x 미터마다 체크 5미터 마다 위치 업데이트
     locaManager?.activityType = .other
@@ -160,6 +160,8 @@ extension AppDelegate: CLLocationManagerDelegate {
   }
   
   private func saveLocationToServer(_ temp: CLLocation) {
+    let currentDate = temp.timestamp.toYear()
+    guard currentDate == Date().toYear() else { return }
     let currentHour = temp.timestamp.toHour()
     var param = [
       "at": currentHour,
@@ -174,7 +176,7 @@ extension AppDelegate: CLLocationManagerDelegate {
     self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").setValue(param)
     
     param.updateValue(temp.timestamp, forKey: "date")
-    self.fs?.collection("Location").document(UserDefaults.myKey ?? "err").collection(temp.timestamp.toYear()).document(currentHour).setData(param)
+    self.fs?.collection("Location").document(UserDefaults.myKey ?? "err").collection(currentDate).document(currentHour).setData(param)
   }
 }
 
