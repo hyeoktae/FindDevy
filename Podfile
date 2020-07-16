@@ -8,6 +8,7 @@ target 'FindDevy' do
 pod 'Firebase/Database'
 pod 'Firebase/Firestore'
 pod 'Firebase/Messaging'
+pod 'Firebase/Analytics'
 
   # Pods for FindDevy
 

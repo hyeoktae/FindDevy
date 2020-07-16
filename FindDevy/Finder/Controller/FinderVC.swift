@@ -29,8 +29,10 @@ class FinderVC: UIViewController {
     AppDelegate.instance.delegate = self
     self.finderView.mapView.delegate = self
     
-    db.getTodayLocations()
-    getTargetLoc(date: Date().toYear())
+    
+    getTargetLoc(date: Date().toYear()) {
+      self.db.getTodayLocations()
+    }
     
     self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(_:))))
   }
@@ -42,24 +44,29 @@ class FinderVC: UIViewController {
     sender.cancelsTouchesInView = false
   }
   
-  private func getTargetLoc(date: String) {
+  private func getTargetLoc(date: String, completion: @escaping () -> ()) {
     self.removeOverlays()
     db.getTargetLocation(date: date) {
-      guard $0.count != 0 else { return }
+      guard $0.count != 0 else {
+        completion()
+        return }
       
-      var locs = $0.enumerated().map{ (i, l) -> MKPointAnnotation in
+      let locs = $0.enumerated().map{ (i, l) -> MKPointAnnotation in
         let anno = MKPointAnnotation()
         anno.coordinate = CLLocationCoordinate2D(latitude: l.coor.0, longitude: l.coor.1)
         anno.title = "\(i + 1)"
         return anno
       }
       
-      let last = locs.removeLast()
-      self.setRegion(point: last.coordinate)
+      if let last = locs.last {
+        self.setRegion(point: last.coordinate)
+      }
       
       self.model.annotations = locs
       
       self.setOverlays(annotations: locs)
+      
+      completion()
     }
   }
   
@@ -91,8 +98,9 @@ class FinderVC: UIViewController {
       if tempCode.count > 20 {
         UserDefaults.otherKey = tempCode
         self.finderView.dateTextField.text = Date().toYear()
-        db.getTodayLocations()
-        getTargetLoc(date: Date().toYear())
+        getTargetLoc(date: Date().toYear()) {
+          self.db.getTodayLocations()
+        }
         Isaac.toast("코드 등록 완료!")
         return
       }
@@ -100,25 +108,24 @@ class FinderVC: UIViewController {
     guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
       Isaac.toast("날짜를 확인해주세요!")
       return }
-    now == Date().toYear() ? db.getTodayLocations() : ()
-    getTargetLoc(date: now)
+    now == Date().toYear() ? getTargetLoc(date: now) { self.db.getTodayLocations() } : getTargetLoc(date: now){}
   }
   
 }
 
 extension FinderVC: LocalDelegate {
   func viewDidEnterBackground() {
-    db.removeObserver()
     self.removeOverlays()
+    db.removeObserver()
   }
   
   func viewDidBecomeActive() {
     guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
-      db.getTodayLocations()
-      getTargetLoc(date: Date().toYear())
+      getTargetLoc(date: Date().toYear()) {
+        self.db.getTodayLocations()
+      }
       return }
-    now == Date().toYear() ? db.getTodayLocations() : ()
-    getTargetLoc(date: now)
+    now == Date().toYear() ? getTargetLoc(date: now) { self.db.getTodayLocations() } : getTargetLoc(date: now){}
   }
   
 }
