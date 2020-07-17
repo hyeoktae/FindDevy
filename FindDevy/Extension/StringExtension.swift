@@ -29,4 +29,9 @@ extension String {
     return dayFormatter.date(from: self) != nil
   }
   
+  func isLessThanToday() -> Bool {
+    let today = Date().toYear()
+    return Int(today) ?? 0 >= Int(self) ?? 9999999999
+  }
+  
 }

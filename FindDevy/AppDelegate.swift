@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseMessaging
+import OneSignal
 import CoreLocation
 
 protocol LocalDelegate: class {
@@ -25,6 +25,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return (UIApplication.shared.delegate as! AppDelegate)
   }
   
+  lazy var notificationReceivedBlock: OSHandleNotificationReceivedBlock = { notification in
+    print("Received Notification - \(notification?.payload.notificationID) - \(notification?.payload.title)")
+    DispatchQueue.global(qos: .background).async {
+      self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
+      self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+      let state = CLLocationManager.authorizationStatus()
+      if state == .authorizedAlways || state == .authorizedWhenInUse {
+        self.startUpdatingLocation()
+      }
+    }
+  }
+  
+  lazy var notificationOpenedBlock: OSHandleNotificationActionBlock = { result in
+    // This block gets called when the user reacts to a notification received
+    let payload: OSNotificationPayload = result!.notification.payload
+    
+    var fullMessage = payload.body
+    print("Message = \(fullMessage)")
+    if payload.contentAvailable {
+      DispatchQueue.global(qos: .background).async {
+        self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
+        self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+        let state = CLLocationManager.authorizationStatus()
+        if state == .authorizedAlways || state == .authorizedWhenInUse {
+          self.startUpdatingLocation()
+        }
+      }
+    }
+//    if payload.additionalData != nil {
+//      if payload.title != nil {
+//        let messageTitle = payload.title
+//        print("Message Title = \(messageTitle!)")
+//      }
+//
+//      let additionalData = payload.additionalData
+//      if additionalData?["actionSelected"] != nil {
+//        fullMessage = fullMessage! + "\nPressed ButtonID: \(additionalData!["actionSelected"])"
+//      }
+//    }
+  }
+  
   var delegate: LocalDelegate?
   var locaManager: CLLocationManager?
   var ref: DatabaseReference?
@@ -33,33 +74,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-    
-    CLLocationManager.authorizationStatus()
     guard UserDefaults.myKey == nil else { return true }
     UserDefaults.myKey = UUID.init().uuidString
     return true
   }
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
     ref = Database.database().reference()
     fs = Firestore.firestore()
     
-    Messaging.messaging().delegate = self
-    UNUserNotificationCenter.current().delegate = self
-    let authOptions: UNAuthorizationOptions = [.alert, .sound]
-    UNUserNotificationCenter.current().requestAuthorization(
-      options: authOptions,
-      completionHandler: {_, _ in })
-    
-    application.registerForRemoteNotifications()
-    
     setupWindow()
     
-    if UserDefaults.roll == "devy" {
-      locaManager = CLLocationManager()
-      checkAuthorizationStatus()
-    }
+    OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+    let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
+    
+    OneSignal.initWithLaunchOptions(launchOptions,
+    appId: "f150dfd8-b292-4948-9963-cc27fd189121",
+    handleNotificationReceived: notificationReceivedBlock,
+    handleNotificationAction: notificationOpenedBlock,
+    settings: onesignalInitSettings)
+    
+    OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+    
+    OneSignal.promptForPushNotifications(userResponse: { _ in })
     
     return true
   }
@@ -69,6 +106,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let vc = UserDefaults.roll == nil ? SelectRollVC() : (UserDefaults.roll == "devy" ? ChildVC() : FinderVC())
     window?.rootViewController = vc
     window?.makeKeyAndVisible()
+    CLLocationManager.authorizationStatus()
+    if UserDefaults.roll == "devy" {
+      locaManager = CLLocationManager()
+      checkAuthorizationStatus()
+    }
+    OneSignal.promptForPushNotifications(userResponse: { accepted in
+      print("User accepted notifications: \(accepted)")
+      if accepted {
+        DispatchQueue.global().async {
+          self.fs?.collection("OneToken").document(UserDefaults.myKey ?? "err").setData(["token": OneSignal.getUserDevice().getUserId() ?? "err"])
+        }
+      }
+    })
   }
   
   func applicationDidBecomeActive(_ application: UIApplication) {
@@ -82,12 +132,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func applicationWillTerminate(_ application: UIApplication) {
     self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(true)
-  }
-  
-  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-    print("[Log] deviceToken :", deviceTokenString)
-    Messaging.messaging().apnsToken = deviceToken
   }
   
 }
@@ -134,85 +178,6 @@ extension AppDelegate {
   
 }
 
-extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
-  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-    let dataDict: [String: String] = ["token": fcmToken]
-    NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-    self.fs?.collection("fcmToken").document(UserDefaults.myKey ?? "err").setData(dataDict)
-    
-  }
-  
-  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-    
-    
-    registerBackgroundTask {
-      completionHandler(.newData)
-    }
-    
-//    if let userInfo = userInfo as? [String: AnyObject] {
-//        let parseNotificationOperation = ParseNotificationOperation(userInfo: userInfo, fetchCompletionHandler: completionHandler)
-//        MainService.shared.enqueueApnsOperation(parseNotificationOperation)
-//
-//        if (tsk == UIBackgroundTaskInvalid) {
-//            task = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
-//                self.endTask()
-//            }
-//        }
-//    }
-    
-  }
-  
-  func registerBackgroundTask(completion: @escaping () -> ()) {
-    task = UIApplication.shared.beginBackgroundTask {
-      
-      UIApplication.shared.endBackgroundTask(self.task)
-      self.task = .invalid
-      
-      DispatchQueue.global(qos: .background).async {
-        print("background fetch")
-        self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-        self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
-        let state = CLLocationManager.authorizationStatus()
-        if state == .authorizedAlways || state == .authorizedWhenInUse {
-          self.startUpdatingLocation()
-        }
-        Firestore.firestore().collection("temp").document(UserDefaults.myKey ?? "err").setData(["temp": "in background"], completion: { (_) in
-          if self.task != .invalid {
-            UIApplication.shared.endBackgroundTask(self.task)
-            self.task = .invalid
-          }
-          completion()
-        })
-      }
-    }
-  }
-  
-  func endBackgroundTask() {
-    print("Background task ended.")
-    UIApplication.shared.endBackgroundTask(self.task)
-    self.task = .invalid
-    
-  }
-
-  
-  func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-    print("willPresent")
-    completionHandler([[.alert, .sound]])
-  }
-  
-  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-    print("didReceive")
-    locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-    locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
-   let state = CLLocationManager.authorizationStatus()
-   if state == .authorizedAlways || state == .authorizedWhenInUse {
-     self.startUpdatingLocation()
-   }
-    completionHandler()
-  }
-  
-}
-
 extension AppDelegate: CLLocationManagerDelegate {
   func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
     self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true)
@@ -245,13 +210,6 @@ extension AppDelegate: CLLocationManagerDelegate {
     guard let temp = locations.first else { return }
     self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false)
     
-//    guard UserDefaults.lastLocation != nil else {
-//      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
-//      saveLocationToServer(temp)
-//      return }
-//    guard CLLocation(latitude: UserDefaults.lastLocation?[0] ?? 0, longitude: UserDefaults.lastLocation?[1] ?? 0).distance(from: temp).magnitude > 500.0 else {
-//      UserDefaults.lastLocation = [temp.coordinate.latitude, temp.coordinate.longitude]
-  //      return }
     saveLocationToServer(temp)
     
     manager.desiredAccuracy = kCLLocationAccuracyHundredMeters // 정확도

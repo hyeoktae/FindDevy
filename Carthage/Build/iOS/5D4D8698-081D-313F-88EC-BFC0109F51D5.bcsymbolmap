@@ -1,0 +1,4174 @@
+BCSymbolMap Version: 2.0
+Apple clang version 11.0.3 (clang-1103.0.32.62)
+/Users/tass/Library/Caches/org.carthage.CarthageKit/DerivedData/11.5_11E608c/OneSignal-iOS-SDK/2.14.3/Build/Intermediates.noindex/ArchiveIntermediates/OneSignalFramework/IntermediateBuildFilesPath/OneSignal.build/Release-iphoneos/OneSignalFramework.build/DerivedSources/OneSignal_vers.c
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK
+-[OSCachedUniqueOutcome initWithParamsName:uniqueId:channel:]
+-[OSCachedUniqueOutcome initWithParamsName:uniqueId:timestamp:channel:]
+-[OSCachedUniqueOutcome encodeWithCoder:]
+-[OSCachedUniqueOutcome initWithCoder:]
+-[OSCachedUniqueOutcome description]
+-[OSCachedUniqueOutcome isEqual:]
+-[OSCachedUniqueOutcome hash]
+-[OSCachedUniqueOutcome name]
+-[OSCachedUniqueOutcome uniqueId]
+-[OSCachedUniqueOutcome timestamp]
+-[OSCachedUniqueOutcome channel]
+-[OSCachedUniqueOutcome .cxx_destruct]
+_OBJC_CLASSLIST_SUP_REFS_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_CLASSLIST_REFERENCES_$_.34
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+__OBJC_METACLASS_RO_$_OSCachedUniqueOutcome
+__OBJC_$_INSTANCE_METHODS_OSCachedUniqueOutcome
+_OBJC_IVAR_$_OSCachedUniqueOutcome._name
+_OBJC_IVAR_$_OSCachedUniqueOutcome._uniqueId
+_OBJC_IVAR_$_OSCachedUniqueOutcome._timestamp
+_OBJC_IVAR_$_OSCachedUniqueOutcome._channel
+__OBJC_$_INSTANCE_VARIABLES_OSCachedUniqueOutcome
+__OBJC_$_PROP_LIST_OSCachedUniqueOutcome
+__OBJC_CLASS_RO_$_OSCachedUniqueOutcome
+_OBJC_LABEL_CLASS_$
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSCachedUniqueOutcome.m
+Source/OSCachedUniqueOutcome.m
+Source/OSCachedUniqueOutcome.h
+-[OSPermissionSubscriptionState description]
+-[OSPermissionSubscriptionState toDictionary]
+-[OSPermissionSubscriptionState permissionStatus]
+-[OSPermissionSubscriptionState setPermissionStatus:]
+-[OSPermissionSubscriptionState subscriptionStatus]
+-[OSPermissionSubscriptionState setSubscriptionStatus:]
+-[OSPermissionSubscriptionState emailSubscriptionStatus]
+-[OSPermissionSubscriptionState setEmailSubscriptionStatus:]
+-[OSPermissionSubscriptionState .cxx_destruct]
+-[OSPendingCallbacks successBlock]
+-[OSPendingCallbacks setSuccessBlock:]
+-[OSPendingCallbacks failureBlock]
+-[OSPendingCallbacks setFailureBlock:]
+-[OSPendingCallbacks .cxx_destruct]
++[OneSignal setInFocusDisplayType:]
++[OneSignal inFocusDisplayType]
++[OneSignal osNotificationSettings]
++[OneSignal currentPermissionState]
++[OneSignal lastPermissionState]
++[OneSignal setLastPermissionState:]
++[OneSignal currentEmailSubscriptionState]
++[OneSignal lastEmailSubscriptionState]
++[OneSignal setLastEmailSubscriptionState:]
++[OneSignal currentSubscriptionState]
++[OneSignal lastSubscriptionState]
++[OneSignal setLastSubscriptionState:]
++[OneSignal permissionStateChangesObserver]
++[OneSignal subscriptionStateChangesObserver]
++[OneSignal emailSubscriptionStateChangesObserver]
++[OneSignal setMSubscriptionStatus:]
++[OneSignal getUserDevice]
++[OneSignal didCallDownloadParameters]
++[OneSignal downloadedParameters]
++[OneSignal receiveReceiptsController]
++[OneSignal appEntryState]
++[OneSignal setAppEntryState:]
++[OneSignal influenceDataRepository]
++[OneSignal trackerFactory]
++[OneSignal sessionManager]
++[OneSignal outcomeEventsCache]
++[OneSignal outcomeEventFactory]
++[OneSignal getOutcomeEventsController]
++[OneSignal app_id]
++[OneSignal sdk_version_raw]
++[OneSignal sdk_semantic_version]
++[OneSignal mUserId]
++[OneSignal mEmailAuthToken]
++[OneSignal mEmailUserId]
++[OneSignal setMSDKType:]
++[OneSignal setWaitingForApnsResponse:]
++[OneSignal setDelayIntervals:withRegistrationDelay:]
++[OneSignal clearStatics]
++[OneSignal coldStartFromTapOnNotification]
++[OneSignal shouldDelaySubscriptionSettingsUpdate]
++[OneSignal initWithLaunchOptions:appId:]
++[OneSignal initWithLaunchOptions:appId:handleNotificationAction:]
++[OneSignal initWithLaunchOptions:appId:handleNotificationAction:settings:]
++[OneSignal initWithLaunchOptions:appId:handleNotificationReceived:handleNotificationAction:settings:]
++[OneSignal appGroupKey]
++[OneSignal initAppId:withSettings:]
++[OneSignal initSettings:withStandardUserDefaults:]
+___51+[OneSignal initSettings:withStandardUserDefaults:]_block_invoke
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
++[OneSignal checkProvisionalAuthorizationStatus]
++[OneSignal registerForProvisionalAuthorization:]
++[OneSignal shouldLogMissingPrivacyConsentErrorWithMethodName:]
++[OneSignal setRequiresUserPrivacyConsent:]
++[OneSignal requiresUserPrivacyConsent]
++[OneSignal consentGranted:]
++[OneSignal checkIfApplicationImplementsDeprecatedMethods]
+___58+[OneSignal checkIfApplicationImplementsDeprecatedMethods]_block_invoke
++[OneSignal downloadIOSParamsWithAppId:]
+___40+[OneSignal downloadIOSParamsWithAppId:]_block_invoke
+___40+[OneSignal downloadIOSParamsWithAppId:]_block_invoke.397
++[OneSignal setLogLevel:visualLevel:]
++[OneSignal onesignal_Log:message:]
++[OneSignal presentAppSettings]
++[OneSignal providesAppNotificationSettings]
++[OneSignal registerForAPNsToken]
+___33+[OneSignal registerForAPNsToken]_block_invoke
++[OneSignal promptForPushNotificationsWithUserResponse:fallbackToSettings:]
+___75+[OneSignal promptForPushNotificationsWithUserResponse:fallbackToSettings:]_block_invoke
++[OneSignal promptForPushNotificationsWithUserResponse:]
++[OneSignal registerForPushNotifications]
++[OneSignal getPermissionSubscriptionState]
++[OneSignal addPermissionObserver:]
++[OneSignal removePermissionObserver:]
++[OneSignal addSubscriptionObserver:]
++[OneSignal removeSubscriptionObserver:]
++[OneSignal addEmailSubscriptionObserver:]
++[OneSignal removeEmailSubscriptionObserver:]
++[OneSignal IdsAvailable:]
++[OneSignal fireIdsAvailableCallback]
+___37+[OneSignal fireIdsAvailableCallback]_block_invoke
++[OneSignal sendTagsWithJsonString:]
++[OneSignal sendTags:]
++[OneSignal sendTags:onSuccess:onFailure:]
++[OneSignal sendTagsToServer]
+___29+[OneSignal sendTagsToServer]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+___29+[OneSignal sendTagsToServer]_block_invoke.568
++[OneSignal sendTag:value:]
++[OneSignal sendTag:value:onSuccess:onFailure:]
++[OneSignal getTags:onFailure:]
+___31+[OneSignal getTags:onFailure:]_block_invoke
+___copy_helper_block_e4_20b
++[OneSignal getTags:]
++[OneSignal deleteTag:onSuccess:onFailure:]
++[OneSignal deleteTag:]
++[OneSignal deleteTags:]
++[OneSignal deleteTagsWithJsonString:]
++[OneSignal deleteTags:onSuccess:onFailure:]
++[OneSignal postNotification:]
++[OneSignal postNotification:onSuccess:onFailure:]
+___50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke
+___50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke_2
+___copy_helper_block_e4_20s24b
+___destroy_helper_block_e4_20s24s
+___50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke.625
+___50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke_2.626
++[OneSignal postNotificationWithJsonString:onSuccess:onFailure:]
++[OneSignal convertDatesToISO8061Strings:]
++[OneSignal parseNSErrorAsJsonString:]
++[OneSignal enableInAppLaunchURL:]
++[OneSignal setSubscription:]
++[OneSignal setLocationShared:]
++[OneSignal promptLocation]
++[OneSignal promptLocationFallbackToSettings:completionHandler:]
++[OneSignal isLocationShared]
++[OneSignal handleDidFailRegisterForRemoteNotification:]
++[OneSignal updateDeviceToken:]
+___31+[OneSignal updateDeviceToken:]_block_invoke
++[OneSignal playerPutForPushTokenAndNotificationTypes]
++[OneSignal setImmediateOnSessionRetry:]
++[OneSignal isImmediatePlayerCreateOrOnSession]
++[OneSignal setIsOnSessionSuccessfulForCurrentState:]
++[OneSignal shouldRegisterNow]
++[OneSignal registerUserAfterDelay]
++[OneSignal getRegisterQueue]
++[OneSignal registerUser]
+___25+[OneSignal registerUser]_block_invoke
++[OneSignal registerUserInternal]
+___33+[OneSignal registerUserInternal]_block_invoke
+___copy_helper_block_e4_24s28s
+___destroy_helper_block_e4_24s28s
+___33+[OneSignal registerUserInternal]_block_invoke.881
++[OneSignal receivedInAppMessageJson:]
++[OneSignal getUsableDeviceToken]
++[OneSignal sendNotificationTypesUpdate]
+___40+[OneSignal sendNotificationTypesUpdate]_block_invoke
++[OneSignal setInAppMessageClickHandler:]
++[OneSignal pauseInAppMessages:]
++[OneSignal isInAppMessagingPaused]
++[OneSignal sendPurchases:]
++[OneSignal setLastAppActiveMessageId:]
++[OneSignal setLastnonActiveMessageId:]
++[OneSignal notificationReceived:foreground:isActive:wasOpened:]
++[OneSignal checkForProcessedDups:lastMessageId:]
++[OneSignal handleNotificationOpened:foreground:isActive:actionType:displayType:]
++[OneSignal shouldPromptToShowURL]
++[OneSignal launchWebURL:]
++[OneSignal submitNotificationOpened:]
++[OneSignal clearBadgeCount:]
++[OneSignal getNotificationTypes]
++[OneSignal setSubscriptionErrorStatus:]
++[OneSignal updateNotificationTypes:]
++[OneSignal didRegisterForRemoteNotifications:deviceToken:]
++[OneSignal remoteSilentNotification:UserInfo:completionHandler:]
++[OneSignal processLocalActionBasedNotification:identifier:]
++[OneSignal syncHashedEmail:]
++[OneSignal didReceiveNotificationExtensionRequest:withMutableNotificationContent:]
++[OneSignal serviceExtensionTimeWillExpireRequest:withMutableNotificationContent:]
++[OneSignal callFailureBlockOnMainThread:withError:]
+___52+[OneSignal callFailureBlockOnMainThread:withError:]_block_invoke
+___copy_helper_block_e4_20b24s
++[OneSignal callSuccessBlockOnMainThread:]
+___42+[OneSignal callSuccessBlockOnMainThread:]_block_invoke
++[OneSignal setEmail:]
++[OneSignal setEmail:withSuccess:withFailure:]
++[OneSignal setEmail:withEmailAuthHashToken:]
++[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke
+___copy_helper_block_e4_24b
+___destroy_helper_block_e4_24s
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1088
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1095
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke_2
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke_3
+___copy_helper_block_e4_24s28s32s36b40b
+___destroy_helper_block_e4_24s28s32s36s40s
+___69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1105
++[OneSignal logoutEmail]
++[OneSignal logoutEmailWithSuccess:withFailure:]
+___48+[OneSignal logoutEmailWithSuccess:withFailure:]_block_invoke
+___48+[OneSignal logoutEmailWithSuccess:withFailure:]_block_invoke_2
++[OneSignal emailChangedWithNewEmailPlayerId:]
+___46+[OneSignal emailChangedWithNewEmailPlayerId:]_block_invoke
++[OneSignal sessionLaunchTime]
++[OneSignal addTrigger:withValue:]
++[OneSignal addTriggers:]
++[OneSignal removeTriggerForKey:]
++[OneSignal removeTriggersForKeys:]
++[OneSignal getTriggers]
++[OneSignal getTriggerValueForKey:]
++[OneSignal setExternalUserId:]
++[OneSignal setExternalUserId:withCompletion:]
+___46+[OneSignal setExternalUserId:withCompletion:]_block_invoke
++[OneSignal removeExternalUserId]
++[OneSignal removeExternalUserId:]
++[OneSignal existingPushExternalUserId]
++[OneSignal existingEmailExternalUserId]
++[OneSignal isEmailSetup]
++[OneSignal shouldUpdateExternalUserId:withRequests:]
++[OneSignal getDuplicateExternalUserIdResponse:withRequests:]
++[OneSignal sendClickActionOutcomes:]
++[OneSignal sendOutcome:]
++[OneSignal sendOutcome:onSuccess:]
++[OneSignal sendUniqueOutcome:]
++[OneSignal sendUniqueOutcome:onSuccess:]
++[OneSignal sendOutcomeWithValue:value:]
++[OneSignal sendOutcomeWithValue:value:onSuccess:]
++[OneSignal isValidOutcomeEntry:]
++[OneSignal isValidOutcomeValue:]
++[OneSignal(SessionStatusDelegate) onSessionEnding:]
++[UIApplication(OneSignal) load]
+-[UIApplication(OneSignal) onesignalSetApplicationIconBadgeNumber:]
++[UIApplication(OneSignal) setupUNUserNotificationCenterDelegate]
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_SELECTOR_REFERENCES_.43
+__OBJC_METACLASS_RO_$_OSPermissionSubscriptionState
+__OBJC_$_INSTANCE_METHODS_OSPermissionSubscriptionState
+_OBJC_IVAR_$_OSPermissionSubscriptionState._permissionStatus
+_OBJC_IVAR_$_OSPermissionSubscriptionState._subscriptionStatus
+_OBJC_IVAR_$_OSPermissionSubscriptionState._emailSubscriptionStatus
+__OBJC_$_INSTANCE_VARIABLES_OSPermissionSubscriptionState
+__OBJC_$_PROP_LIST_OSPermissionSubscriptionState
+__OBJC_CLASS_RO_$_OSPermissionSubscriptionState
+__OBJC_METACLASS_RO_$_OSPendingCallbacks
+__OBJC_$_INSTANCE_METHODS_OSPendingCallbacks
+_OBJC_IVAR_$_OSPendingCallbacks._successBlock
+_OBJC_IVAR_$_OSPendingCallbacks._failureBlock
+__OBJC_$_INSTANCE_VARIABLES_OSPendingCallbacks
+__OBJC_$_PROP_LIST_OSPendingCallbacks
+__OBJC_CLASS_RO_$_OSPendingCallbacks
+_mSDKType
+_OBJC_CLASSLIST_REFERENCES_$_.85
+_OBJC_SELECTOR_REFERENCES_.89
+__inFocusDisplayType
+__osNotificationSettings
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_CLASSLIST_REFERENCES_$_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_CLASSLIST_REFERENCES_$_.97
+_OBJC_CLASSLIST_REFERENCES_$_.98
+__currentPermissionState
+_OBJC_CLASSLIST_REFERENCES_$_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_CLASSLIST_REFERENCES_$_.106
+_OBJC_SELECTOR_REFERENCES_.108
+__lastPermissionState
+_OBJC_SELECTOR_REFERENCES_.110
+__currentEmailSubscriptionState
+_OBJC_CLASSLIST_REFERENCES_$_.111
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_CLASSLIST_REFERENCES_$_.114
+__lastEmailSubscriptionState
+__currentSubscriptionState
+_OBJC_CLASSLIST_REFERENCES_$_.115
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_CLASSLIST_REFERENCES_$_.124
+__lastSubscriptionState
+__permissionStateChangesObserver
+_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_SELECTOR_REFERENCES_.129
+__subscriptionStateChangesObserver
+_OBJC_SELECTOR_REFERENCES_.131
+__emailSubscriptionStateChangesObserver
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.135
+_mSubscriptionStatus
+__userDevice
+_OBJC_CLASSLIST_REFERENCES_$_.136
+__didCallDownloadParameters
+__downloadedParameters
+__receiveReceiptsController
+_OBJC_CLASSLIST_REFERENCES_$_.137
+__appEntryState
+__influenceDataRepository
+_OBJC_CLASSLIST_REFERENCES_$_.138
+__trackerFactory
+_OBJC_CLASSLIST_REFERENCES_$_.139
+_OBJC_CLASSLIST_REFERENCES_$_.140
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_SELECTOR_REFERENCES_.144
+__sessionManager
+_OBJC_CLASSLIST_REFERENCES_$_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+__outcomeEventsCache
+_OBJC_CLASSLIST_REFERENCES_$_.150
+__outcomeEventFactory
+__outcomeEventsController
+_app_id
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.154
+_OBJC_SELECTOR_REFERENCES_.156
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_SELECTOR_REFERENCES_.160
+_OBJC_SELECTOR_REFERENCES_.162
+_waitingForApnsResponse
+_reattemptRegistrationInterval
+_maxApnsWait
+_initDone
+_registeredWithApple
+_waitingForOneSReg
+_isOnSessionSuccessfulForCurrentState
+_OBJC_CLASSLIST_REFERENCES_$_.163
+_OBJC_SELECTOR_REFERENCES_.165
+_sessionLaunchTime
+_performedOnSessionRequest
+_pendingExternalUserId
+_coldStartFromTapOnNotification
+_shouldDelaySubscriptionUpdate
+_OBJC_CLASSLIST_REFERENCES_$_.166
+_OBJC_SELECTOR_REFERENCES_.168
+_OBJC_SELECTOR_REFERENCES_.170
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_CLASSLIST_REFERENCES_$_.175
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_SELECTOR_REFERENCES_.181
+_OBJC_SELECTOR_REFERENCES_.183
+_delayedInitializationForPrivacyConsent
+_OBJC_CLASSLIST_REFERENCES_$_.184
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_CLASSLIST_REFERENCES_$_.189
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_SELECTOR_REFERENCES_.193
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_CLASSLIST_REFERENCES_$_.196
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_CLASSLIST_REFERENCES_$_.201
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_initializationTime
+_OBJC_CLASSLIST_REFERENCES_$_.206
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_SELECTOR_REFERENCES_.210
+_OBJC_CLASSLIST_REFERENCES_$_.211
+_OBJC_SELECTOR_REFERENCES_.213
+_OBJC_SELECTOR_REFERENCES_.215
+_OBJC_CLASSLIST_REFERENCES_$_.216
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.222
+_trackIAPPurchase
+_OBJC_CLASSLIST_REFERENCES_$_.223
+_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_CLASSLIST_REFERENCES_$_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_CLASSLIST_REFERENCES_$_.229
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.235
+_OBJC_SELECTOR_REFERENCES_.243
+_OBJC_CLASSLIST_REFERENCES_$_.244
+_OBJC_SELECTOR_REFERENCES_.246
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.254
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_SELECTOR_REFERENCES_.260
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_SELECTOR_REFERENCES_.266
+_OBJC_CLASSLIST_REFERENCES_$_.267
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_SELECTOR_REFERENCES_.273
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_SELECTOR_REFERENCES_.283
+_OBJC_SELECTOR_REFERENCES_.287
+_promptBeforeOpeningPushURLs
+_OBJC_SELECTOR_REFERENCES_.291
+_providesAppNotificationSettings
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.297
+_OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.301
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_SELECTOR_REFERENCES_.311
+___block_descriptor_24_e4__e26_v8?0"OSPermissionState"4l
+_OBJC_SELECTOR_REFERENCES_.315
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.321
+_shouldRequireUserConsent
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.333
+_OBJC_SELECTOR_REFERENCES_.335
+_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.339
+___block_descriptor_20_e5_v4?0l
+___block_literal_global
+_OBJC_CLASSLIST_REFERENCES_$_.347
+_OBJC_SELECTOR_REFERENCES_.349
+_OBJC_SELECTOR_REFERENCES_.351
+_OBJC_CLASSLIST_REFERENCES_$_.352
+_OBJC_SELECTOR_REFERENCES_.354
+_OBJC_SELECTOR_REFERENCES_.356
+_OBJC_SELECTOR_REFERENCES_.358
+_OBJC_CLASSLIST_REFERENCES_$_.363
+_OBJC_SELECTOR_REFERENCES_.365
+_OBJC_CLASSLIST_REFERENCES_$_.366
+_OBJC_SELECTOR_REFERENCES_.368
+_OBJC_SELECTOR_REFERENCES_.372
+_delayedEmailParameters
+_OBJC_SELECTOR_REFERENCES_.374
+_OBJC_SELECTOR_REFERENCES_.376
+_OBJC_SELECTOR_REFERENCES_.377
+_OBJC_SELECTOR_REFERENCES_.378
+_OBJC_SELECTOR_REFERENCES_.380
+_OBJC_SELECTOR_REFERENCES_.390
+_OBJC_SELECTOR_REFERENCES_.392
+_OBJC_SELECTOR_REFERENCES_.394
+___block_descriptor_24_e4__e21_v8?0"NSDictionary"4l
+___block_descriptor_20_e16_v8?0"NSError"4l
+___block_literal_global.399
+_OBJC_SELECTOR_REFERENCES_.401
+__nsLogLevel
+__visualLogLevel
+_OBJC_SELECTOR_REFERENCES_.417
+_OBJC_CLASSLIST_REFERENCES_$_.418
+_OBJC_SELECTOR_REFERENCES_.420
+_OBJC_SELECTOR_REFERENCES_.426
+_OBJC_SELECTOR_REFERENCES_.428
+_OBJC_CLASSLIST_REFERENCES_$_.429
+_OBJC_SELECTOR_REFERENCES_.431
+_OBJC_SELECTOR_REFERENCES_.433
+_OBJC_SELECTOR_REFERENCES_.435
+_OBJC_SELECTOR_REFERENCES_.443
+_backgroundModesEnabled
+_OBJC_SELECTOR_REFERENCES_.445
+___block_literal_global.448
+_OBJC_SELECTOR_REFERENCES_.450
+_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
+_OBJC_SELECTOR_REFERENCES_.466
+___block_descriptor_24_e4__e7_v8?0i4l
+_OBJC_SELECTOR_REFERENCES_.470
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_SELECTOR_REFERENCES_.478
+_OBJC_CLASSLIST_REFERENCES_$_.481
+_OBJC_SELECTOR_REFERENCES_.482
+_OBJC_SELECTOR_REFERENCES_.483
+_OBJC_SELECTOR_REFERENCES_.484
+_OBJC_SELECTOR_REFERENCES_.486
+_OBJC_SELECTOR_REFERENCES_.488
+_OBJC_SELECTOR_REFERENCES_.490
+_OBJC_SELECTOR_REFERENCES_.492
+_OBJC_SELECTOR_REFERENCES_.494
+_OBJC_SELECTOR_REFERENCES_.496
+_OBJC_SELECTOR_REFERENCES_.498
+_OBJC_SELECTOR_REFERENCES_.500
+_OBJC_SELECTOR_REFERENCES_.504
+_OBJC_SELECTOR_REFERENCES_.506
+___block_descriptor_24_e4__e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.511
+_OBJC_CLASSLIST_REFERENCES_$_.512
+_OBJC_SELECTOR_REFERENCES_.514
+_OBJC_SELECTOR_REFERENCES_.516
+_OBJC_SELECTOR_REFERENCES_.524
+_OBJC_SELECTOR_REFERENCES_.528
+_OBJC_SELECTOR_REFERENCES_.532
+_OBJC_SELECTOR_REFERENCES_.536
+_OBJC_SELECTOR_REFERENCES_.538
+_pendingSendTagCallbacks
+_OBJC_CLASSLIST_REFERENCES_$_.539
+_OBJC_CLASSLIST_REFERENCES_$_.540
+_OBJC_SELECTOR_REFERENCES_.541
+_OBJC_SELECTOR_REFERENCES_.542
+_OBJC_SELECTOR_REFERENCES_.544
+_OBJC_CLASSLIST_REFERENCES_$_.545
+_OBJC_SELECTOR_REFERENCES_.547
+_OBJC_SELECTOR_REFERENCES_.549
+_OBJC_SELECTOR_REFERENCES_.551
+_OBJC_CLASSLIST_REFERENCES_$_.552
+_OBJC_CLASSLIST_REFERENCES_$_.553
+_OBJC_SELECTOR_REFERENCES_.555
+_OBJC_SELECTOR_REFERENCES_.557
+_OBJC_SELECTOR_REFERENCES_.559
+_OBJC_SELECTOR_REFERENCES_.563
+_OBJC_SELECTOR_REFERENCES_.565
+___block_descriptor_24_e4_20s_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.570
+_OBJC_SELECTOR_REFERENCES_.574
+_OBJC_SELECTOR_REFERENCES_.578
+_pendingGetTagsSuccessBlock
+_pendingGetTagsFailureBlock
+_OBJC_CLASSLIST_REFERENCES_$_.581
+___block_descriptor_24_e4_20bs_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.587
+_OBJC_SELECTOR_REFERENCES_.591
+_OBJC_SELECTOR_REFERENCES_.599
+_OBJC_SELECTOR_REFERENCES_.605
+_OBJC_SELECTOR_REFERENCES_.607
+_OBJC_SELECTOR_REFERENCES_.611
+_OBJC_SELECTOR_REFERENCES_.615
+_OBJC_CLASSLIST_REFERENCES_$_.616
+_OBJC_SELECTOR_REFERENCES_.618
+_OBJC_SELECTOR_REFERENCES_.620
+_OBJC_SELECTOR_REFERENCES_.622
+___block_descriptor_28_e4_20s24bs_e5_v4?0l
+___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
+_OBJC_CLASSLIST_REFERENCES_$_.635
+_OBJC_CLASSLIST_REFERENCES_$_.636
+_OBJC_SELECTOR_REFERENCES_.640
+_OBJC_SELECTOR_REFERENCES_.642
+_OBJC_SELECTOR_REFERENCES_.646
+_OBJC_SELECTOR_REFERENCES_.648
+_OBJC_SELECTOR_REFERENCES_.650
+_OBJC_CLASSLIST_REFERENCES_$_.653
+_OBJC_SELECTOR_REFERENCES_.655
+_OBJC_SELECTOR_REFERENCES_.667
+_OBJC_SELECTOR_REFERENCES_.669
+_OBJC_SELECTOR_REFERENCES_.671
+_OBJC_SELECTOR_REFERENCES_.677
+_OBJC_SELECTOR_REFERENCES_.679
+_OBJC_SELECTOR_REFERENCES_.683
+_OBJC_SELECTOR_REFERENCES_.687
+_OBJC_SELECTOR_REFERENCES_.689
+_OBJC_SELECTOR_REFERENCES_.699
+_OBJC_SELECTOR_REFERENCES_.703
+_OBJC_SELECTOR_REFERENCES_.705
+_OBJC_SELECTOR_REFERENCES_.707
+_OBJC_SELECTOR_REFERENCES_.709
+___block_descriptor_28_e4__e26_v8?0"OSPermissionState"4l
+_OBJC_CLASSLIST_REFERENCES_$_.713
+_OBJC_SELECTOR_REFERENCES_.715
+_OBJC_SELECTOR_REFERENCES_.717
+_OBJC_SELECTOR_REFERENCES_.719
+_OBJC_SELECTOR_REFERENCES_.721
+_OBJC_SELECTOR_REFERENCES_.725
+_serialQueue
+_OBJC_SELECTOR_REFERENCES_.731
+_OBJC_SELECTOR_REFERENCES_.734
+_OBJC_SELECTOR_REFERENCES_.736
+_OBJC_SELECTOR_REFERENCES_.738
+_OBJC_SELECTOR_REFERENCES_.740
+_OBJC_SELECTOR_REFERENCES_.742
+_OBJC_CLASSLIST_REFERENCES_$_.745
+_OBJC_SELECTOR_REFERENCES_.747
+_OBJC_SELECTOR_REFERENCES_.749
+_OBJC_CLASSLIST_REFERENCES_$_.752
+_OBJC_SELECTOR_REFERENCES_.754
+_OBJC_SELECTOR_REFERENCES_.756
+_OBJC_SELECTOR_REFERENCES_.762
+_OBJC_SELECTOR_REFERENCES_.764
+_OBJC_SELECTOR_REFERENCES_.770
+_OBJC_SELECTOR_REFERENCES_.774
+_OBJC_CLASSLIST_REFERENCES_$_.779
+_OBJC_SELECTOR_REFERENCES_.781
+_OBJC_SELECTOR_REFERENCES_.789
+_OBJC_SELECTOR_REFERENCES_.793
+_OBJC_SELECTOR_REFERENCES_.795
+_OBJC_SELECTOR_REFERENCES_.797
+_OBJC_SELECTOR_REFERENCES_.807
+_OBJC_CLASSLIST_REFERENCES_$_.824
+_OBJC_SELECTOR_REFERENCES_.826
+_OBJC_SELECTOR_REFERENCES_.832
+_OBJC_SELECTOR_REFERENCES_.836
+_OBJC_CLASSLIST_REFERENCES_$_.849
+_OBJC_SELECTOR_REFERENCES_.851
+_OBJC_SELECTOR_REFERENCES_.861
+_OBJC_SELECTOR_REFERENCES_.863
+_OBJC_SELECTOR_REFERENCES_.867
+_OBJC_SELECTOR_REFERENCES_.869
+_OBJC_SELECTOR_REFERENCES_.871
+_OBJC_SELECTOR_REFERENCES_.873
+_OBJC_SELECTOR_REFERENCES_.877
+___block_descriptor_32_e4_24s28s_e21_v8?0"NSDictionary"4l
+_OBJC_CLASSLIST_REFERENCES_$_.884
+_OBJC_SELECTOR_REFERENCES_.886
+_OBJC_CLASSLIST_REFERENCES_$_.887
+_OBJC_SELECTOR_REFERENCES_.889
+_OBJC_SELECTOR_REFERENCES_.891
+_OBJC_CLASSLIST_REFERENCES_$_.892
+_OBJC_SELECTOR_REFERENCES_.894
+_OBJC_SELECTOR_REFERENCES_.896
+_OBJC_SELECTOR_REFERENCES_.898
+_OBJC_SELECTOR_REFERENCES_.900
+_OBJC_SELECTOR_REFERENCES_.902
+_OBJC_SELECTOR_REFERENCES_.904
+_OBJC_CLASSLIST_REFERENCES_$_.905
+_OBJC_SELECTOR_REFERENCES_.907
+_OBJC_SELECTOR_REFERENCES_.909
+__lastAppActiveMessageId
+__lastnonActiveMessageId
+_OBJC_SELECTOR_REFERENCES_.911
+_OBJC_SELECTOR_REFERENCES_.923
+_OBJC_CLASSLIST_REFERENCES_$_.924
+_OBJC_SELECTOR_REFERENCES_.926
+_OBJC_SELECTOR_REFERENCES_.928
+_OBJC_SELECTOR_REFERENCES_.932
+_OBJC_SELECTOR_REFERENCES_.936
+_OBJC_SELECTOR_REFERENCES_.938
+_OBJC_SELECTOR_REFERENCES_.940
+_OBJC_SELECTOR_REFERENCES_.942
+_OBJC_SELECTOR_REFERENCES_.948
+_OBJC_SELECTOR_REFERENCES_.954
+_OBJC_SELECTOR_REFERENCES_.956
+_OBJC_SELECTOR_REFERENCES_.962
+_OBJC_SELECTOR_REFERENCES_.964
+_OBJC_SELECTOR_REFERENCES_.966
+_OBJC_SELECTOR_REFERENCES_.968
+_OBJC_SELECTOR_REFERENCES_.970
+_OBJC_SELECTOR_REFERENCES_.972
+_OBJC_SELECTOR_REFERENCES_.974
+_OBJC_CLASSLIST_REFERENCES_$_.977
+_OBJC_SELECTOR_REFERENCES_.979
+_OBJC_SELECTOR_REFERENCES_.983
+_OBJC_SELECTOR_REFERENCES_.985
+_OBJC_SELECTOR_REFERENCES_.989
+_OBJC_SELECTOR_REFERENCES_.999
+_OBJC_SELECTOR_REFERENCES_.1001
+_OBJC_SELECTOR_REFERENCES_.1007
+_OBJC_SELECTOR_REFERENCES_.1015
+_OBJC_SELECTOR_REFERENCES_.1017
+_OBJC_SELECTOR_REFERENCES_.1019
+_OBJC_SELECTOR_REFERENCES_.1021
+_OBJC_SELECTOR_REFERENCES_.1023
+_OBJC_SELECTOR_REFERENCES_.1025
+_OBJC_CLASSLIST_REFERENCES_$_.1030
+_OBJC_SELECTOR_REFERENCES_.1032
+_OBJC_SELECTOR_REFERENCES_.1034
+_OBJC_SELECTOR_REFERENCES_.1036
+_OBJC_CLASSLIST_REFERENCES_$_.1039
+_OBJC_SELECTOR_REFERENCES_.1041
+_OBJC_CLASSLIST_REFERENCES_$_.1042
+_OBJC_SELECTOR_REFERENCES_.1044
+_OBJC_SELECTOR_REFERENCES_.1046
+___block_descriptor_28_e4_20bs24s_e5_v4?0l
+___block_descriptor_24_e4_20bs_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.1050
+_OBJC_CLASSLIST_REFERENCES_$_.1059
+_OBJC_SELECTOR_REFERENCES_.1067
+_OBJC_SELECTOR_REFERENCES_.1069
+_OBJC_SELECTOR_REFERENCES_.1071
+_OBJC_SELECTOR_REFERENCES_.1077
+_OBJC_CLASSLIST_REFERENCES_$_.1082
+_OBJC_SELECTOR_REFERENCES_.1084
+_OBJC_SELECTOR_REFERENCES_.1086
+___block_descriptor_28_e4_24bs_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.1090
+___block_descriptor_28_e4_24bs_e16_v8?0"NSError"4l
+_OBJC_CLASSLIST_REFERENCES_$_.1092
+_OBJC_SELECTOR_REFERENCES_.1094
+_OBJC_SELECTOR_REFERENCES_.1097
+_OBJC_SELECTOR_REFERENCES_.1099
+_OBJC_SELECTOR_REFERENCES_.1101
+___block_descriptor_44_e4_24s28s32s36bs40bs_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.1109
+_OBJC_CLASSLIST_REFERENCES_$_.1116
+_OBJC_SELECTOR_REFERENCES_.1118
+_OBJC_SELECTOR_REFERENCES_.1121
+___block_descriptor_24_e4__e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.1128
+_OBJC_SELECTOR_REFERENCES_.1136
+_OBJC_SELECTOR_REFERENCES_.1140
+_OBJC_SELECTOR_REFERENCES_.1144
+_OBJC_SELECTOR_REFERENCES_.1148
+_OBJC_CLASSLIST_REFERENCES_$_.1155
+_OBJC_SELECTOR_REFERENCES_.1157
+_OBJC_SELECTOR_REFERENCES_.1159
+_OBJC_SELECTOR_REFERENCES_.1161
+___block_descriptor_28_e4_20s24bs_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.1165
+_OBJC_SELECTOR_REFERENCES_.1171
+_OBJC_SELECTOR_REFERENCES_.1177
+_OBJC_SELECTOR_REFERENCES_.1179
+_OBJC_SELECTOR_REFERENCES_.1183
+_OBJC_SELECTOR_REFERENCES_.1185
+_OBJC_SELECTOR_REFERENCES_.1187
+_OBJC_SELECTOR_REFERENCES_.1191
+_OBJC_SELECTOR_REFERENCES_.1193
+_OBJC_SELECTOR_REFERENCES_.1197
+_OBJC_SELECTOR_REFERENCES_.1199
+__OBJC_$_CLASS_METHODS_OneSignal
+__OBJC_METACLASS_RO_$_OneSignal
+__OBJC_CLASS_RO_$_OneSignal
+_OBJC_CLASSLIST_REFERENCES_$_.1313
+_OBJC_SELECTOR_REFERENCES_.1315
+__OBJC_$_CATEGORY_CLASS_METHODS_OneSignal_$_SessionStatusDelegate
+__OBJC_$_CATEGORY_OneSignal_$_SessionStatusDelegate
+_OBJC_CLASSLIST_REFERENCES_$_.1320
+_OBJC_SELECTOR_REFERENCES_.1322
+_OBJC_SELECTOR_REFERENCES_.1324
+_OBJC_CLASSLIST_REFERENCES_$_.1329
+_OBJC_SELECTOR_REFERENCES_.1331
+_OBJC_SELECTOR_REFERENCES_.1335
+_OBJC_SELECTOR_REFERENCES_.1337
+_OBJC_SELECTOR_REFERENCES_.1339
+_OBJC_SELECTOR_REFERENCES_.1341
+_OBJC_SELECTOR_REFERENCES_.1343
+_OBJC_CLASSLIST_REFERENCES_$_.1346
+_OBJC_SELECTOR_REFERENCES_.1348
+_OBJC_SELECTOR_REFERENCES_.1350
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIApplication_$_OneSignal
+__OBJC_$_CATEGORY_CLASS_METHODS_UIApplication_$_OneSignal
+__OBJC_$_CATEGORY_UIApplication_$_OneSignal
+_OBJC_LABEL_CATEGORY_$
+_OBJC_LABEL_NONLAZY_CATEGORY_$
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignal.m
+Source/OneSignal.m
+__46+[OneSignal setExternalUserId:withCompletion:]_block_invoke
+__46+[OneSignal emailChangedWithNewEmailPlayerId:]_block_invoke
+__48+[OneSignal logoutEmailWithSuccess:withFailure:]_block_invoke_2
+__48+[OneSignal logoutEmailWithSuccess:withFailure:]_block_invoke
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1105
+__destroy_helper_block_e4_24s28s32s36s40s
+__copy_helper_block_e4_24s28s32s36b40b
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke_3
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke_2
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1095
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke.1088
+__destroy_helper_block_e4_24s
+__copy_helper_block_e4_24b
+__69+[OneSignal setEmail:withEmailAuthHashToken:withSuccess:withFailure:]_block_invoke
+__42+[OneSignal callSuccessBlockOnMainThread:]_block_invoke
+__copy_helper_block_e4_20b24s
+__52+[OneSignal callFailureBlockOnMainThread:withError:]_block_invoke
+__40+[OneSignal sendNotificationTypesUpdate]_block_invoke
+__33+[OneSignal registerUserInternal]_block_invoke.881
+__destroy_helper_block_e4_24s28s
+__copy_helper_block_e4_24s28s
+__33+[OneSignal registerUserInternal]_block_invoke
+__25+[OneSignal registerUser]_block_invoke
+__31+[OneSignal updateDeviceToken:]_block_invoke
+__50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke_2.626
+__50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke.625
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24b
+__50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke_2
+__50+[OneSignal postNotification:onSuccess:onFailure:]_block_invoke
+__copy_helper_block_e4_20b
+__31+[OneSignal getTags:onFailure:]_block_invoke
+__29+[OneSignal sendTagsToServer]_block_invoke.568
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__29+[OneSignal sendTagsToServer]_block_invoke
+__37+[OneSignal fireIdsAvailableCallback]_block_invoke
+__75+[OneSignal promptForPushNotificationsWithUserResponse:fallbackToSettings:]_block_invoke
+__33+[OneSignal registerForAPNsToken]_block_invoke
+__40+[OneSignal downloadIOSParamsWithAppId:]_block_invoke.397
+__40+[OneSignal downloadIOSParamsWithAppId:]_block_invoke
+__58+[OneSignal checkIfApplicationImplementsDeprecatedMethods]_block_invoke
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
+__51+[OneSignal initSettings:withStandardUserDefaults:]_block_invoke
+onesignal_Log
+Source/OneSignalInternal.h
+Source/OneSignal.h
+-[OSInAppMessageLocationPrompt init]
+-[OSInAppMessageLocationPrompt handlePrompt:]
+-[OSInAppMessageLocationPrompt description]
+-[OSInAppMessageLocationPrompt hasPrompted]
+-[OSInAppMessageLocationPrompt setHasPrompted:]
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.9
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_OSInAppMessagePrompt
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSInAppMessagePrompt
+__OBJC_$_PROP_LIST_OSInAppMessagePrompt
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSInAppMessagePrompt
+__OBJC_PROTOCOL_$_OSInAppMessagePrompt
+__OBJC_LABEL_PROTOCOL_$_OSInAppMessagePrompt
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageLocationPrompt
+__OBJC_METACLASS_RO_$_OSInAppMessageLocationPrompt
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageLocationPrompt
+_OBJC_IVAR_$_OSInAppMessageLocationPrompt._hasPrompted
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageLocationPrompt
+__OBJC_$_PROP_LIST_OSInAppMessageLocationPrompt
+__OBJC_CLASS_RO_$_OSInAppMessageLocationPrompt
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageLocationPrompt.m
+Source/OSInAppMessageLocationPrompt.h
+Source/OSInAppMessageLocationPrompt.m
++[OSMessagingController sharedInstance]
+___39+[OSMessagingController sharedInstance]_block_invoke
++[OSMessagingController removeInstance]
+-[OSMessagingController isInAppMessagingPaused]
+-[OSMessagingController setInAppMessagingPaused:]
++[OSMessagingController doesDeviceSupportIAM]
+-[OSMessagingController init]
+___29-[OSMessagingController init]_block_invoke
+-[OSMessagingController updateInAppMessagesFromCache]
+-[OSMessagingController updateInAppMessagesFromOnSession:]
+-[OSMessagingController resetRedisplayMessagesBySession]
+-[OSMessagingController deleteOldRedisplayedInAppMessages]
+-[OSMessagingController setInAppMessageClickHandler:]
+-[OSMessagingController presentInAppMessage:]
+-[OSMessagingController isMessageInDisplayQueue:]
+-[OSMessagingController presentInAppPreviewMessage:]
+-[OSMessagingController displayMessage:]
+-[OSMessagingController showAndImpressMessage:]
+___47-[OSMessagingController showAndImpressMessage:]_block_invoke
+___copy_helper_block_e4_20s24s
+-[OSMessagingController messageViewImpressionRequest:]
+___54-[OSMessagingController messageViewImpressionRequest:]_block_invoke
+___54-[OSMessagingController messageViewImpressionRequest:]_block_invoke.192
+-[OSMessagingController evaluateMessages]
+-[OSMessagingController setDataForRedisplay:]
+-[OSMessagingController shouldShowInAppMessage:]
+-[OSMessagingController handleMessageActionWithURL:]
+___52-[OSMessagingController handleMessageActionWithURL:]_block_invoke
+-[OSMessagingController evaluateRedisplayedInAppMessages:]
+-[OSMessagingController addTriggers:]
+-[OSMessagingController removeTriggersForKeys:]
+-[OSMessagingController getTriggers]
+-[OSMessagingController getTriggerValueForKey:]
+-[OSMessagingController messageViewControllerWasDismissed]
+-[OSMessagingController evaluateMessageDisplayQueue]
+-[OSMessagingController hideWindow]
+-[OSMessagingController persistInAppMessageForRedisplay:]
+-[OSMessagingController handlePromptActions:withMessage:]
+___57-[OSMessagingController handlePromptActions:withMessage:]_block_invoke
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
+-[OSMessagingController showAlertDialogMessage:promptActions:]
+___62-[OSMessagingController showAlertDialogMessage:promptActions:]_block_invoke
+-[OSMessagingController messageViewDidSelectAction:withAction:]
+-[OSMessagingController processPreviewInAppMessage:withAction:]
+-[OSMessagingController isClickAvailable:withClickId:]
+-[OSMessagingController sendClickRESTCall:withAction:]
+___54-[OSMessagingController sendClickRESTCall:withAction:]_block_invoke
+___54-[OSMessagingController sendClickRESTCall:withAction:]_block_invoke.391
+-[OSMessagingController sendTagCallWithAction:]
+-[OSMessagingController sendOutcomes:forMessageId:]
+-[OSMessagingController webViewContentFinishedLoading]
+-[OSMessagingController addKeySceneToWindow:]
+-[OSMessagingController triggerConditionChanged]
+-[OSMessagingController onApplicationDidBecomeActive]
+-[OSMessagingController isInAppMessageShowing]
+-[OSMessagingController setIsInAppMessageShowing:]
+-[OSMessagingController window]
+-[OSMessagingController setWindow:]
+-[OSMessagingController messages]
+-[OSMessagingController setMessages:]
+-[OSMessagingController triggerController]
+-[OSMessagingController setTriggerController:]
+-[OSMessagingController messageDisplayQueue]
+-[OSMessagingController setMessageDisplayQueue:]
+-[OSMessagingController seenInAppMessages]
+-[OSMessagingController setSeenInAppMessages:]
+-[OSMessagingController redisplayedInAppMessages]
+-[OSMessagingController setRedisplayedInAppMessages:]
+-[OSMessagingController clickedClickIds]
+-[OSMessagingController setClickedClickIds:]
+-[OSMessagingController impressionedInAppMessages]
+-[OSMessagingController setImpressionedInAppMessages:]
+-[OSMessagingController actionClickBlock]
+-[OSMessagingController setActionClickBlock:]
+-[OSMessagingController viewController]
+-[OSMessagingController setViewController:]
+-[OSMessagingController dateGenerator]
+-[OSMessagingController setDateGenerator:]
+-[OSMessagingController currentPromptAction]
+-[OSMessagingController setCurrentPromptAction:]
+-[OSMessagingController currentPromptActions]
+-[OSMessagingController setCurrentPromptActions:]
+-[OSMessagingController currentInAppMessage]
+-[OSMessagingController setCurrentInAppMessage:]
+-[OSMessagingController isAppInactive]
+-[OSMessagingController setIsAppInactive:]
+-[OSMessagingController .cxx_destruct]
++[DummyOSMessagingController sharedInstance]
+-[DummyOSMessagingController init]
+-[DummyOSMessagingController isInAppMessagingPaused]
+-[DummyOSMessagingController setInAppMessagingPaused:]
+-[DummyOSMessagingController updateInAppMessagesFromOnSession:]
+-[DummyOSMessagingController setInAppMessageClickHandler:]
+-[DummyOSMessagingController presentInAppMessage:]
+-[DummyOSMessagingController presentInAppPreviewMessage:]
+-[DummyOSMessagingController displayMessage:]
+-[DummyOSMessagingController messageViewImpressionRequest:]
+-[DummyOSMessagingController evaluateMessages]
+-[DummyOSMessagingController shouldShowInAppMessage:]
+-[DummyOSMessagingController handleMessageActionWithURL:]
+-[DummyOSMessagingController addTriggers:]
+-[DummyOSMessagingController removeTriggersForKeys:]
+-[DummyOSMessagingController getTriggers]
+-[DummyOSMessagingController getTriggerValueForKey:]
+-[DummyOSMessagingController messageViewControllerWasDismissed]
+-[DummyOSMessagingController messageViewDidSelectAction:withAction:]
+-[DummyOSMessagingController webViewContentFinishedLoading]
+-[DummyOSMessagingController triggerConditionChanged]
+___clang_at_available_requires_core_foundation_framework
+___clang_at_available_requires_core_foundation_framework.cold.1
+_sharedInstance
+_once
+__isInAppMessagingPaused
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+___block_descriptor_20_e5_d4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_CLASSLIST_REFERENCES_$_.36
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_CLASSLIST_REFERENCES_$_.46
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_CLASSLIST_REFERENCES_$_.62
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.145
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_CLASSLIST_REFERENCES_$_.158
+_OBJC_SELECTOR_REFERENCES_.164
+_OBJC_SELECTOR_REFERENCES_.166
+___block_descriptor_28_e4_20s24s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.172
+_OBJC_SELECTOR_REFERENCES_.190
+___block_descriptor_28_e4_20s24s_e21_v8?0"NSDictionary"4l
+_OBJC_SELECTOR_REFERENCES_.196
+___block_descriptor_28_e4_20s24s_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.199
+_OBJC_SELECTOR_REFERENCES_.207
+_OBJC_SELECTOR_REFERENCES_.209
+_OBJC_SELECTOR_REFERENCES_.217
+_OBJC_SELECTOR_REFERENCES_.221
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.229
+_OBJC_SELECTOR_REFERENCES_.237
+_OBJC_SELECTOR_REFERENCES_.241
+_OBJC_SELECTOR_REFERENCES_.245
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_CLASSLIST_REFERENCES_$_.250
+_OBJC_SELECTOR_REFERENCES_.252
+___block_descriptor_20_e7_v8?0c4l
+___block_literal_global.254
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_SELECTOR_REFERENCES_.264
+_OBJC_SELECTOR_REFERENCES_.268
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.278
+_OBJC_SELECTOR_REFERENCES_.280
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.292
+_OBJC_SELECTOR_REFERENCES_.298
+_OBJC_SELECTOR_REFERENCES_.300
+_OBJC_SELECTOR_REFERENCES_.302
+_OBJC_SELECTOR_REFERENCES_.304
+_OBJC_SELECTOR_REFERENCES_.308
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_SELECTOR_REFERENCES_.322
+_OBJC_SELECTOR_REFERENCES_.324
+___block_descriptor_32_e4_20s24s28s_e7_v8?0i4l
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_CLASSLIST_REFERENCES_$_.330
+_OBJC_SELECTOR_REFERENCES_.332
+_OBJC_SELECTOR_REFERENCES_.338
+_OBJC_CLASSLIST_REFERENCES_$_.343
+_OBJC_SELECTOR_REFERENCES_.345
+___block_descriptor_24_e4_20s_e7_v8?0i4l
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_SELECTOR_REFERENCES_.353
+_OBJC_SELECTOR_REFERENCES_.355
+_OBJC_SELECTOR_REFERENCES_.357
+_OBJC_SELECTOR_REFERENCES_.359
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_SELECTOR_REFERENCES_.369
+_OBJC_SELECTOR_REFERENCES_.371
+_OBJC_SELECTOR_REFERENCES_.379
+_OBJC_SELECTOR_REFERENCES_.381
+_OBJC_SELECTOR_REFERENCES_.383
+_OBJC_SELECTOR_REFERENCES_.385
+_OBJC_CLASSLIST_REFERENCES_$_.386
+_OBJC_SELECTOR_REFERENCES_.388
+___block_descriptor_32_e4_20s24s28s_e21_v8?0"NSDictionary"4l
+___block_descriptor_32_e4_20s24s28s_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.395
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.399
+_OBJC_SELECTOR_REFERENCES_.403
+_OBJC_CLASSLIST_REFERENCES_$_.404
+_OBJC_SELECTOR_REFERENCES_.406
+_OBJC_SELECTOR_REFERENCES_.408
+_OBJC_CLASSLIST_REFERENCES_$_.409
+_OBJC_SELECTOR_REFERENCES_.411
+_OBJC_SELECTOR_REFERENCES_.413
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.422
+_OBJC_SELECTOR_REFERENCES_.424
+_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.432
+_OBJC_SELECTOR_REFERENCES_.434
+_OBJC_SELECTOR_REFERENCES_.436
+_OBJC_SELECTOR_REFERENCES_.438
+_OBJC_SELECTOR_REFERENCES_.440
+__OBJC_$_CLASS_METHODS_OSMessagingController
+__OBJC_$_PROTOCOL_REFS_OSInAppMessageViewControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSInAppMessageViewControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSInAppMessageViewControllerDelegate
+__OBJC_PROTOCOL_$_OSInAppMessageViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_OSInAppMessageViewControllerDelegate
+__OBJC_$_PROTOCOL_REFS_OSTriggerControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSTriggerControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSTriggerControllerDelegate
+__OBJC_PROTOCOL_$_OSTriggerControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_OSTriggerControllerDelegate
+__OBJC_$_PROTOCOL_REFS_OSMessagingControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSMessagingControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSMessagingControllerDelegate
+__OBJC_PROTOCOL_$_OSMessagingControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_OSMessagingControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_OSMessagingController
+__OBJC_METACLASS_RO_$_OSMessagingController
+__OBJC_$_INSTANCE_METHODS_OSMessagingController
+_OBJC_IVAR_$_OSMessagingController._isInAppMessageShowing
+_OBJC_IVAR_$_OSMessagingController._isAppInactive
+_OBJC_IVAR_$_OSMessagingController._window
+_OBJC_IVAR_$_OSMessagingController._messages
+_OBJC_IVAR_$_OSMessagingController._triggerController
+_OBJC_IVAR_$_OSMessagingController._messageDisplayQueue
+_OBJC_IVAR_$_OSMessagingController._seenInAppMessages
+_OBJC_IVAR_$_OSMessagingController._redisplayedInAppMessages
+_OBJC_IVAR_$_OSMessagingController._clickedClickIds
+_OBJC_IVAR_$_OSMessagingController._impressionedInAppMessages
+_OBJC_IVAR_$_OSMessagingController._actionClickBlock
+_OBJC_IVAR_$_OSMessagingController._viewController
+_OBJC_IVAR_$_OSMessagingController._dateGenerator
+_OBJC_IVAR_$_OSMessagingController._currentPromptAction
+_OBJC_IVAR_$_OSMessagingController._currentPromptActions
+_OBJC_IVAR_$_OSMessagingController._currentInAppMessage
+__OBJC_$_INSTANCE_VARIABLES_OSMessagingController
+__OBJC_$_PROP_LIST_OSMessagingController
+__OBJC_CLASS_RO_$_OSMessagingController
+_OBJC_CLASSLIST_SUP_REFS_$_.573
+__OBJC_$_CLASS_METHODS_DummyOSMessagingController
+__OBJC_METACLASS_RO_$_DummyOSMessagingController
+__OBJC_$_INSTANCE_METHODS_DummyOSMessagingController
+__OBJC_CLASS_RO_$_DummyOSMessagingController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSMessagingController.m
+Source/OSMessagingController.m
+Source/OSMessagingController.h
+__54-[OSMessagingController sendClickRESTCall:withAction:]_block_invoke.391
+__54-[OSMessagingController sendClickRESTCall:withAction:]_block_invoke
+__62-[OSMessagingController showAlertDialogMessage:promptActions:]_block_invoke
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
+__57-[OSMessagingController handlePromptActions:withMessage:]_block_invoke
+__52-[OSMessagingController handleMessageActionWithURL:]_block_invoke
+__54-[OSMessagingController messageViewImpressionRequest:]_block_invoke.192
+__54-[OSMessagingController messageViewImpressionRequest:]_block_invoke
+__copy_helper_block_e4_20s24s
+__47-[OSMessagingController showAndImpressMessage:]_block_invoke
+__29-[OSMessagingController init]_block_invoke
+__39+[OSMessagingController sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/dispatch/once.h
+-[OSInAppMessage(OSInAppMessageController) loadMessageHTMLContentWithResult:failure:]
+-[OSInAppMessage(OSInAppMessageController) loadPreviewMessageHTMLContentWithUUID:success:failure:]
+-[OSInAppMessage(OSInAppMessageController) variantId]
+_OBJC_CLASSLIST_REFERENCES_$_.6
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_CLASSLIST_REFERENCES_$_.18
+_OBJC_CLASSLIST_REFERENCES_$_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_CLASSLIST_REFERENCES_$_.29
+_OBJC_CLASSLIST_REFERENCES_$_.38
+__OBJC_$_CATEGORY_INSTANCE_METHODS_OSInAppMessage_$_OSInAppMessageController
+__OBJC_$_CATEGORY_OSInAppMessage_$_OSInAppMessageController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageController.m
+Source/OSInAppMessageController.m
++[OneSignalClient sharedClient]
+___31+[OneSignalClient sharedClient]_block_invoke
+-[OneSignalClient init]
+-[OneSignalClient configurationWithCachingPolicy:]
+-[OneSignalClient privacyConsentErrorWithRequestType:]
+-[OneSignalClient genericTimedOutError]
+-[OneSignalClient executeSimultaneousRequests:withCompletion:]
+___62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.42
+___copy_helper_block_e4_20s24s28s32r36r
+___destroy_helper_block_e4_20s24s28s32r36r
+___62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.53
+___62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.61
+___copy_helper_block_e4_20b24r
+___destroy_helper_block_e4_20s24r
+___copy_helper_block_e4_20s24s28b
+-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]
+___69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke
+___69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32r
+___destroy_helper_block_e4_20s24s28s32r
+___69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke.62
+___69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke.63
+___copy_helper_block_e4_20b24b28r32r
+___destroy_helper_block_e4_20s24s28r32r
+___copy_helper_block_e4_20s24s28b32b
+___destroy_helper_block_e4_20s24s28s32s
+-[OneSignalClient executeRequest:onSuccess:onFailure:]
+___54-[OneSignalClient executeRequest:onSuccess:onFailure:]_block_invoke
+-[OneSignalClient executeSynchronousRequest:onSuccess:onFailure:]
+___65-[OneSignalClient executeSynchronousRequest:onSuccess:onFailure:]_block_invoke
+___copy_helper_block_e4_20s24r28r
+___destroy_helper_block_e4_20s24r28r
+-[OneSignalClient executeDataRequest:onSuccess:onFailure:]
+___58-[OneSignalClient executeDataRequest:onSuccess:onFailure:]_block_invoke
+___copy_helper_block_e4_20s24b28b
+-[OneSignalClient handleMissingAppIdError:withRequest:]
+-[OneSignalClient validRequest:]
+-[OneSignalClient reattemptRequest:]
+-[OneSignalClient willReattemptRequest:withRequest:success:failure:asyncRequest:]
+-[OneSignalClient prettyPrintDebugStatementWithRequest:]
+-[OneSignalClient handleJSONNSURLResponse:data:error:isAsync:withRequest:onSuccess:onFailure:]
+-[OneSignalClient sharedSession]
+-[OneSignalClient setSharedSession:]
+-[OneSignalClient noCacheSession]
+-[OneSignalClient setNoCacheSession:]
+-[OneSignalClient .cxx_destruct]
+_sharedClient.sharedClient
+_sharedClient.once
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_CLASSLIST_REFERENCES_$_.8
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_CLASSLIST_REFERENCES_$_.21
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_SELECTOR_REFERENCES_.49
+___block_descriptor_40_e4_20s24s28s32r36r_e21_v8?0"NSDictionary"4l
+___block_descriptor_40_e4_20s24s28s32r36r_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+___block_descriptor_28_e4_20bs24r_e5_v4?0l
+___block_descriptor_32_e4_20s24s28bs_e5_v4?0l
+___block_descriptor_36_e4_20s24s28s32r_e21_v8?0"NSDictionary"4l
+___block_descriptor_36_e4_20s24s28s32r_e16_v8?0"NSError"4l
+___block_descriptor_36_e4_20bs24bs28r32r_e5_v4?0l
+___block_descriptor_36_e4_20s24s28bs32bs_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
+___block_descriptor_36_e4_20s24s28bs32bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+_OBJC_SELECTOR_REFERENCES_.95
+___block_descriptor_32_e4_20s24r28r_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+___block_descriptor_32_e4_20s24bs28bs_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
+_OBJC_CLASSLIST_REFERENCES_$_.129
+_OBJC_CLASSLIST_REFERENCES_$_.134
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_SELECTOR_REFERENCES_.150
+__OBJC_$_CLASS_METHODS_OneSignalClient
+__OBJC_METACLASS_RO_$_OneSignalClient
+__OBJC_$_INSTANCE_METHODS_OneSignalClient
+_OBJC_IVAR_$_OneSignalClient._sharedSession
+_OBJC_IVAR_$_OneSignalClient._noCacheSession
+__OBJC_$_INSTANCE_VARIABLES_OneSignalClient
+__OBJC_$_PROP_LIST_OneSignalClient
+__OBJC_CLASS_RO_$_OneSignalClient
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalClient.m
+Source/OneSignalClient.m
+__copy_helper_block_e4_20s24b28b
+__58-[OneSignalClient executeDataRequest:onSuccess:onFailure:]_block_invoke
+__destroy_helper_block_e4_20s24r28r
+__copy_helper_block_e4_20s24r28r
+__65-[OneSignalClient executeSynchronousRequest:onSuccess:onFailure:]_block_invoke
+__54-[OneSignalClient executeRequest:onSuccess:onFailure:]_block_invoke
+__destroy_helper_block_e4_20s24s28s32s
+__copy_helper_block_e4_20s24s28b32b
+__destroy_helper_block_e4_20s24s28r32r
+__copy_helper_block_e4_20b24b28r32r
+__69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke.63
+__69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke.62
+__destroy_helper_block_e4_20s24s28s32r
+__copy_helper_block_e4_20s24s28s32r
+__69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke_2
+__69-[OneSignalClient executeSimultaneousRequests:withSuccess:onFailure:]_block_invoke
+__copy_helper_block_e4_20s24s28b
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20b24r
+__62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.61
+__62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.53
+__destroy_helper_block_e4_20s24s28s32r36r
+__copy_helper_block_e4_20s24s28s32r36r
+__62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke.42
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__62-[OneSignalClient executeSimultaneousRequests:withCompletion:]_block_invoke
+__31+[OneSignalClient sharedClient]_block_invoke
+-[OneSignalNotificationSettingsIOS8 getNotificationPermissionState:]
+-[OneSignalNotificationSettingsIOS8 getNotificationPermissionState]
+___67-[OneSignalNotificationSettingsIOS8 getNotificationPermissionState]_block_invoke
+___copy_helper_block_e4_20r
+___destroy_helper_block_e4_20r
+-[OneSignalNotificationSettingsIOS8 getNotificationTypes]
+-[OneSignalNotificationSettingsIOS8 promptForNotifications:]
+-[OneSignalNotificationSettingsIOS8 onNotificationPromptResponse:]
+-[OneSignalNotificationSettingsIOS8 onAPNsResponse:]
+-[OneSignalNotificationSettingsIOS8 registerForProvisionalAuthorization:]
+-[OneSignalNotificationSettingsIOS8 .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_SELECTOR_REFERENCES_.3
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_CLASSLIST_REFERENCES_$_.14
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_CLASSLIST_REFERENCES_$_.23
+___block_descriptor_24_e4_20r_e26_v8?0"OSPermissionState"4l
+__OBJC_$_PROTOCOL_REFS_OneSignalNotificationSettings
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OneSignalNotificationSettings
+__OBJC_$_PROTOCOL_METHOD_TYPES_OneSignalNotificationSettings
+__OBJC_PROTOCOL_$_OneSignalNotificationSettings
+__OBJC_LABEL_PROTOCOL_$_OneSignalNotificationSettings
+__OBJC_CLASS_PROTOCOLS_$_OneSignalNotificationSettingsIOS8
+__OBJC_METACLASS_RO_$_OneSignalNotificationSettingsIOS8
+__OBJC_$_INSTANCE_METHODS_OneSignalNotificationSettingsIOS8
+_OBJC_IVAR_$_OneSignalNotificationSettingsIOS8.notificationPromptReponseCallback
+__OBJC_$_INSTANCE_VARIABLES_OneSignalNotificationSettingsIOS8
+__OBJC_$_PROP_LIST_OneSignalNotificationSettingsIOS8
+__OBJC_CLASS_RO_$_OneSignalNotificationSettingsIOS8
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalNotificationSettingsIOS8.m
+Source/OneSignalNotificationSettingsIOS8.m
+__destroy_helper_block_e4_20r
+__copy_helper_block_e4_20r
+__67-[OneSignalNotificationSettingsIOS8 getNotificationPermissionState]_block_invoke
++[OneSignalNotificationCategoryController sharedInstance]
+___57+[OneSignalNotificationCategoryController sharedInstance]_block_invoke
+-[OneSignalNotificationCategoryController saveCategoryId:]
+-[OneSignalNotificationCategoryController existingRegisteredCategoryIds]
+-[OneSignalNotificationCategoryController pruneCategories:]
+-[OneSignalNotificationCategoryController registerNotificationCategoryForNotificationId:]
+-[OneSignalNotificationCategoryController existingCategories]
+___61-[OneSignalNotificationCategoryController existingCategories]_block_invoke
+___copy_helper_block_e4_20s24r
+_sharedInstance.sharedInstance
+_sharedInstance.once
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_CLASSLIST_REFERENCES_$_.33
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_SELECTOR_REFERENCES_.47
+___block_descriptor_28_e4_20s24r_e14_v8?0"NSSet"4l
+__OBJC_$_CLASS_METHODS_OneSignalNotificationCategoryController
+__OBJC_METACLASS_RO_$_OneSignalNotificationCategoryController
+__OBJC_$_INSTANCE_METHODS_OneSignalNotificationCategoryController
+__OBJC_CLASS_RO_$_OneSignalNotificationCategoryController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalNotificationCategoryController.m
+__copy_helper_block_e4_20s24r
+__61-[OneSignalNotificationCategoryController existingCategories]_block_invoke
+Source/OneSignalNotificationCategoryController.m
+__57+[OneSignalNotificationCategoryController sharedInstance]_block_invoke
++[OneSignalJailbreakDetection isJailbroken]
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_CLASSLIST_REFERENCES_$_.28
+__OBJC_$_CLASS_METHODS_OneSignalJailbreakDetection
+__OBJC_METACLASS_RO_$_OneSignalJailbreakDetection
+__OBJC_CLASS_RO_$_OneSignalJailbreakDetection
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalJailbreakDetection.m
+Source/OneSignalJailbreakDetection.m
+-[OSOutcomeEventsV2Repository requestMeasureOutcomeEventWithAppId:deviceType:event:onSuccess:onFailure:]
+__OBJC_METACLASS_RO_$_OSOutcomeEventsV2Repository
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventsV2Repository
+__OBJC_CLASS_RO_$_OSOutcomeEventsV2Repository
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventsV2Repository.m
+Source/OSOutcomeEventsV2Repository.m
+-[OSOutcomeSource initWithDirectBody:indirectBody:]
+-[OSOutcomeSource toDictionaryObject]
+-[OSOutcomeSource description]
+-[OSOutcomeSource directBody]
+-[OSOutcomeSource setDirectBody:]
+-[OSOutcomeSource indirectBody]
+-[OSOutcomeSource setIndirectBody:]
+-[OSOutcomeSource .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.9
+__OBJC_METACLASS_RO_$_OSOutcomeSource
+__OBJC_$_INSTANCE_METHODS_OSOutcomeSource
+_OBJC_IVAR_$_OSOutcomeSource._directBody
+_OBJC_IVAR_$_OSOutcomeSource._indirectBody
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeSource
+__OBJC_$_PROP_LIST_OSOutcomeSource
+__OBJC_CLASS_RO_$_OSOutcomeSource
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeSource.m
+Source/OSOutcomeSource.m
+Source/OSOutcomeSource.h
++[OSInAppMessageTag instanceWithData:]
++[OSInAppMessageTag instanceWithJson:]
++[OSInAppMessageTag instancePreviewFromPayload:]
+-[OSInAppMessageTag jsonRepresentation]
+-[OSInAppMessageTag description]
+-[OSInAppMessageTag tagsToAdd]
+-[OSInAppMessageTag setTagsToAdd:]
+-[OSInAppMessageTag tagsToRemove]
+-[OSInAppMessageTag setTagsToRemove:]
+-[OSInAppMessageTag .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.2
+_OBJC_CLASSLIST_REFERENCES_$_.20
+_OBJC_CLASSLIST_REFERENCES_$_.32
+__OBJC_$_CLASS_METHODS_OSInAppMessageTag
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSJSONEncodable
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSJSONEncodable
+__OBJC_PROTOCOL_$_OSJSONEncodable
+__OBJC_LABEL_PROTOCOL_$_OSJSONEncodable
+__OBJC_$_PROTOCOL_CLASS_METHODS_OSJSONDecodable
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSJSONDecodable
+__OBJC_PROTOCOL_$_OSJSONDecodable
+__OBJC_LABEL_PROTOCOL_$_OSJSONDecodable
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageTag
+__OBJC_METACLASS_RO_$_OSInAppMessageTag
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageTag
+_OBJC_IVAR_$_OSInAppMessageTag._tagsToAdd
+_OBJC_IVAR_$_OSInAppMessageTag._tagsToRemove
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageTag
+__OBJC_$_PROP_LIST_OSInAppMessageTag
+__OBJC_CLASS_RO_$_OSInAppMessageTag
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageTag.m
+Source/OSInAppMessageTag.m
+-[OneSignalRequest init]
+-[OneSignalRequest urlRequest]
+-[OneSignalRequest missingAppId]
+-[OneSignalRequest attachBodyToRequest:withParameters:]
+-[OneSignalRequest attachQueryParametersToRequest:withParameters:]
+-[OneSignalRequest queryStringForParameters:]
+-[OneSignalRequest disableLocalCaching]
+-[OneSignalRequest setDisableLocalCaching:]
+-[OneSignalRequest method]
+-[OneSignalRequest setMethod:]
+-[OneSignalRequest path]
+-[OneSignalRequest setPath:]
+-[OneSignalRequest parameters]
+-[OneSignalRequest setParameters:]
+-[OneSignalRequest reattemptCount]
+-[OneSignalRequest setReattemptCount:]
+-[OneSignalRequest dataRequest]
+-[OneSignalRequest setDataRequest:]
+-[OneSignalRequest .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_OBJC_CLASSLIST_REFERENCES_$_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_CLASSLIST_REFERENCES_$_.74
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_CLASSLIST_REFERENCES_$_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.114
+__OBJC_METACLASS_RO_$_OneSignalRequest
+__OBJC_$_INSTANCE_METHODS_OneSignalRequest
+_OBJC_IVAR_$_OneSignalRequest._disableLocalCaching
+_OBJC_IVAR_$_OneSignalRequest._dataRequest
+_OBJC_IVAR_$_OneSignalRequest._method
+_OBJC_IVAR_$_OneSignalRequest._path
+_OBJC_IVAR_$_OneSignalRequest._parameters
+_OBJC_IVAR_$_OneSignalRequest._reattemptCount
+__OBJC_$_INSTANCE_VARIABLES_OneSignalRequest
+__OBJC_$_PROP_LIST_OneSignalRequest
+__OBJC_CLASS_RO_$_OneSignalRequest
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalRequest.m
+Source/OneSignalRequest.m
+Source/OneSignalRequest.h
+-[OSChannelTracker initWithRepository:]
+-[OSChannelTracker idTag]
+-[OSChannelTracker channelType]
+-[OSChannelTracker lastChannelObjectsReceivedByNewId:]
+-[OSChannelTracker lastChannelObjects]
+-[OSChannelTracker channelLimit]
+-[OSChannelTracker indirectAttributionWindow]
+-[OSChannelTracker saveChannelObjects:]
+-[OSChannelTracker initInfluencedTypeFromCache]
+-[OSChannelTracker cacheState]
+-[OSChannelTracker isDirectSessionEnabled]
+-[OSChannelTracker isIndirectSessionEnabled]
+-[OSChannelTracker isUnattributedSessionEnabled]
+-[OSChannelTracker resetAndInitInfluence]
+-[OSChannelTracker lastReceivedIds]
+-[OSChannelTracker saveLastId:]
+-[OSChannelTracker currentSessionInfluence]
+-[OSChannelTracker description]
+-[OSChannelTracker influenceType]
+-[OSChannelTracker setInfluenceType:]
+-[OSChannelTracker directId]
+-[OSChannelTracker setDirectId:]
+-[OSChannelTracker indirectIds]
+-[OSChannelTracker setIndirectIds:]
+-[OSChannelTracker dataRepository]
+-[OSChannelTracker .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.40
+_OBJC_CLASSLIST_REFERENCES_$_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_CLASSLIST_REFERENCES_$_.68
+_OBJC_CLASSLIST_REFERENCES_$_.81
+_OBJC_CLASSLIST_REFERENCES_$_.96
+_OBJC_SELECTOR_REFERENCES_.98
+__OBJC_METACLASS_RO_$_OSChannelTracker
+__OBJC_$_INSTANCE_METHODS_OSChannelTracker
+_OBJC_IVAR_$_OSChannelTracker._influenceType
+_OBJC_IVAR_$_OSChannelTracker._directId
+_OBJC_IVAR_$_OSChannelTracker._indirectIds
+_OBJC_IVAR_$_OSChannelTracker._dataRepository
+__OBJC_$_INSTANCE_VARIABLES_OSChannelTracker
+__OBJC_$_PROP_LIST_OSChannelTracker
+__OBJC_CLASS_RO_$_OSChannelTracker
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSChannelTracker.m
+Source/OSChannelTracker.m
+Source/OSChannelTracker.h
+-[OSFocusInfluenceParam initWithParamsInfluenceIds:influenceKey:directInfluence:influenceDirectKey:]
+-[OSFocusInfluenceParam influenceKey]
+-[OSFocusInfluenceParam influenceIds]
+-[OSFocusInfluenceParam influenceDirectKey]
+-[OSFocusInfluenceParam directInfluence]
+-[OSFocusInfluenceParam .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSFocusInfluenceParam
+__OBJC_$_INSTANCE_METHODS_OSFocusInfluenceParam
+_OBJC_IVAR_$_OSFocusInfluenceParam._directInfluence
+_OBJC_IVAR_$_OSFocusInfluenceParam._influenceKey
+_OBJC_IVAR_$_OSFocusInfluenceParam._influenceIds
+_OBJC_IVAR_$_OSFocusInfluenceParam._influenceDirectKey
+__OBJC_$_INSTANCE_VARIABLES_OSFocusInfluenceParam
+__OBJC_$_PROP_LIST_OSFocusInfluenceParam
+__OBJC_CLASS_RO_$_OSFocusInfluenceParam
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSFocusInfluenceParam.m
+Source/OSFocusInfluenceParam.m
+Source/OSFocusInfluenceParam.h
+-[OSInAppMessageDisplayStats init]
++[OSInAppMessageDisplayStats instanceWithDisplayQuantity:lastDisplayTime:]
++[OSInAppMessageDisplayStats instanceWithData:]
++[OSInAppMessageDisplayStats instanceWithJson:]
++[OSInAppMessageDisplayStats instancePreviewFromPayload:]
+-[OSInAppMessageDisplayStats jsonRepresentation]
+-[OSInAppMessageDisplayStats isDelayTimeSatisfied:]
+-[OSInAppMessageDisplayStats shouldDisplayAgain]
+-[OSInAppMessageDisplayStats incrementDisplayQuantity]
+-[OSInAppMessageDisplayStats isRedisplayEnabled]
+-[OSInAppMessageDisplayStats description]
+-[OSInAppMessageDisplayStats encodeWithCoder:]
+-[OSInAppMessageDisplayStats initWithCoder:]
+-[OSInAppMessageDisplayStats lastDisplayTime]
+-[OSInAppMessageDisplayStats setLastDisplayTime:]
+-[OSInAppMessageDisplayStats displayDelay]
+-[OSInAppMessageDisplayStats setDisplayDelay:]
+-[OSInAppMessageDisplayStats displayQuantity]
+-[OSInAppMessageDisplayStats setDisplayQuantity:]
+-[OSInAppMessageDisplayStats displayLimit]
+-[OSInAppMessageDisplayStats setDisplayLimit:]
+-[OSInAppMessageDisplayStats setIsRedisplayEnabled:]
+-[OSInAppMessageDisplayStats redisplayEnabled]
+-[OSInAppMessageDisplayStats setRedisplayEnabled:]
+_OBJC_CLASSLIST_REFERENCES_$_.16
+__OBJC_$_CLASS_METHODS_OSInAppMessageDisplayStats
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSCoding
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSCoding
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageDisplayStats
+__OBJC_METACLASS_RO_$_OSInAppMessageDisplayStats
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageDisplayStats
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._isRedisplayEnabled
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._redisplayEnabled
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._displayQuantity
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._displayLimit
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._lastDisplayTime
+_OBJC_IVAR_$_OSInAppMessageDisplayStats._displayDelay
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageDisplayStats
+__OBJC_$_PROP_LIST_OSInAppMessageDisplayStats
+__OBJC_CLASS_RO_$_OSInAppMessageDisplayStats
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageDisplayStats.m
+Source/OSInAppMessageDisplayStats.m
+Source/OSInAppMessageDisplayStats.h
+-[OSOutcomeEventParams initWithOutcomeId:outcomeSource:weight:timestamp:]
+-[OSOutcomeEventParams toDictionaryObject]
+-[OSOutcomeEventParams description]
+-[OSOutcomeEventParams outcomeId]
+-[OSOutcomeEventParams setOutcomeId:]
+-[OSOutcomeEventParams outcomeSource]
+-[OSOutcomeEventParams setOutcomeSource:]
+-[OSOutcomeEventParams weight]
+-[OSOutcomeEventParams setWeight:]
+-[OSOutcomeEventParams timestamp]
+-[OSOutcomeEventParams setTimestamp:]
+-[OSOutcomeEventParams .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.15
+__OBJC_METACLASS_RO_$_OSOutcomeEventParams
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventParams
+_OBJC_IVAR_$_OSOutcomeEventParams._outcomeId
+_OBJC_IVAR_$_OSOutcomeEventParams._outcomeSource
+_OBJC_IVAR_$_OSOutcomeEventParams._weight
+_OBJC_IVAR_$_OSOutcomeEventParams._timestamp
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeEventParams
+__OBJC_$_PROP_LIST_OSOutcomeEventParams
+__OBJC_CLASS_RO_$_OSOutcomeEventParams
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventParams.m
+Source/OSOutcomeEventParams.m
+Source/OSOutcomeEventParams.h
+-[OSOutcomeEventsFactory initWithCache:]
+-[OSOutcomeEventsFactory repository]
+-[OSOutcomeEventsFactory checkVersionChanged]
+-[OSOutcomeEventsFactory createRepository]
+-[OSOutcomeEventsFactory cache]
+-[OSOutcomeEventsFactory setRepository:]
+-[OSOutcomeEventsFactory .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSOutcomeEventsFactory
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventsFactory
+_OBJC_IVAR_$_OSOutcomeEventsFactory._cache
+_OBJC_IVAR_$_OSOutcomeEventsFactory._repository
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeEventsFactory
+__OBJC_$_PROP_LIST_OSOutcomeEventsFactory
+__OBJC_CLASS_RO_$_OSOutcomeEventsFactory
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventsFactory.m
+Source/OSOutcomeEventsFactory.m
+-[DirectDownloadDelegate URLSession:dataTask:didReceiveData:]
+-[DirectDownloadDelegate URLSession:dataTask:didReceiveResponse:completionHandler:]
+-[DirectDownloadDelegate URLSession:didBecomeInvalidWithError:]
+-[DirectDownloadDelegate URLSession:task:didCompleteWithError:]
+-[DirectDownloadDelegate initWithFilePath:]
+-[DirectDownloadDelegate error]
+-[DirectDownloadDelegate response]
+-[DirectDownloadDelegate isDone]
+-[DirectDownloadDelegate .cxx_destruct]
++[NSURLSession(DirectDownload) downloadItemAtURL:toFile:error:]
+-[OSNotificationAction initWithActionType::]
+-[OSNotificationAction type]
+-[OSNotificationAction actionID]
+-[OSNotificationAction .cxx_destruct]
+-[OSNotification initWithPayload:displayType:]
+-[OSNotification stringify]
+-[OSNotification payload]
+-[OSNotification wasShown]
+-[OSNotification wasAppInFocus]
+-[OSNotification isSilentNotification]
+-[OSNotification displayType]
+-[OSNotification hasMutableContent]
+-[OSNotification .cxx_destruct]
+-[OSNotificationOpenedResult initWithNotification:action:]
+-[OSNotificationOpenedResult stringify]
+-[OSNotificationOpenedResult notification]
+-[OSNotificationOpenedResult action]
+-[OSNotificationOpenedResult .cxx_destruct]
++[OneSignalHelper resetLocals]
++[OneSignalHelper beginBackgroundMediaTask]
+___43+[OneSignalHelper beginBackgroundMediaTask]_block_invoke
++[OneSignalHelper endBackgroundMediaTask]
++[OneSignalHelper webVC]
++[OneSignalHelper isRemoteSilentNotification:]
++[OneSignalHelper lastMessageReceived:]
++[OneSignalHelper setNotificationActionBlock:]
++[OneSignalHelper setNotificationReceivedBlock:]
++[OneSignalHelper getAppName]
++[OneSignalHelper formatApsPayloadIntoStandard:identifier:]
++[OneSignalHelper isOneSignalPayload:]
++[OneSignalHelper handleNotificationReceived:fromBackground:]
++[OneSignalHelper handleNotificationAction:actionID:displayType:]
++[OneSignalHelper handleIAMPreview:]
++[OneSignalHelper getNetType]
++[OneSignalHelper getCurrentDeviceVersion]
++[OneSignalHelper isIOSVersionGreaterThanOrEqual:]
++[OneSignalHelper isIOSVersionLessThan:]
++[OneSignalHelper getSystemInfoMachine]
++[OneSignalHelper getDeviceVariant]
++[OneSignalHelper canGetNotificationTypes]
++[OneSignalHelper createUILocalNotification:]
++[OneSignalHelper prepareUILocalNotification:]
++[OneSignalHelper sharedInstance]
++[OneSignalHelper randomStringWithLength:]
++[OneSignalHelper registerAsUNNotificationCenterDelegate]
++[OneSignalHelper prepareUNNotificationRequest:]
++[OneSignalHelper addActionButtons:toNotificationContent:]
++[OneSignalHelper addAttachments:toNotificationContent:]
++[OneSignalHelper addNotificationRequest:completionHandler:]
+___60+[OneSignalHelper addNotificationRequest:completionHandler:]_block_invoke
+___60+[OneSignalHelper addNotificationRequest:completionHandler:]_block_invoke_2
++[OneSignalHelper downloadMediaAndSaveInBundle:]
++[OneSignalHelper getSupportedFileExtensionFromURL:mimeType:]
++[OneSignalHelper clearCachedMedia]
++[OneSignalHelper verifyURL:]
++[OneSignalHelper isWWWScheme:]
++[OneSignalHelper displayWebView:]
+___34+[OneSignalHelper displayWebView:]_block_invoke
+___34+[OneSignalHelper displayWebView:]_block_invoke_2
+___34+[OneSignalHelper displayWebView:]_block_invoke_3
+___copy_helper_block_e4_24s28r
+___destroy_helper_block_e4_24s28r
+___34+[OneSignalHelper displayWebView:]_block_invoke.741
++[OneSignalHelper runOnMainThread:]
++[OneSignalHelper dispatch_async_on_main_queue:]
++[OneSignalHelper performSelector:onMainThreadOnObject:withObject:afterDelay:]
+___78+[OneSignalHelper performSelector:onMainThreadOnObject:withObject:afterDelay:]_block_invoke
+___copy_helper_block_e8_20s36s
+___destroy_helper_block_e8_20s36s
++[OneSignalHelper isValidEmail:]
++[OneSignalHelper hashUsingSha1:]
++[OneSignalHelper hashUsingMD5:]
++[OneSignalHelper trimURLSpacing:]
++[OneSignalHelper isTablet]
+__OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSURLSessionDelegate
+__OBJC_PROTOCOL_$_NSURLSessionDelegate
+__OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
+__OBJC_$_PROTOCOL_REFS_NSURLSessionTaskDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionTaskDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSURLSessionTaskDelegate
+__OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
+__OBJC_LABEL_PROTOCOL_$_NSURLSessionTaskDelegate
+__OBJC_$_PROTOCOL_REFS_NSURLSessionDataDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDataDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSURLSessionDataDelegate
+__OBJC_PROTOCOL_$_NSURLSessionDataDelegate
+__OBJC_LABEL_PROTOCOL_$_NSURLSessionDataDelegate
+__OBJC_CLASS_PROTOCOLS_$_DirectDownloadDelegate
+__OBJC_METACLASS_RO_$_DirectDownloadDelegate
+__OBJC_$_INSTANCE_METHODS_DirectDownloadDelegate
+__OBJC_$_INSTANCE_VARIABLES_DirectDownloadDelegate
+__OBJC_$_PROP_LIST_DirectDownloadDelegate
+__OBJC_CLASS_RO_$_DirectDownloadDelegate
+_OBJC_CLASSLIST_REFERENCES_$_.120
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_CLASSLIST_REFERENCES_$_.123
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_CLASSLIST_REFERENCES_$_.126
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_CLASSLIST_REFERENCES_$_.141
+_OBJC_SELECTOR_REFERENCES_.143
+__OBJC_$_CATEGORY_CLASS_METHODS_NSURLSession_$_DirectDownload
+__OBJC_$_CATEGORY_NSURLSession_$_DirectDownload
+_OBJC_CLASSLIST_SUP_REFS_$_.153
+__OBJC_METACLASS_RO_$_OSNotificationAction
+__OBJC_$_INSTANCE_METHODS_OSNotificationAction
+_OBJC_IVAR_$_OSNotificationAction._type
+_OBJC_IVAR_$_OSNotificationAction._actionID
+__OBJC_$_INSTANCE_VARIABLES_OSNotificationAction
+__OBJC_$_PROP_LIST_OSNotificationAction
+__OBJC_CLASS_RO_$_OSNotificationAction
+_OBJC_CLASSLIST_SUP_REFS_$_.168
+_OBJC_CLASSLIST_REFERENCES_$_.169
+_OBJC_SELECTOR_REFERENCES_.171
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_CLASSLIST_REFERENCES_$_.178
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_CLASSLIST_REFERENCES_$_.182
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_CLASSLIST_REFERENCES_$_.187
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_CLASSLIST_REFERENCES_$_.190
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.204
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.234
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_SELECTOR_REFERENCES_.240
+_OBJC_SELECTOR_REFERENCES_.244
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_CLASSLIST_REFERENCES_$_.259
+_OBJC_SELECTOR_REFERENCES_.261
+_OBJC_CLASSLIST_REFERENCES_$_.262
+__OBJC_METACLASS_RO_$_OSNotification
+__OBJC_$_INSTANCE_METHODS_OSNotification
+_OBJC_IVAR_$_OSNotification._shown
+_OBJC_IVAR_$_OSNotification._isAppInFocus
+_OBJC_IVAR_$_OSNotification._silentNotification
+_OBJC_IVAR_$_OSNotification._mutableContent
+_OBJC_IVAR_$_OSNotification._payload
+_OBJC_IVAR_$_OSNotification._displayType
+__OBJC_$_INSTANCE_VARIABLES_OSNotification
+__OBJC_$_PROP_LIST_OSNotification
+__OBJC_CLASS_RO_$_OSNotification
+_OBJC_CLASSLIST_SUP_REFS_$_.290
+_OBJC_SELECTOR_REFERENCES_.293
+__OBJC_METACLASS_RO_$_OSNotificationOpenedResult
+__OBJC_$_INSTANCE_METHODS_OSNotificationOpenedResult
+_OBJC_IVAR_$_OSNotificationOpenedResult._notification
+_OBJC_IVAR_$_OSNotificationOpenedResult._action
+__OBJC_$_INSTANCE_VARIABLES_OSNotificationOpenedResult
+__OBJC_$_PROP_LIST_OSNotificationOpenedResult
+__OBJC_CLASS_RO_$_OSNotificationOpenedResult
+_lastMessageID
+_OBJC_SELECTOR_REFERENCES_.325
+__lastMessageIdFromAction
+_OBJC_SELECTOR_REFERENCES_.328
+_OBJC_SELECTOR_REFERENCES_.330
+_OBJC_SELECTOR_REFERENCES_.340
+_OBJC_CLASSLIST_REFERENCES_$_.358
+_OBJC_SELECTOR_REFERENCES_.360
+_OBJC_SELECTOR_REFERENCES_.366
+_OBJC_CLASSLIST_REFERENCES_$_.367
+_OBJC_CLASSLIST_REFERENCES_$_.378
+_OBJC_SELECTOR_REFERENCES_.382
+_OBJC_SELECTOR_REFERENCES_.386
+_OBJC_CLASSLIST_REFERENCES_$_.395
+_OBJC_CLASSLIST_REFERENCES_$_.400
+_OBJC_SELECTOR_REFERENCES_.405
+_OBJC_SELECTOR_REFERENCES_.407
+_OBJC_CLASSLIST_REFERENCES_$_.408
+_OBJC_SELECTOR_REFERENCES_.409
+_OBJC_CLASSLIST_REFERENCES_$_.410
+_OBJC_CLASSLIST_REFERENCES_$_.412
+_OBJC_SELECTOR_REFERENCES_.414
+_OBJC_CLASSLIST_REFERENCES_$_.419
+_OBJC_SELECTOR_REFERENCES_.421
+_OBJC_CLASSLIST_REFERENCES_$_.422
+_OBJC_CLASSLIST_REFERENCES_$_.427
+_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_CLASSLIST_REFERENCES_$_.434
+_OBJC_SELECTOR_REFERENCES_.442
+_OBJC_SELECTOR_REFERENCES_.444
+_OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.458
+_OBJC_SELECTOR_REFERENCES_.464
+_OBJC_CLASSLIST_REFERENCES_$_.465
+_OBJC_CLASSLIST_REFERENCES_$_.466
+_OBJC_CLASSLIST_REFERENCES_$_.471
+_OBJC_SELECTOR_REFERENCES_.473
+_OBJC_SELECTOR_REFERENCES_.475
+_OBJC_SELECTOR_REFERENCES_.477
+_OBJC_SELECTOR_REFERENCES_.479
+_OBJC_SELECTOR_REFERENCES_.481
+_OBJC_SELECTOR_REFERENCES_.485
+_OBJC_SELECTOR_REFERENCES_.487
+_OBJC_SELECTOR_REFERENCES_.489
+_OBJC_SELECTOR_REFERENCES_.491
+_OBJC_CLASSLIST_REFERENCES_$_.492
+_OBJC_CLASSLIST_REFERENCES_$_.495
+_OBJC_SELECTOR_REFERENCES_.497
+_OBJC_SELECTOR_REFERENCES_.499
+_OBJC_SELECTOR_REFERENCES_.501
+_OBJC_SELECTOR_REFERENCES_.503
+_OBJC_SELECTOR_REFERENCES_.505
+_OBJC_SELECTOR_REFERENCES_.507
+_OBJC_SELECTOR_REFERENCES_.508
+_OBJC_SELECTOR_REFERENCES_.510
+_OBJC_SELECTOR_REFERENCES_.512
+_OBJC_SELECTOR_REFERENCES_.518
+_OBJC_SELECTOR_REFERENCES_.520
+_singleInstance
+_OBJC_CLASSLIST_REFERENCES_$_.523
+_OBJC_SELECTOR_REFERENCES_.525
+_OBJC_SELECTOR_REFERENCES_.529
+_OBJC_SELECTOR_REFERENCES_.531
+_OBJC_CLASSLIST_REFERENCES_$_.532
+_OBJC_SELECTOR_REFERENCES_.534
+_OBJC_SELECTOR_REFERENCES_.543
+_OBJC_SELECTOR_REFERENCES_.545
+_OBJC_CLASSLIST_REFERENCES_$_.546
+_OBJC_SELECTOR_REFERENCES_.548
+_OBJC_SELECTOR_REFERENCES_.550
+_OBJC_SELECTOR_REFERENCES_.552
+_OBJC_SELECTOR_REFERENCES_.554
+_OBJC_SELECTOR_REFERENCES_.556
+_OBJC_SELECTOR_REFERENCES_.558
+_OBJC_CLASSLIST_REFERENCES_$_.559
+_OBJC_SELECTOR_REFERENCES_.561
+_OBJC_CLASSLIST_REFERENCES_$_.564
+_OBJC_SELECTOR_REFERENCES_.566
+_OBJC_CLASSLIST_REFERENCES_$_.567
+_OBJC_SELECTOR_REFERENCES_.569
+_OBJC_SELECTOR_REFERENCES_.571
+_OBJC_SELECTOR_REFERENCES_.573
+_OBJC_CLASSLIST_REFERENCES_$_.574
+_OBJC_SELECTOR_REFERENCES_.576
+_OBJC_CLASSLIST_REFERENCES_$_.579
+_OBJC_SELECTOR_REFERENCES_.581
+_OBJC_CLASSLIST_REFERENCES_$_.582
+_OBJC_SELECTOR_REFERENCES_.584
+_OBJC_SELECTOR_REFERENCES_.586
+_OBJC_SELECTOR_REFERENCES_.588
+_OBJC_SELECTOR_REFERENCES_.590
+_OBJC_SELECTOR_REFERENCES_.592
+_OBJC_SELECTOR_REFERENCES_.594
+_OBJC_CLASSLIST_REFERENCES_$_.595
+_OBJC_SELECTOR_REFERENCES_.597
+_OBJC_SELECTOR_REFERENCES_.601
+_OBJC_SELECTOR_REFERENCES_.603
+_OBJC_CLASSLIST_REFERENCES_$_.606
+_OBJC_SELECTOR_REFERENCES_.608
+_OBJC_SELECTOR_REFERENCES_.612
+_OBJC_SELECTOR_REFERENCES_.614
+_OBJC_SELECTOR_REFERENCES_.616
+_OBJC_SELECTOR_REFERENCES_.624
+_OBJC_SELECTOR_REFERENCES_.626
+___block_literal_global.628
+_OBJC_SELECTOR_REFERENCES_.630
+_OBJC_SELECTOR_REFERENCES_.631
+_OBJC_SELECTOR_REFERENCES_.635
+_OBJC_SELECTOR_REFERENCES_.641
+_OBJC_CLASSLIST_REFERENCES_$_.642
+_OBJC_SELECTOR_REFERENCES_.644
+_OBJC_SELECTOR_REFERENCES_.652
+_OBJC_SELECTOR_REFERENCES_.659
+_OBJC_SELECTOR_REFERENCES_.661
+_OBJC_SELECTOR_REFERENCES_.691
+_OBJC_SELECTOR_REFERENCES_.693
+_OBJC_SELECTOR_REFERENCES_.695
+_OBJC_SELECTOR_REFERENCES_.697
+_OBJC_SELECTOR_REFERENCES_.713
+_OBJC_CLASSLIST_REFERENCES_$_.714
+_OBJC_SELECTOR_REFERENCES_.716
+_OBJC_SELECTOR_REFERENCES_.718
+_OBJC_SELECTOR_REFERENCES_.720
+___block_descriptor_32_e4_24s28r_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.723
+___block_descriptor_32_e4_24s28r_e7_v8?0c4l
+_OBJC_SELECTOR_REFERENCES_.727
+_OBJC_SELECTOR_REFERENCES_.733
+_OBJC_CLASSLIST_REFERENCES_$_.740
+___block_descriptor_24_e4_20r_e7_v8?0i4l
+_OBJC_SELECTOR_REFERENCES_.744
+___block_descriptor_44_e8_20s36s_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.751
+_OBJC_SELECTOR_REFERENCES_.755
+_OBJC_SELECTOR_REFERENCES_.757
+_OBJC_SELECTOR_REFERENCES_.759
+_OBJC_SELECTOR_REFERENCES_.761
+_OBJC_CLASSLIST_REFERENCES_$_.764
+_OBJC_SELECTOR_REFERENCES_.766
+_OBJC_SELECTOR_REFERENCES_.768
+__OBJC_$_CLASS_METHODS_OneSignalHelper
+__OBJC_METACLASS_RO_$_OneSignalHelper
+__OBJC_CLASS_RO_$_OneSignalHelper
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalHelper.m
+Source/OneSignalHelper.m
+__destroy_helper_block_e8_20s36s
+__copy_helper_block_e8_20s36s
+__78+[OneSignalHelper performSelector:onMainThreadOnObject:withObject:afterDelay:]_block_invoke
+__34+[OneSignalHelper displayWebView:]_block_invoke.741
+__destroy_helper_block_e4_24s28r
+__copy_helper_block_e4_24s28r
+__34+[OneSignalHelper displayWebView:]_block_invoke_3
+__34+[OneSignalHelper displayWebView:]_block_invoke_2
+__34+[OneSignalHelper displayWebView:]_block_invoke
+__60+[OneSignalHelper addNotificationRequest:completionHandler:]_block_invoke_2
+__60+[OneSignalHelper addNotificationRequest:completionHandler:]_block_invoke
+__43+[OneSignalHelper beginBackgroundMediaTask]_block_invoke
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalSelectorHelpers.m
+ClassGetSubclasses
+Source/OneSignalSelectorHelpers.m
+injectToProperClass
+checkIfInstanceOverridesSelector
+injectSelector
+getClassWithProtocolInHierarchy
++[OneSignalReachability reachabilityWithAddress:]
++[OneSignalReachability reachabilityForInternetConnection]
+-[OneSignalReachability dealloc]
+-[OneSignalReachability localWiFiStatusForFlags:]
+-[OneSignalReachability networkStatusForFlags:]
+-[OneSignalReachability connectionRequired]
+-[OneSignalReachability currentReachabilityStatus]
+__OBJC_$_CLASS_METHODS_OneSignalReachability
+__OBJC_METACLASS_RO_$_OneSignalReachability
+__OBJC_$_INSTANCE_METHODS_OneSignalReachability
+_OBJC_IVAR_$_OneSignalReachability._alwaysReturnLocalWiFiStatus
+_OBJC_IVAR_$_OneSignalReachability._reachabilityRef
+__OBJC_$_INSTANCE_VARIABLES_OneSignalReachability
+__OBJC_CLASS_RO_$_OneSignalReachability
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalReachability.m
+Source/OneSignalReachability.m
+-[OSInAppMessagePushPrompt init]
+-[OSInAppMessagePushPrompt handlePrompt:]
+___41-[OSInAppMessagePushPrompt handlePrompt:]_block_invoke
+-[OSInAppMessagePushPrompt description]
+-[OSInAppMessagePushPrompt hasPrompted]
+-[OSInAppMessagePushPrompt setHasPrompted:]
+___block_descriptor_24_e4_20bs_e7_v8?0c4l
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessagePushPrompt
+__OBJC_METACLASS_RO_$_OSInAppMessagePushPrompt
+__OBJC_$_INSTANCE_METHODS_OSInAppMessagePushPrompt
+_OBJC_IVAR_$_OSInAppMessagePushPrompt._hasPrompted
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessagePushPrompt
+__OBJC_$_PROP_LIST_OSInAppMessagePushPrompt
+__OBJC_CLASS_RO_$_OSInAppMessagePushPrompt
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessagePushPrompt.m
+Source/OSInAppMessagePushPrompt.h
+Source/OSInAppMessagePushPrompt.m
+__41-[OSInAppMessagePushPrompt handlePrompt:]_block_invoke
++[OneSignalTrackFirebaseAnalytics resetLocals]
++[OneSignalTrackFirebaseAnalytics libraryExists]
++[OneSignalTrackFirebaseAnalytics init]
++[OneSignalTrackFirebaseAnalytics updateFromDownloadParams:]
++[OneSignalTrackFirebaseAnalytics appGroupKey]
++[OneSignalTrackFirebaseAnalytics logEventWithName:parameters:]
++[OneSignalTrackFirebaseAnalytics getCampaignNameFromPayload:]
++[OneSignalTrackFirebaseAnalytics trackOpenEvent:]
++[OneSignalTrackFirebaseAnalytics trackReceivedEvent:]
++[OneSignalTrackFirebaseAnalytics trackInfluenceOpenEvent]
+_lastOpenedTime
+_trackingEnabled
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_SELECTOR_REFERENCES_.66
+__OBJC_$_CLASS_METHODS_OneSignalTrackFirebaseAnalytics
+__OBJC_METACLASS_RO_$_OneSignalTrackFirebaseAnalytics
+__OBJC_CLASS_RO_$_OneSignalTrackFirebaseAnalytics
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalTrackFirebaseAnalytics.m
+Source/OneSignalTrackFirebaseAnalytics.m
+-[OSUnattributedFocusTimeProcessor init]
+-[OSUnattributedFocusTimeProcessor beginBackgroundFocusTask]
+___60-[OSUnattributedFocusTimeProcessor beginBackgroundFocusTask]_block_invoke
+-[OSUnattributedFocusTimeProcessor endBackgroundFocusTask]
+-[OSUnattributedFocusTimeProcessor getMinSessionTime]
+-[OSUnattributedFocusTimeProcessor unsentActiveTimeUserDefaultsKey]
+-[OSUnattributedFocusTimeProcessor sendOnFocusCall:]
+-[OSUnattributedFocusTimeProcessor sendUnsentActiveTime:]
+-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]
+___78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke
+___78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke_2
+___78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke.73
+-[OSUnattributedFocusTimeProcessor cancelDelayedJob]
+_OBJC_IVAR_$_OSUnattributedFocusTimeProcessor.focusBackgroundTask
+___block_descriptor_24_e4_20s_e5_v4?0l
+_OBJC_CLASSLIST_REFERENCES_$_.42
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_CLASSLIST_REFERENCES_$_.48
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_SELECTOR_REFERENCES_.77
+___block_descriptor_40_e8_20s36s_e5_v4?0l
+__OBJC_METACLASS_RO_$_OSUnattributedFocusTimeProcessor
+__OBJC_$_INSTANCE_METHODS_OSUnattributedFocusTimeProcessor
+__OBJC_$_INSTANCE_VARIABLES_OSUnattributedFocusTimeProcessor
+__OBJC_CLASS_RO_$_OSUnattributedFocusTimeProcessor
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSUnattributedFocusTimeProcessor.m
+Source/OSUnattributedFocusTimeProcessor.m
+__78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke.73
+__78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke_2
+__78-[OSUnattributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]_block_invoke
+__60-[OSUnattributedFocusTimeProcessor beginBackgroundFocusTask]_block_invoke
++[OneSignalNotificationSettingsIOS10 getQueue]
+-[OneSignalNotificationSettingsIOS10 init]
+-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState:]
+___69-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState:]_block_invoke
+___69-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState:]_block_invoke_2
+-[OneSignalNotificationSettingsIOS10 defaultPermissionState]
+-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState]
+___68-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState]_block_invoke
+___68-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState]_block_invoke_2
+___copy_helper_block_e4_20s24s28r
+___destroy_helper_block_e4_20s24s28r
+-[OneSignalNotificationSettingsIOS10 getNotificationTypes]
+-[OneSignalNotificationSettingsIOS10 promptForNotifications:]
+___61-[OneSignalNotificationSettingsIOS10 promptForNotifications:]_block_invoke
+___61-[OneSignalNotificationSettingsIOS10 promptForNotifications:]_block_invoke_2
+-[OneSignalNotificationSettingsIOS10 registerForProvisionalAuthorization:]
+___74-[OneSignalNotificationSettingsIOS10 registerForProvisionalAuthorization:]_block_invoke
+___74-[OneSignalNotificationSettingsIOS10 registerForProvisionalAuthorization:]_block_invoke_2
+-[OneSignalNotificationSettingsIOS10 onNotificationPromptResponse:]
+-[OneSignalNotificationSettingsIOS10 onAPNsResponse:]
+-[OneSignalNotificationSettingsIOS10 useCachedStatus]
+-[OneSignalNotificationSettingsIOS10 setUseCachedStatus:]
+_OBJC_CLASSLIST_REFERENCES_$_.5
+___block_descriptor_28_e4_20s24bs_e31_v8?0"UNNotificationSettings"4l
+_OBJC_CLASSLIST_REFERENCES_$_.44
+___block_descriptor_28_e4_20s24r_e26_v8?0"OSPermissionState"4l
+___block_descriptor_32_e4_20s24s28r_e5_v4?0l
+___block_descriptor_25_e4_20bs_e5_v4?0l
+___block_descriptor_24_e4_20bs_e19_v12?0c4"NSError"8l
+__OBJC_$_CLASS_METHODS_OneSignalNotificationSettingsIOS10
+__OBJC_CLASS_PROTOCOLS_$_OneSignalNotificationSettingsIOS10
+__OBJC_METACLASS_RO_$_OneSignalNotificationSettingsIOS10
+__OBJC_$_INSTANCE_METHODS_OneSignalNotificationSettingsIOS10
+_OBJC_IVAR_$_OneSignalNotificationSettingsIOS10._useCachedStatus
+__OBJC_$_INSTANCE_VARIABLES_OneSignalNotificationSettingsIOS10
+__OBJC_$_PROP_LIST_OneSignalNotificationSettingsIOS10
+__OBJC_CLASS_RO_$_OneSignalNotificationSettingsIOS10
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalNotificationSettingsIOS10.m
+Source/OneSignalNotificationSettingsIOS10.m
+__74-[OneSignalNotificationSettingsIOS10 registerForProvisionalAuthorization:]_block_invoke_2
+__74-[OneSignalNotificationSettingsIOS10 registerForProvisionalAuthorization:]_block_invoke
+__61-[OneSignalNotificationSettingsIOS10 promptForNotifications:]_block_invoke_2
+__61-[OneSignalNotificationSettingsIOS10 promptForNotifications:]_block_invoke
+__destroy_helper_block_e4_20s24s28r
+__copy_helper_block_e4_20s24s28r
+__68-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState]_block_invoke_2
+__68-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState]_block_invoke
+__69-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState:]_block_invoke_2
+__69-[OneSignalNotificationSettingsIOS10 getNotificationPermissionState:]_block_invoke
++[OSTrigger(Test) triggerWithKind:withProperty:withId:withOperator:withValue:]
++[OSTrigger(Test) dynamicTriggerWithKind:withId:withOperator:withValue:]
++[OSTrigger(Test) dynamicTriggerWithKind:withOperator:withValue:]
++[OSTrigger(Test) customTriggerWithProperty:withId:withOperator:withValue:]
++[OSTrigger(Test) customTriggerWithProperty:withOperator:withValue:]
++[OSInAppMessageTestHelper testActionJson]
++[OSInAppMessageTestHelper testMessageJson]
++[OSInAppMessageTestHelper testMessageJsonRedisplay]
++[OSInAppMessageTestHelper testMessageWithTriggersJson:]
++[OSInAppMessageTestHelper testMessageWithTriggersJson:redisplayLimit:delay:]
++[OSInAppMessageTestHelper testMessage]
++[OSInAppMessageTestHelper testMessageWithRedisplayLimit:delay:]
++[OSInAppMessageTestHelper testMessageWithTriggers:]
++[OSInAppMessageTestHelper testMessageWithTriggers:withRedisplayLimit:delay:]
++[OSInAppMessageTestHelper testRegistrationJsonWithMessages:]
++[OSInAppMessageTestHelper testMessageJsonWithTriggerPropertyName:withId:withOperator:withValue:]
++[OSInAppMessageTestHelper testInAppMessageGetContainsWithHTML:]
+-[OSMessagingController(Test) setTriggerWithName:withValue:]
+__OBJC_$_CATEGORY_CLASS_METHODS_OSTrigger_$_Test
+__OBJC_$_CATEGORY_OSTrigger_$_Test
+_OBJC_CLASSLIST_REFERENCES_$_.51
+_OBJC_CLASSLIST_REFERENCES_$_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_CLASSLIST_REFERENCES_$_.93
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+__OBJC_$_CLASS_METHODS_OSInAppMessageTestHelper
+__OBJC_METACLASS_RO_$_OSInAppMessageTestHelper
+__OBJC_CLASS_RO_$_OSInAppMessageTestHelper
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_SELECTOR_REFERENCES_.169
+__OBJC_$_CATEGORY_INSTANCE_METHODS_OSMessagingController_$_Test
+__OBJC_$_PROP_LIST_OSMessagingController_$_Test
+__OBJC_$_CATEGORY_OSMessagingController_$_Test
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/UnitTests/OSInAppMessagingHelpers.m
+UnitTests/OSInAppMessagingHelpers.m
+-[OSPermissionState observable]
+-[OSPermissionState initAsTo]
+-[OSPermissionState initAsFrom]
+-[OSPermissionState persistAsFrom]
+-[OSPermissionState copyWithZone:]
+-[OSPermissionState setHasPrompted:]
+-[OSPermissionState hasPrompted]
+-[OSPermissionState reachable]
+-[OSPermissionState setProvisional:]
+-[OSPermissionState isProvisional]
+-[OSPermissionState setAnsweredPrompt:]
+-[OSPermissionState answeredPrompt]
+-[OSPermissionState setAccepted:]
+-[OSPermissionState setProvidesAppNotificationSettings:]
+-[OSPermissionState status]
+-[OSPermissionState statusAsString]
+-[OSPermissionState compare:]
+-[OSPermissionState description]
+-[OSPermissionState toDictionary]
+-[OSPermissionState providesAppNotificationSettings]
+-[OSPermissionState accepted]
+-[OSPermissionState provisional]
+-[OSPermissionState setReachable:]
+-[OSPermissionState notificationTypes]
+-[OSPermissionState setNotificationTypes:]
+-[OSPermissionState setObservable:]
+-[OSPermissionState .cxx_destruct]
+-[OSPermissionChangedInternalObserver onChanged:]
++[OSPermissionChangedInternalObserver fireChangesObserver:]
+-[OSPermissionStateChanges description]
+-[OSPermissionStateChanges toDictionary]
+-[OSPermissionStateChanges to]
+-[OSPermissionStateChanges setTo:]
+-[OSPermissionStateChanges from]
+-[OSPermissionStateChanges setFrom:]
+-[OSPermissionStateChanges .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.54
+__OBJC_METACLASS_RO_$_OSPermissionState
+__OBJC_$_INSTANCE_METHODS_OSPermissionState
+_OBJC_IVAR_$_OSPermissionState._providesAppNotificationSettings
+_OBJC_IVAR_$_OSPermissionState._accepted
+_OBJC_IVAR_$_OSPermissionState._provisional
+_OBJC_IVAR_$_OSPermissionState._reachable
+_OBJC_IVAR_$_OSPermissionState._notificationTypes
+_OBJC_IVAR_$_OSPermissionState._observable
+__OBJC_$_INSTANCE_VARIABLES_OSPermissionState
+__OBJC_$_PROP_LIST_OSPermissionState
+__OBJC_CLASS_RO_$_OSPermissionState
+_OBJC_CLASSLIST_REFERENCES_$_.122
+__OBJC_$_CLASS_METHODS_OSPermissionChangedInternalObserver
+__OBJC_$_PROTOCOL_REFS_OSPermissionStateObserver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSPermissionStateObserver
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSPermissionStateObserver
+__OBJC_PROTOCOL_$_OSPermissionStateObserver
+__OBJC_LABEL_PROTOCOL_$_OSPermissionStateObserver
+__OBJC_CLASS_PROTOCOLS_$_OSPermissionChangedInternalObserver
+__OBJC_METACLASS_RO_$_OSPermissionChangedInternalObserver
+__OBJC_$_INSTANCE_METHODS_OSPermissionChangedInternalObserver
+__OBJC_$_PROP_LIST_OSPermissionChangedInternalObserver
+__OBJC_CLASS_RO_$_OSPermissionChangedInternalObserver
+_OBJC_SELECTOR_REFERENCES_.185
+__OBJC_METACLASS_RO_$_OSPermissionStateChanges
+__OBJC_$_INSTANCE_METHODS_OSPermissionStateChanges
+_OBJC_IVAR_$_OSPermissionStateChanges._to
+_OBJC_IVAR_$_OSPermissionStateChanges._from
+__OBJC_$_INSTANCE_VARIABLES_OSPermissionStateChanges
+__OBJC_$_PROP_LIST_OSPermissionStateChanges
+__OBJC_CLASS_RO_$_OSPermissionStateChanges
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSPermission.m
+Source/OSPermission.m
+Source/OSPermission.h
++[OneSignalCacheCleaner cleanCachedUserData]
++[OneSignalCacheCleaner cleanUniqueOutcomeNotifications]
+__OBJC_$_CLASS_METHODS_OneSignalCacheCleaner
+__OBJC_METACLASS_RO_$_OneSignalCacheCleaner
+__OBJC_CLASS_RO_$_OneSignalCacheCleaner
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalCacheCleaner.m
+Source/OneSignalCacheCleaner.m
+-[OSOutcomeSourceBody initWithNotificationIds:inAppMessagesIds:]
+-[OSOutcomeSourceBody toDictionaryObject]
+-[OSOutcomeSourceBody description]
+-[OSOutcomeSourceBody notificationIds]
+-[OSOutcomeSourceBody setNotificationIds:]
+-[OSOutcomeSourceBody inAppMessagesIds]
+-[OSOutcomeSourceBody setInAppMessagesIds:]
+-[OSOutcomeSourceBody .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSOutcomeSourceBody
+__OBJC_$_INSTANCE_METHODS_OSOutcomeSourceBody
+_OBJC_IVAR_$_OSOutcomeSourceBody._notificationIds
+_OBJC_IVAR_$_OSOutcomeSourceBody._inAppMessagesIds
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeSourceBody
+__OBJC_$_PROP_LIST_OSOutcomeSourceBody
+__OBJC_CLASS_RO_$_OSOutcomeSourceBody
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeSourceBody.m
+Source/OSOutcomeSourceBody.m
+Source/OSOutcomeSourceBody.h
+-[OSMigrationController migrate]
+-[OSMigrationController migrateToVersion_02_14_00_AndGreater]
+-[OSMigrationController saveCurrentSDKVersion]
+__OBJC_METACLASS_RO_$_OSMigrationController
+__OBJC_$_INSTANCE_METHODS_OSMigrationController
+__OBJC_CLASS_RO_$_OSMigrationController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSMigrationController.m
+Source/OSMigrationController.m
+-[OneSignalOutcomeEventsController initWithSessionManager:outcomeEventsFactory:]
+-[OneSignalOutcomeEventsController initUniqueOutcomeEventsFromCache]
+-[OneSignalOutcomeEventsController clearOutcomes]
+-[OneSignalOutcomeEventsController sendClickActionOutcomes:appId:deviceType:]
+-[OneSignalOutcomeEventsController sendUniqueOutcomeEvent:appId:deviceType:successBlock:]
+-[OneSignalOutcomeEventsController sendOutcomeEvent:appId:deviceType:successBlock:]
+-[OneSignalOutcomeEventsController sendOutcomeEventWithValue:value:appId:deviceType:successBlock:]
+-[OneSignalOutcomeEventsController sendUniqueOutcomeEvent:appId:deviceType:influences:successBlock:]
+-[OneSignalOutcomeEventsController setSourceChannelIdsWithInfluence:sourceBody:]
+-[OneSignalOutcomeEventsController sendAndCreateOutcomeEvent:weight:appId:deviceType:influences:successBlock:]
+___110-[OneSignalOutcomeEventsController sendAndCreateOutcomeEvent:weight:appId:deviceType:influences:successBlock:]_block_invoke
+___110-[OneSignalOutcomeEventsController sendAndCreateOutcomeEvent:weight:appId:deviceType:influences:successBlock:]_block_invoke.131
+-[OneSignalOutcomeEventsController removeDisabledInfluences:]
+-[OneSignalOutcomeEventsController saveUniqueOutcome:]
+-[OneSignalOutcomeEventsController saveAttributedUniqueOutcomeFromParams:]
+-[OneSignalOutcomeEventsController saveUnattributedUniqueOutcomeEvents]
+-[OneSignalOutcomeEventsController sessionManager]
+-[OneSignalOutcomeEventsController outcomeEventsFactory]
+-[OneSignalOutcomeEventsController .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_CLASSLIST_REFERENCES_$_.69
+_OBJC_CLASSLIST_REFERENCES_$_.86
+_OBJC_SELECTOR_REFERENCES_.96
+_OBJC_CLASSLIST_REFERENCES_$_.101
+_OBJC_CLASSLIST_REFERENCES_$_.117
+_OBJC_CLASSLIST_REFERENCES_$_.127
+___block_descriptor_32_e4_20s24s28bs_e21_v8?0"NSDictionary"4l
+___block_descriptor_28_e4_20s24bs_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.148
+__OBJC_METACLASS_RO_$_OneSignalOutcomeEventsController
+__OBJC_$_INSTANCE_METHODS_OneSignalOutcomeEventsController
+_OBJC_IVAR_$_OneSignalOutcomeEventsController._sessionManager
+_OBJC_IVAR_$_OneSignalOutcomeEventsController._outcomeEventsFactory
+__OBJC_$_INSTANCE_VARIABLES_OneSignalOutcomeEventsController
+__OBJC_$_PROP_LIST_OneSignalOutcomeEventsController
+__OBJC_CLASS_RO_$_OneSignalOutcomeEventsController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalOutcomeEventsController.m
+Source/OneSignalOutcomeEventsController.m
+__110-[OneSignalOutcomeEventsController sendAndCreateOutcomeEvent:weight:appId:deviceType:influences:successBlock:]_block_invoke.131
+__110-[OneSignalOutcomeEventsController sendAndCreateOutcomeEvent:weight:appId:deviceType:influences:successBlock:]_block_invoke
+-[NSURL(OneSignal) valueFromQueryParameter:]
+-[NSURL(OneSignal) supportedFileExtensionFromQueryItems]
+-[NSURL(OneSignal) findExtensionInParam:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSURL_$_OneSignal
+__OBJC_$_CATEGORY_NSURL_$_OneSignal
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/NSURL+OneSignal.m
+Source/NSURL+OneSignal.m
++[OneSignalAlertView showInAppAlert:]
+-[OneSignalAlertViewDelegate initWithMessageDict:]
+-[OneSignalAlertViewDelegate alertView:clickedButtonAtIndex:]
+_OBJC_CLASSLIST_REFERENCES_$_.4
+_OBJC_CLASSLIST_REFERENCES_$_.30
+__OBJC_$_CLASS_METHODS_OneSignalAlertView
+__OBJC_METACLASS_RO_$_OneSignalAlertView
+__OBJC_CLASS_RO_$_OneSignalAlertView
+_delegateReference
+_OBJC_CLASSLIST_REFERENCES_$_.73
+__OBJC_$_PROTOCOL_REFS_UIAlertViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIAlertViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIAlertViewDelegate
+__OBJC_PROTOCOL_$_UIAlertViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UIAlertViewDelegate
+__OBJC_CLASS_PROTOCOLS_$_OneSignalAlertViewDelegate
+__OBJC_METACLASS_RO_$_OneSignalAlertViewDelegate
+__OBJC_$_INSTANCE_METHODS_OneSignalAlertViewDelegate
+__OBJC_$_PROP_LIST_OneSignalAlertViewDelegate
+__OBJC_CLASS_RO_$_OneSignalAlertViewDelegate
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalAlertViewDelegate.m
+Source/OneSignalAlertViewDelegate.m
++[OSNotificationPayload parseWithApns:]
+-[OSNotificationPayload initWithRawMessage:]
+-[OSNotificationPayload parseOriginalPayload]
+-[OSNotificationPayload parseOSDataPayload]
+-[OSNotificationPayload parseOSDataAdditionalData]
+-[OSNotificationPayload parseCommonOneSignalFields:]
+-[OSNotificationPayload parseApnsFields]
+-[OSNotificationPayload parseAlertField:]
+-[OSNotificationPayload parseRemoteSlient:]
+-[OSNotificationPayload parseActionButtons:]
+-[OSNotificationPayload parseOtherApnsFields]
+-[OSNotificationPayload description]
+-[OSNotificationPayload notificationID]
+-[OSNotificationPayload templateID]
+-[OSNotificationPayload templateName]
+-[OSNotificationPayload contentAvailable]
+-[OSNotificationPayload mutableContent]
+-[OSNotificationPayload category]
+-[OSNotificationPayload badge]
+-[OSNotificationPayload badgeIncrement]
+-[OSNotificationPayload sound]
+-[OSNotificationPayload title]
+-[OSNotificationPayload subtitle]
+-[OSNotificationPayload body]
+-[OSNotificationPayload launchURL]
+-[OSNotificationPayload additionalData]
+-[OSNotificationPayload attachments]
+-[OSNotificationPayload actionButtons]
+-[OSNotificationPayload rawPayload]
+-[OSNotificationPayload threadId]
+-[OSNotificationPayload .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.91
+_OBJC_SELECTOR_REFERENCES_.118
+__OBJC_$_CLASS_METHODS_OSNotificationPayload
+__OBJC_METACLASS_RO_$_OSNotificationPayload
+__OBJC_$_INSTANCE_METHODS_OSNotificationPayload
+_OBJC_IVAR_$_OSNotificationPayload._contentAvailable
+_OBJC_IVAR_$_OSNotificationPayload._mutableContent
+_OBJC_IVAR_$_OSNotificationPayload._notificationID
+_OBJC_IVAR_$_OSNotificationPayload._templateID
+_OBJC_IVAR_$_OSNotificationPayload._templateName
+_OBJC_IVAR_$_OSNotificationPayload._category
+_OBJC_IVAR_$_OSNotificationPayload._badge
+_OBJC_IVAR_$_OSNotificationPayload._badgeIncrement
+_OBJC_IVAR_$_OSNotificationPayload._sound
+_OBJC_IVAR_$_OSNotificationPayload._title
+_OBJC_IVAR_$_OSNotificationPayload._subtitle
+_OBJC_IVAR_$_OSNotificationPayload._body
+_OBJC_IVAR_$_OSNotificationPayload._launchURL
+_OBJC_IVAR_$_OSNotificationPayload._additionalData
+_OBJC_IVAR_$_OSNotificationPayload._attachments
+_OBJC_IVAR_$_OSNotificationPayload._actionButtons
+_OBJC_IVAR_$_OSNotificationPayload._rawPayload
+_OBJC_IVAR_$_OSNotificationPayload._threadId
+__OBJC_$_INSTANCE_VARIABLES_OSNotificationPayload
+__OBJC_$_PROP_LIST_OSNotificationPayload
+__OBJC_CLASS_RO_$_OSNotificationPayload
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSNotificationPayload.m
+Source/OSNotificationPayload.m
++[OneSignalViewHelper validateOrientation:]
++[OneSignalViewHelper sizeToScale:]
++[OneSignalViewHelper getScreenBounds]
++[OneSignalViewHelper getScreenScale]
+__OBJC_$_CLASS_METHODS_OneSignalViewHelper
+__OBJC_METACLASS_RO_$_OneSignalViewHelper
+__OBJC_CLASS_RO_$_OneSignalViewHelper
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalViewHelper.m
+Source/OneSignalViewHelper.m
+UIDeviceOrientationIsLandscape
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+UIDeviceOrientationIsPortrait
++[OSInAppMessageOutcome instanceWithData:]
++[OSInAppMessageOutcome instanceWithJson:]
++[OSInAppMessageOutcome instancePreviewFromPayload:]
+-[OSInAppMessageOutcome jsonRepresentation]
+-[OSInAppMessageOutcome description]
+-[OSInAppMessageOutcome name]
+-[OSInAppMessageOutcome setName:]
+-[OSInAppMessageOutcome weight]
+-[OSInAppMessageOutcome setWeight:]
+-[OSInAppMessageOutcome unique]
+-[OSInAppMessageOutcome setUnique:]
+-[OSInAppMessageOutcome .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.39
+__OBJC_$_CLASS_METHODS_OSInAppMessageOutcome
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageOutcome
+__OBJC_METACLASS_RO_$_OSInAppMessageOutcome
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageOutcome
+_OBJC_IVAR_$_OSInAppMessageOutcome._unique
+_OBJC_IVAR_$_OSInAppMessageOutcome._name
+_OBJC_IVAR_$_OSInAppMessageOutcome._weight
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageOutcome
+__OBJC_$_PROP_LIST_OSInAppMessageOutcome
+__OBJC_CLASS_RO_$_OSInAppMessageOutcome
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageOutcome.m
+Source/OSInAppMessageOutcome.m
++[OneSignalUNUserNotificationCenter swizzleSelectors]
++[OneSignalUNUserNotificationCenter setUseiOS10_2_workaround:]
+-[OneSignalUNUserNotificationCenter onesignalRequestAuthorizationWithOptions:completionHandler:]
+___96-[OneSignalUNUserNotificationCenter onesignalRequestAuthorizationWithOptions:completionHandler:]_block_invoke
+-[OneSignalUNUserNotificationCenter onesignalGetNotificationSettingsWithCompletionHandler:]
+___91-[OneSignalUNUserNotificationCenter onesignalGetNotificationSettingsWithCompletionHandler:]_block_invoke
+-[OneSignalUNUserNotificationCenter setOneSignalUNDelegate:]
+-[OneSignalUNUserNotificationCenter onesignalUserNotificationCenter:willPresentNotification:withCompletionHandler:]
+___115-[OneSignalUNUserNotificationCenter onesignalUserNotificationCenter:willPresentNotification:withCompletionHandler:]_block_invoke
+-[OneSignalUNUserNotificationCenter onesignalUserNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:]
++[OneSignalUNUserNotificationCenter isDismissEvent:]
++[OneSignalUNUserNotificationCenter processiOS10Open:]
++[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]
+___153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke
+___153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke.163
+___153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke_2
+_delegateUNSubclasses
+_useiOS10_2_workaround
+_useCachedUNNotificationSettings
+___block_descriptor_25_e4_20bs_e19_v12?0c4"NSError"8l
+_cachedUNNotificationSettings
+___block_descriptor_24_e4_20bs_e31_v8?0"UNNotificationSettings"4l
+_previousDelegate
+__OBJC_$_PROTOCOL_REFS_UNUserNotificationCenterDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UNUserNotificationCenterDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UNUserNotificationCenterDelegate
+__OBJC_PROTOCOL_$_UNUserNotificationCenterDelegate
+__OBJC_LABEL_PROTOCOL_$_UNUserNotificationCenterDelegate
+__OBJC_PROTOCOL_REFERENCE_$_UNUserNotificationCenterDelegate
+_delegateUNClass
+_OBJC_SELECTOR_REFERENCES_.116
+___block_descriptor_24_e4_20bs_e7_v8?0I4l
+__OBJC_$_CLASS_METHODS_OneSignalUNUserNotificationCenter
+__OBJC_METACLASS_RO_$_OneSignalUNUserNotificationCenter
+__OBJC_$_INSTANCE_METHODS_OneSignalUNUserNotificationCenter
+__OBJC_CLASS_RO_$_OneSignalUNUserNotificationCenter
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/UNUserNotificationCenter+OneSignal.m
+__153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke_2
+Source/UNUserNotificationCenter+OneSignal.m
+__153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke.163
+__153+[OneSignalUNUserNotificationCenter callLegacyAppDeletegateSelector:isTextReply:actionIdentifier:userText:fromPresentNotification:withCompletionHandler:]_block_invoke
+__115-[OneSignalUNUserNotificationCenter onesignalUserNotificationCenter:willPresentNotification:withCompletionHandler:]_block_invoke
+__91-[OneSignalUNUserNotificationCenter onesignalGetNotificationSettingsWithCompletionHandler:]_block_invoke
+__96-[OneSignalUNUserNotificationCenter onesignalRequestAuthorizationWithOptions:completionHandler:]_block_invoke
++[OSTrigger instanceWithData:]
++[OSTrigger instanceWithJson:]
+-[OSTrigger jsonRepresentation]
+-[OSTrigger description]
+-[OSTrigger encodeWithCoder:]
+-[OSTrigger initWithCoder:]
+-[OSTrigger triggerId]
+-[OSTrigger setTriggerId:]
+-[OSTrigger kind]
+-[OSTrigger setKind:]
+-[OSTrigger property]
+-[OSTrigger setProperty:]
+-[OSTrigger operatorType]
+-[OSTrigger setOperatorType:]
+-[OSTrigger value]
+-[OSTrigger setValue:]
+-[OSTrigger .cxx_destruct]
+__OBJC_$_CLASS_METHODS_OSTrigger
+__OBJC_CLASS_PROTOCOLS_$_OSTrigger
+__OBJC_METACLASS_RO_$_OSTrigger
+__OBJC_$_INSTANCE_METHODS_OSTrigger
+_OBJC_IVAR_$_OSTrigger._triggerId
+_OBJC_IVAR_$_OSTrigger._kind
+_OBJC_IVAR_$_OSTrigger._property
+_OBJC_IVAR_$_OSTrigger._operatorType
+_OBJC_IVAR_$_OSTrigger._value
+__OBJC_$_INSTANCE_VARIABLES_OSTrigger
+__OBJC_$_PROP_LIST_OSTrigger
+__OBJC_CLASS_RO_$_OSTrigger
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSTrigger.m
+Source/OSTrigger.m
+Source/OSTrigger.h
+-[OneSignalWebView viewDidLoad]
+-[OneSignalWebView viewDidAppear:]
+-[OneSignalWebView dismiss:]
+___28-[OneSignalWebView dismiss:]_block_invoke
+-[OneSignalWebView webView:didStartProvisionalNavigation:]
+-[OneSignalWebView webView:didFinishNavigation:]
+___48-[OneSignalWebView webView:didFinishNavigation:]_block_invoke
+-[OneSignalWebView webView:didFailNavigation:withError:]
+-[OneSignalWebView pinSubviewToMarginsWithSubview:withSuperview:]
+-[OneSignalWebView showInApp]
+-[OneSignalWebView clearWebView]
+-[OneSignalWebView presentationControllerDidDismiss:]
+-[OneSignalWebView url]
+-[OneSignalWebView setUrl:]
+-[OneSignalWebView webView]
+-[OneSignalWebView setWebView:]
+-[OneSignalWebView uiBusy]
+-[OneSignalWebView setUiBusy:]
+-[OneSignalWebView .cxx_destruct]
+_OBJC_IVAR_$_OneSignalWebView._webView
+_OBJC_IVAR_$_OneSignalWebView._uiBusy
+_OBJC_IVAR_$_OneSignalWebView._url
+___block_descriptor_24_e4_20s_e19_v12?04"NSError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.59
+_OBJC_CLASSLIST_REFERENCES_$_.83
+_OBJC_CLASSLIST_REFERENCES_$_.105
+__OBJC_$_PROTOCOL_REFS_WKNavigationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_WKNavigationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_WKNavigationDelegate
+__OBJC_PROTOCOL_$_WKNavigationDelegate
+__OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
+__OBJC_$_PROTOCOL_REFS_UIAdaptivePresentationControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIAdaptivePresentationControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIAdaptivePresentationControllerDelegate
+__OBJC_PROTOCOL_$_UIAdaptivePresentationControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_UIAdaptivePresentationControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_OneSignalWebView
+__OBJC_METACLASS_RO_$_OneSignalWebView
+__OBJC_$_INSTANCE_METHODS_OneSignalWebView
+__OBJC_$_INSTANCE_VARIABLES_OneSignalWebView
+__OBJC_$_PROP_LIST_OneSignalWebView
+__OBJC_CLASS_RO_$_OneSignalWebView
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalWebView.m
+Source/OneSignalWebView.m
+Source/OneSignalWebView.h
+__48-[OneSignalWebView webView:didFinishNavigation:]_block_invoke
+__28-[OneSignalWebView dismiss:]_block_invoke
+-[DelayedInitializationParameters initWithLaunchOptions:withAppId:withHandleNotificationReceivedBlock:withHandleNotificationActionBlock:withSettings:]
+-[DelayedInitializationParameters launchOptions]
+-[DelayedInitializationParameters setLaunchOptions:]
+-[DelayedInitializationParameters appId]
+-[DelayedInitializationParameters setAppId:]
+-[DelayedInitializationParameters settings]
+-[DelayedInitializationParameters setSettings:]
+-[DelayedInitializationParameters receivedBlock]
+-[DelayedInitializationParameters setReceivedBlock:]
+-[DelayedInitializationParameters actionBlock]
+-[DelayedInitializationParameters setActionBlock:]
+-[DelayedInitializationParameters .cxx_destruct]
+__OBJC_METACLASS_RO_$_DelayedInitializationParameters
+__OBJC_$_INSTANCE_METHODS_DelayedInitializationParameters
+_OBJC_IVAR_$_DelayedInitializationParameters._launchOptions
+_OBJC_IVAR_$_DelayedInitializationParameters._appId
+_OBJC_IVAR_$_DelayedInitializationParameters._settings
+_OBJC_IVAR_$_DelayedInitializationParameters._receivedBlock
+_OBJC_IVAR_$_DelayedInitializationParameters._actionBlock
+__OBJC_$_INSTANCE_VARIABLES_DelayedInitializationParameters
+__OBJC_$_PROP_LIST_DelayedInitializationParameters
+__OBJC_CLASS_RO_$_DelayedInitializationParameters
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/DelayedInitializationParameters.m
+Source/DelayedInitializationParameters.m
+Source/DelayedInitializationParameters.h
+-[OSIndirectInfluence initWithParamsInfluenceId:forChannel:timestamp:]
++[OSIndirectInfluence instanceWithData:]
++[OSIndirectInfluence instanceWithJson:]
++[OSIndirectInfluence instancePreviewFromPayload:]
+-[OSIndirectInfluence jsonRepresentation]
+-[OSIndirectInfluence encodeWithCoder:]
+-[OSIndirectInfluence initWithCoder:]
+-[OSIndirectInfluence description]
+-[OSIndirectInfluence channelIdTag]
+-[OSIndirectInfluence setChannelIdTag:]
+-[OSIndirectInfluence influenceId]
+-[OSIndirectInfluence setInfluenceId:]
+-[OSIndirectInfluence timestamp]
+-[OSIndirectInfluence setTimestamp:]
+-[OSIndirectInfluence .cxx_destruct]
+__OBJC_$_CLASS_METHODS_OSIndirectInfluence
+__OBJC_CLASS_PROTOCOLS_$_OSIndirectInfluence
+__OBJC_METACLASS_RO_$_OSIndirectInfluence
+__OBJC_$_INSTANCE_METHODS_OSIndirectInfluence
+_OBJC_IVAR_$_OSIndirectInfluence._channelIdTag
+_OBJC_IVAR_$_OSIndirectInfluence._influenceId
+_OBJC_IVAR_$_OSIndirectInfluence._timestamp
+__OBJC_$_INSTANCE_VARIABLES_OSIndirectInfluence
+__OBJC_$_PROP_LIST_OSIndirectInfluence
+__OBJC_CLASS_RO_$_OSIndirectInfluence
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSIndirectInfluence.m
+Source/OSIndirectInfluence.m
+Source/OSIndirectInfluence.h
+-[OSInfluenceBuilder init]
+-[OSInfluenceBuilder influenceChannel]
+-[OSInfluenceBuilder setInfluenceChannel:]
+-[OSInfluenceBuilder influenceType]
+-[OSInfluenceBuilder setInfluenceType:]
+-[OSInfluenceBuilder ids]
+-[OSInfluenceBuilder setIds:]
+-[OSInfluenceBuilder .cxx_destruct]
+-[OSInfluence initWithInfluenceType:forInfluenceChannel:withIds:]
+-[OSInfluence initWithBuilder:]
+-[OSInfluence copy]
+-[OSInfluence isAttributedInfluence]
+-[OSInfluence isDirectInfluence]
+-[OSInfluence isIndirectInfluence]
+-[OSInfluence isUnattributedInfluence]
+-[OSInfluence description]
+-[OSInfluence influenceChannel]
+-[OSInfluence influenceType]
+-[OSInfluence ids]
+-[OSInfluence setIds:]
+-[OSInfluence .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSInfluenceBuilder
+__OBJC_$_INSTANCE_METHODS_OSInfluenceBuilder
+_OBJC_IVAR_$_OSInfluenceBuilder._influenceChannel
+_OBJC_IVAR_$_OSInfluenceBuilder._influenceType
+_OBJC_IVAR_$_OSInfluenceBuilder._ids
+__OBJC_$_INSTANCE_VARIABLES_OSInfluenceBuilder
+__OBJC_$_PROP_LIST_OSInfluenceBuilder
+__OBJC_CLASS_RO_$_OSInfluenceBuilder
+_OBJC_CLASSLIST_SUP_REFS_$_.23
+__OBJC_METACLASS_RO_$_OSInfluence
+__OBJC_$_INSTANCE_METHODS_OSInfluence
+_OBJC_IVAR_$_OSInfluence._influenceChannel
+_OBJC_IVAR_$_OSInfluence._influenceType
+_OBJC_IVAR_$_OSInfluence._ids
+__OBJC_$_INSTANCE_VARIABLES_OSInfluence
+__OBJC_$_PROP_LIST_OSInfluence
+__OBJC_CLASS_RO_$_OSInfluence
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInfluence.m
+Source/OSInfluence.m
+Source/OSInfluence.h
+-[OSOutcomeEventsCache isOutcomesV2ServiceEnabled]
+-[OSOutcomeEventsCache saveOutcomesV2ServiceEnabled:]
+-[OSOutcomeEventsCache getUnattributedUniqueOutcomeEventsSent]
+-[OSOutcomeEventsCache saveUnattributedUniqueOutcomeEventsSent:]
+-[OSOutcomeEventsCache getAttributedUniqueOutcomeEventSent]
+-[OSOutcomeEventsCache saveAttributedUniqueOutcomeEventNotificationIds:]
+__OBJC_METACLASS_RO_$_OSOutcomeEventsCache
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventsCache
+__OBJC_CLASS_RO_$_OSOutcomeEventsCache
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventsCache.m
+Source/OSOutcomeEventsCache.m
++[OneSignalAppDelegate oneSignalLoadedTagSelector]
++[OneSignalAppDelegate delegateClass]
+-[OneSignalAppDelegate setOneSignalDelegate:]
++[OneSignalAppDelegate sizzlePreiOS10MethodsPhase1]
++[OneSignalAppDelegate sizzlePreiOS10MethodsPhase2]
+-[OneSignalAppDelegate oneSignalDidRegisterForRemoteNotifications:deviceToken:]
+-[OneSignalAppDelegate oneSignalDidFailRegisterForRemoteNotification:error:]
+-[OneSignalAppDelegate oneSignalDidRegisterUserNotifications:settings:]
+-[OneSignalAppDelegate oneSignalReceivedRemoteNotification:userInfo:]
+-[OneSignalAppDelegate oneSignalRemoteSilentNotification:UserInfo:fetchCompletionHandler:]
+-[OneSignalAppDelegate oneSignalLocalNotificationOpened:handleActionWithIdentifier:forLocalNotification:completionHandler:]
+-[OneSignalAppDelegate oneSignalLocalNotificationOpened:notification:]
+-[OneSignalAppDelegate oneSignalApplicationWillResignActive:]
+-[OneSignalAppDelegate oneSignalApplicationDidEnterBackground:]
+-[OneSignalAppDelegate oneSignalApplicationDidBecomeActive:]
+-[OneSignalAppDelegate oneSignalApplicationWillTerminate:]
+_delegateSubclasses
+_delegateClass
+__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+__OBJC_$_PROP_LIST_UIApplicationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+__OBJC_PROTOCOL_REFERENCE_$_UIApplicationDelegate
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_CLASSLIST_REFERENCES_$_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_CLASSLIST_REFERENCES_$_.251
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_CLASSLIST_REFERENCES_$_.256
+_OBJC_SELECTOR_REFERENCES_.263
+__OBJC_$_CLASS_METHODS_OneSignalAppDelegate
+__OBJC_METACLASS_RO_$_OneSignalAppDelegate
+__OBJC_$_INSTANCE_METHODS_OneSignalAppDelegate
+__OBJC_CLASS_RO_$_OneSignalAppDelegate
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/UIApplicationDelegate+OneSignal.m
+Source/UIApplicationDelegate+OneSignal.m
++[OSFocusTimeProcessorFactory focusTimeProcessors]
++[OSFocusTimeProcessorFactory cancelFocusCall]
++[OSFocusTimeProcessorFactory resetUnsentActiveTime]
++[OSFocusTimeProcessorFactory createTimeProcessorWithInfluences:focusEventType:]
+__focusTimeProcessors
+_OBJC_CLASSLIST_REFERENCES_$_.10
+__OBJC_$_CLASS_METHODS_OSFocusTimeProcessorFactory
+__OBJC_METACLASS_RO_$_OSFocusTimeProcessorFactory
+__OBJC_CLASS_RO_$_OSFocusTimeProcessorFactory
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSFocusTimeProcessorFactory.m
+Source/OSFocusTimeProcessorFactory.m
+-[OSDialogRequest initWithTitle:withMessage:withActionTitle:withCancelTitle:withCompletion:]
+-[OSDialogRequest initWithTitle:withMessage:withActionTitles:withCancelTitle:withCompletion:]
+-[OSDialogRequest title]
+-[OSDialogRequest setTitle:]
+-[OSDialogRequest message]
+-[OSDialogRequest setMessage:]
+-[OSDialogRequest actionTitles]
+-[OSDialogRequest setActionTitles:]
+-[OSDialogRequest cancelTitle]
+-[OSDialogRequest setCancelTitle:]
+-[OSDialogRequest completion]
+-[OSDialogRequest setCompletion:]
+-[OSDialogRequest .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSDialogRequest
+__OBJC_$_INSTANCE_METHODS_OSDialogRequest
+_OBJC_IVAR_$_OSDialogRequest._title
+_OBJC_IVAR_$_OSDialogRequest._message
+_OBJC_IVAR_$_OSDialogRequest._actionTitles
+_OBJC_IVAR_$_OSDialogRequest._cancelTitle
+_OBJC_IVAR_$_OSDialogRequest._completion
+__OBJC_$_INSTANCE_VARIABLES_OSDialogRequest
+__OBJC_$_PROP_LIST_OSDialogRequest
+__OBJC_CLASS_RO_$_OSDialogRequest
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalDialogRequest.m
+Source/OneSignalDialogRequest.m
+Source/OneSignalDialogRequest.h
+-[OSOutcomeEventsRepository initWithCache:]
+-[OSOutcomeEventsRepository requestMeasureOutcomeEventWithAppId:deviceType:event:onSuccess:onFailure:]
+-[OSOutcomeEventsRepository getNotCachedUniqueInfluencesForOutcome:influences:]
+-[OSOutcomeEventsRepository getCachedUniqueOutcomesByChannel:channelIds:outcomeName:]
+-[OSOutcomeEventsRepository getCachedUniqueOutcomesFromSourceBody:outcomeName:]
+-[OSOutcomeEventsRepository saveUniqueOutcomeEventParams:]
+-[OSOutcomeEventsRepository getUnattributedUniqueOutcomeEventsSent]
+-[OSOutcomeEventsRepository saveUnattributedUniqueOutcomeEventsSent:]
+-[OSOutcomeEventsRepository getAttributedUniqueOutcomeEventSent]
+-[OSOutcomeEventsRepository saveAttributedUniqueOutcomeEventNotificationIds:]
+-[OSOutcomeEventsRepository outcomeEventsCache]
+-[OSOutcomeEventsRepository .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSOutcomeEventsRepository
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventsRepository
+_OBJC_IVAR_$_OSOutcomeEventsRepository._outcomeEventsCache
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeEventsRepository
+__OBJC_$_PROP_LIST_OSOutcomeEventsRepository
+__OBJC_CLASS_RO_$_OSOutcomeEventsRepository
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventsRepository.m
+Source/OSOutcomeEventsRepository.m
+Source/OSOutcomeEventsRepository.h
++[OneSignalNotificationServiceExtensionHandler didReceiveNotificationExtensionRequest:withMutableNotificationContent:]
++[OneSignalNotificationServiceExtensionHandler serviceExtensionTimeWillExpireRequest:withMutableNotificationContent:]
++[OneSignalNotificationServiceExtensionHandler addActionButtonsToExtentionRequest:withPayload:withMutableNotificationContent:]
++[OneSignalNotificationServiceExtensionHandler onNotificationReceived:]
+_OBJC_CLASSLIST_REFERENCES_$_.57
+__OBJC_$_CLASS_METHODS_OneSignalNotificationServiceExtensionHandler
+__OBJC_METACLASS_RO_$_OneSignalNotificationServiceExtensionHandler
+__OBJC_CLASS_RO_$_OneSignalNotificationServiceExtensionHandler
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalNotificationServiceExtensionHandler.m
+Source/OneSignalNotificationServiceExtensionHandler.m
+-[OSTriggerController init]
+-[OSTriggerController addTriggers:]
+-[OSTriggerController removeTriggersForKeys:]
+-[OSTriggerController getTriggers]
+-[OSTriggerController getTriggerValueForKey:]
+-[OSTriggerController hasSharedTriggers:newTriggersKeys:]
+-[OSTriggerController timeSinceLastMessage:]
+-[OSTriggerController messageMatchesTriggers:]
+-[OSTriggerController evaluateTrigger:forMessage:]
+-[OSTriggerController triggerValue:isEqualToValue:]
+-[OSTriggerController array:containsValue:]
+-[OSTriggerController triggerMatchesFlex:matchesStringValue:]
+-[OSTriggerController trigger:matchesStringValue:operatorType:]
+-[OSTriggerController trigger:matchesNumericValue:operatorType:]
+-[OSTriggerController dynamicTriggerFired]
+-[OSTriggerController delegate]
+-[OSTriggerController setDelegate:]
+-[OSTriggerController triggers]
+-[OSTriggerController setTriggers:]
+-[OSTriggerController dynamicTriggerController]
+-[OSTriggerController setDynamicTriggerController:]
+-[OSTriggerController .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.71
+_OBJC_CLASSLIST_REFERENCES_$_.82
+_OBJC_CLASSLIST_REFERENCES_$_.87
+__OBJC_$_PROTOCOL_REFS_OSDynamicTriggerControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSDynamicTriggerControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSDynamicTriggerControllerDelegate
+__OBJC_PROTOCOL_$_OSDynamicTriggerControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_OSDynamicTriggerControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_OSTriggerController
+__OBJC_METACLASS_RO_$_OSTriggerController
+__OBJC_$_INSTANCE_METHODS_OSTriggerController
+_OBJC_IVAR_$_OSTriggerController._delegate
+_OBJC_IVAR_$_OSTriggerController._triggers
+_OBJC_IVAR_$_OSTriggerController._dynamicTriggerController
+__OBJC_$_INSTANCE_VARIABLES_OSTriggerController
+__OBJC_$_PROP_LIST_OSTriggerController
+__OBJC_CLASS_RO_$_OSTriggerController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSTriggerController.m
+Source/OSTriggerController.m
+Source/OSTriggerController.h
++[OneSignalSetEmailParameters withEmail:withAuthToken:withSuccess:withFailure:]
+-[OneSignalSetEmailParameters email]
+-[OneSignalSetEmailParameters setEmail:]
+-[OneSignalSetEmailParameters authToken]
+-[OneSignalSetEmailParameters setAuthToken:]
+-[OneSignalSetEmailParameters successBlock]
+-[OneSignalSetEmailParameters setSuccessBlock:]
+-[OneSignalSetEmailParameters failureBlock]
+-[OneSignalSetEmailParameters setFailureBlock:]
+-[OneSignalSetEmailParameters .cxx_destruct]
+__OBJC_$_CLASS_METHODS_OneSignalSetEmailParameters
+__OBJC_METACLASS_RO_$_OneSignalSetEmailParameters
+__OBJC_$_INSTANCE_METHODS_OneSignalSetEmailParameters
+_OBJC_IVAR_$_OneSignalSetEmailParameters._email
+_OBJC_IVAR_$_OneSignalSetEmailParameters._authToken
+_OBJC_IVAR_$_OneSignalSetEmailParameters._successBlock
+_OBJC_IVAR_$_OneSignalSetEmailParameters._failureBlock
+__OBJC_$_INSTANCE_VARIABLES_OneSignalSetEmailParameters
+__OBJC_$_PROP_LIST_OneSignalSetEmailParameters
+__OBJC_CLASS_RO_$_OneSignalSetEmailParameters
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalSetEmailParameters.m
+Source/OneSignalSetEmailParameters.m
+Source/OneSignalSetEmailParameters.h
++[OSInAppMessageBridgeEvent instanceWithData:]
++[OSInAppMessageBridgeEvent instanceWithJson:]
+-[OSInAppMessageBridgeEvent description]
+-[OSInAppMessageBridgeEvent type]
+-[OSInAppMessageBridgeEvent setType:]
+-[OSInAppMessageBridgeEvent renderingComplete]
+-[OSInAppMessageBridgeEvent setRenderingComplete:]
+-[OSInAppMessageBridgeEvent resize]
+-[OSInAppMessageBridgeEvent setResize:]
+-[OSInAppMessageBridgeEvent userAction]
+-[OSInAppMessageBridgeEvent setUserAction:]
+-[OSInAppMessageBridgeEvent .cxx_destruct]
++[OSInAppMessageBridgeEventRenderingComplete instanceWithData:]
++[OSInAppMessageBridgeEventRenderingComplete instanceWithJson:]
+-[OSInAppMessageBridgeEventRenderingComplete description]
+-[OSInAppMessageBridgeEventRenderingComplete displayLocation]
+-[OSInAppMessageBridgeEventRenderingComplete setDisplayLocation:]
+-[OSInAppMessageBridgeEventRenderingComplete height]
+-[OSInAppMessageBridgeEventRenderingComplete setHeight:]
+-[OSInAppMessageBridgeEventRenderingComplete .cxx_destruct]
++[OSInAppMessageBridgeEventResize instanceWithData:]
++[OSInAppMessageBridgeEventResize instanceWithJson:]
+-[OSInAppMessageBridgeEventResize description]
+-[OSInAppMessageBridgeEventResize height]
+-[OSInAppMessageBridgeEventResize setHeight:]
+-[OSInAppMessageBridgeEventResize .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.50
+__OBJC_$_CLASS_METHODS_OSInAppMessageBridgeEvent
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageBridgeEvent
+__OBJC_METACLASS_RO_$_OSInAppMessageBridgeEvent
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageBridgeEvent
+_OBJC_IVAR_$_OSInAppMessageBridgeEvent._type
+_OBJC_IVAR_$_OSInAppMessageBridgeEvent._renderingComplete
+_OBJC_IVAR_$_OSInAppMessageBridgeEvent._resize
+_OBJC_IVAR_$_OSInAppMessageBridgeEvent._userAction
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageBridgeEvent
+__OBJC_$_PROP_LIST_OSInAppMessageBridgeEvent
+__OBJC_CLASS_RO_$_OSInAppMessageBridgeEvent
+__OBJC_$_CLASS_METHODS_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_METACLASS_RO_$_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageBridgeEventRenderingComplete
+_OBJC_IVAR_$_OSInAppMessageBridgeEventRenderingComplete._displayLocation
+_OBJC_IVAR_$_OSInAppMessageBridgeEventRenderingComplete._height
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_$_PROP_LIST_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_CLASS_RO_$_OSInAppMessageBridgeEventRenderingComplete
+__OBJC_$_CLASS_METHODS_OSInAppMessageBridgeEventResize
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageBridgeEventResize
+__OBJC_METACLASS_RO_$_OSInAppMessageBridgeEventResize
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageBridgeEventResize
+_OBJC_IVAR_$_OSInAppMessageBridgeEventResize._height
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageBridgeEventResize
+__OBJC_$_PROP_LIST_OSInAppMessageBridgeEventResize
+__OBJC_CLASS_RO_$_OSInAppMessageBridgeEventResize
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageBridgeEvent.m
+Source/OSInAppMessageBridgeEvent.m
+Source/OSInAppMessageBridgeEvent.h
+-[OSNotificationTracker idTag]
+-[OSNotificationTracker channelType]
+-[OSNotificationTracker lastChannelObjectsReceivedByNewId:]
+-[OSNotificationTracker lastChannelObjects]
+-[OSNotificationTracker channelLimit]
+-[OSNotificationTracker indirectAttributionWindow]
+-[OSNotificationTracker saveChannelObjects:]
+-[OSNotificationTracker initInfluencedTypeFromCache]
+-[OSNotificationTracker cacheState]
+__OBJC_METACLASS_RO_$_OSNotificationTracker
+__OBJC_$_INSTANCE_METHODS_OSNotificationTracker
+__OBJC_CLASS_RO_$_OSNotificationTracker
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSNotificationTracker.m
+Source/OSNotificationTracker.m
++[OneSignalMobileProvision getProvision]
++[OneSignalMobileProvision logInvalidProvisionError:]
++[OneSignalMobileProvision releaseMode]
+_getProvision.provision
+__OBJC_$_CLASS_METHODS_OneSignalMobileProvision
+__OBJC_METACLASS_RO_$_OneSignalMobileProvision
+__OBJC_CLASS_RO_$_OneSignalMobileProvision
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalMobileProvision.m
+Source/OneSignalMobileProvision.m
++[OneSignalTracker resetLocals]
++[OneSignalTracker setLastOpenedTime:]
++[OneSignalTracker beginBackgroundFocusTask]
+___44+[OneSignalTracker beginBackgroundFocusTask]_block_invoke
++[OneSignalTracker endBackgroundFocusTask]
++[OneSignalTracker onFocus:]
++[OneSignalTracker applicationForegrounded]
++[OneSignalTracker applicationBackgrounded]
++[OneSignalTracker onSessionEnded:]
++[OneSignalTracker createFocusCallParams:onSessionEnded:]
++[OneSignalTracker getTimeFocusedElapsed]
++[OneSignalTracker updateLastClosedTime]
+_focusBackgroundTask
+_lastOnFocusWasToBackground
+_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_CLASSLIST_REFERENCES_$_.130
+_OBJC_CLASSLIST_REFERENCES_$_.133
+_OBJC_CLASSLIST_REFERENCES_$_.146
+_OBJC_CLASSLIST_REFERENCES_$_.147
+_OBJC_CLASSLIST_REFERENCES_$_.152
+__OBJC_$_CLASS_METHODS_OneSignalTracker
+__OBJC_METACLASS_RO_$_OneSignalTracker
+__OBJC_CLASS_RO_$_OneSignalTracker
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalTracker.m
+Source/OneSignalTracker.m
+__44+[OneSignalTracker beginBackgroundFocusTask]_block_invoke
+-[OSObservable initWithChangeSelector:]
+-[OSObservable init]
+-[OSObservable addObserver:]
+-[OSObservable removeObserver:]
+-[OSObservable notifyChange:]
+-[OSObservable callObserver:withSelector:withState:]
+___52-[OSObservable callObserver:withSelector:withState:]_block_invoke
+-[OSObservable .cxx_destruct]
+___block_descriptor_32_e4_20s24s28s_e5_v4?0l
+__OBJC_METACLASS_RO_$_OSObservable
+__OBJC_$_INSTANCE_METHODS_OSObservable
+_OBJC_IVAR_$_OSObservable.observers
+_OBJC_IVAR_$_OSObservable.changeSelector
+__OBJC_$_INSTANCE_VARIABLES_OSObservable
+__OBJC_CLASS_RO_$_OSObservable
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSObservable.m
+Source/OSObservable.m
+__52-[OSObservable callObserver:withSelector:withState:]_block_invoke
+-[OSDevice isNotificationEnabled]
+-[OSDevice isUserSubscribed]
+-[OSDevice isSubscribed]
+-[OSDevice getNotificationPermissionStatus]
+-[OSDevice getUserId]
+-[OSDevice getPushToken]
+-[OSDevice getEmailUserId]
+-[OSDevice getEmailAddress]
+__OBJC_METACLASS_RO_$_OSDevice
+__OBJC_$_INSTANCE_METHODS_OSDevice
+__OBJC_CLASS_RO_$_OSDevice
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSDevice.m
+Source/OSDevice.m
+-[OSEmailSubscriptionState observable]
+-[OSEmailSubscriptionState init]
+-[OSEmailSubscriptionState subscribed]
+-[OSEmailSubscriptionState persist]
+-[OSEmailSubscriptionState description]
+-[OSEmailSubscriptionState copyWithZone:]
+-[OSEmailSubscriptionState setEmailUserId:]
+-[OSEmailSubscriptionState setEmailAddress:]
+-[OSEmailSubscriptionState toDictionary]
+-[OSEmailSubscriptionState compare:]
+-[OSEmailSubscriptionState emailUserId]
+-[OSEmailSubscriptionState emailAddress]
+-[OSEmailSubscriptionState setObservable:]
+-[OSEmailSubscriptionState emailAuthCode]
+-[OSEmailSubscriptionState setEmailAuthCode:]
+-[OSEmailSubscriptionState requiresEmailAuth]
+-[OSEmailSubscriptionState setRequiresEmailAuth:]
+-[OSEmailSubscriptionState .cxx_destruct]
+-[OSEmailSubscriptionChangedInternalObserver onChanged:]
++[OSEmailSubscriptionChangedInternalObserver fireChangesObserver:]
+-[OSEmailSubscriptionStateChanges description]
+-[OSEmailSubscriptionStateChanges toDictionary]
+-[OSEmailSubscriptionStateChanges to]
+-[OSEmailSubscriptionStateChanges setTo:]
+-[OSEmailSubscriptionStateChanges from]
+-[OSEmailSubscriptionStateChanges setFrom:]
+-[OSEmailSubscriptionStateChanges .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.27
+__OBJC_METACLASS_RO_$_OSEmailSubscriptionState
+__OBJC_$_INSTANCE_METHODS_OSEmailSubscriptionState
+_OBJC_IVAR_$_OSEmailSubscriptionState._requiresEmailAuth
+_OBJC_IVAR_$_OSEmailSubscriptionState._emailUserId
+_OBJC_IVAR_$_OSEmailSubscriptionState._emailAddress
+_OBJC_IVAR_$_OSEmailSubscriptionState._observable
+_OBJC_IVAR_$_OSEmailSubscriptionState._emailAuthCode
+__OBJC_$_INSTANCE_VARIABLES_OSEmailSubscriptionState
+__OBJC_$_PROP_LIST_OSEmailSubscriptionState
+__OBJC_CLASS_RO_$_OSEmailSubscriptionState
+_OBJC_CLASSLIST_REFERENCES_$_.89
+_OBJC_CLASSLIST_REFERENCES_$_.94
+__OBJC_$_CLASS_METHODS_OSEmailSubscriptionChangedInternalObserver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSEmailSubscriptionStateObserver
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSEmailSubscriptionStateObserver
+__OBJC_PROTOCOL_$_OSEmailSubscriptionStateObserver
+__OBJC_LABEL_PROTOCOL_$_OSEmailSubscriptionStateObserver
+__OBJC_CLASS_PROTOCOLS_$_OSEmailSubscriptionChangedInternalObserver
+__OBJC_METACLASS_RO_$_OSEmailSubscriptionChangedInternalObserver
+__OBJC_$_INSTANCE_METHODS_OSEmailSubscriptionChangedInternalObserver
+__OBJC_CLASS_RO_$_OSEmailSubscriptionChangedInternalObserver
+__OBJC_METACLASS_RO_$_OSEmailSubscriptionStateChanges
+__OBJC_$_INSTANCE_METHODS_OSEmailSubscriptionStateChanges
+_OBJC_IVAR_$_OSEmailSubscriptionStateChanges._to
+_OBJC_IVAR_$_OSEmailSubscriptionStateChanges._from
+__OBJC_$_INSTANCE_VARIABLES_OSEmailSubscriptionStateChanges
+__OBJC_$_PROP_LIST_OSEmailSubscriptionStateChanges
+__OBJC_CLASS_RO_$_OSEmailSubscriptionStateChanges
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSEmailSubscription.m
+Source/OSEmailSubscription.m
+Source/OSEmailSubscription.h
+-[OSInAppMessage init]
+-[OSInAppMessage isBanner]
+-[OSInAppMessage takeActionAsUnique]
+-[OSInAppMessage isClickAvailable:]
+-[OSInAppMessage clearClickIds]
+-[OSInAppMessage addClickId:]
+-[OSInAppMessage getClickedClickIds]
++[OSInAppMessage instanceWithData:]
++[OSInAppMessage instanceWithJson:]
++[OSInAppMessage instancePreviewFromPayload:]
+-[OSInAppMessage jsonRepresentation]
+-[OSInAppMessage description]
+-[OSInAppMessage isEqual:]
+-[OSInAppMessage hash]
+-[OSInAppMessage encodeWithCoder:]
+-[OSInAppMessage initWithCoder:]
+-[OSInAppMessage messageId]
+-[OSInAppMessage setMessageId:]
+-[OSInAppMessage variants]
+-[OSInAppMessage setVariants:]
+-[OSInAppMessage triggers]
+-[OSInAppMessage setTriggers:]
+-[OSInAppMessage position]
+-[OSInAppMessage setPosition:]
+-[OSInAppMessage displayStats]
+-[OSInAppMessage setDisplayStats:]
+-[OSInAppMessage actionTaken]
+-[OSInAppMessage setActionTaken:]
+-[OSInAppMessage isPreview]
+-[OSInAppMessage setIsPreview:]
+-[OSInAppMessage isDisplayedInSession]
+-[OSInAppMessage setIsDisplayedInSession:]
+-[OSInAppMessage isTriggerChanged]
+-[OSInAppMessage setIsTriggerChanged:]
+-[OSInAppMessage height]
+-[OSInAppMessage setHeight:]
+-[OSInAppMessage clickedClickIds]
+-[OSInAppMessage setClickedClickIds:]
+-[OSInAppMessage .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.56
+_OBJC_CLASSLIST_REFERENCES_$_.70
+__OBJC_$_CLASS_METHODS_OSInAppMessage
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessage
+__OBJC_METACLASS_RO_$_OSInAppMessage
+__OBJC_$_INSTANCE_METHODS_OSInAppMessage
+_OBJC_IVAR_$_OSInAppMessage._actionTaken
+_OBJC_IVAR_$_OSInAppMessage._isPreview
+_OBJC_IVAR_$_OSInAppMessage._isDisplayedInSession
+_OBJC_IVAR_$_OSInAppMessage._isTriggerChanged
+_OBJC_IVAR_$_OSInAppMessage._messageId
+_OBJC_IVAR_$_OSInAppMessage._variants
+_OBJC_IVAR_$_OSInAppMessage._triggers
+_OBJC_IVAR_$_OSInAppMessage._position
+_OBJC_IVAR_$_OSInAppMessage._displayStats
+_OBJC_IVAR_$_OSInAppMessage._height
+_OBJC_IVAR_$_OSInAppMessage._clickedClickIds
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessage
+__OBJC_$_PROP_LIST_OSInAppMessage
+__OBJC_CLASS_RO_$_OSInAppMessage
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessage.m
+Source/OSInAppMessage.m
+Source/OSInAppMessage.h
+-[OSBaseFocusTimeProcessor getMinSessionTime]
+-[OSBaseFocusTimeProcessor hasMinSyncTime:]
+-[OSBaseFocusTimeProcessor resetUnsentActiveTime]
+-[OSBaseFocusTimeProcessor unsentActiveTimeUserDefaultsKey]
+-[OSBaseFocusTimeProcessor saveUnsentActiveTime:]
+-[OSBaseFocusTimeProcessor sendOnFocusCall:]
+-[OSBaseFocusTimeProcessor sendUnsentActiveTime:]
+-[OSBaseFocusTimeProcessor cancelDelayedJob]
+-[OSBaseFocusTimeProcessor getUnsentActiveTime]
+-[OSBaseFocusTimeProcessor onFocusCallEnabled]
+-[OSBaseFocusTimeProcessor .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSBaseFocusTimeProcessor
+__OBJC_$_INSTANCE_METHODS_OSBaseFocusTimeProcessor
+_OBJC_IVAR_$_OSBaseFocusTimeProcessor.unsentActiveTime
+_OBJC_IVAR_$_OSBaseFocusTimeProcessor._onFocusCallEnabled
+__OBJC_$_INSTANCE_VARIABLES_OSBaseFocusTimeProcessor
+__OBJC_$_PROP_LIST_OSBaseFocusTimeProcessor
+__OBJC_CLASS_RO_$_OSBaseFocusTimeProcessor
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSBaseFocusTimeProcessor.m
+Source/OSBaseFocusTimeProcessor.m
+Source/OSBaseFocusTimeProcessor.h
+-[OSOutcomeEventsV1Repository requestMeasureOutcomeEventWithAppId:deviceType:event:onSuccess:onFailure:]
+__OBJC_METACLASS_RO_$_OSOutcomeEventsV1Repository
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEventsV1Repository
+__OBJC_CLASS_RO_$_OSOutcomeEventsV1Repository
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEventsV1Repository.m
+Source/OSOutcomeEventsV1Repository.m
+-[OSFocusCallParams initWithParamsAppId:userId:emailUserId:emailAuthToken:netType:timeElapsed:influenceParams:onSessionEnded:]
+-[OSFocusCallParams description]
+-[OSFocusCallParams appId]
+-[OSFocusCallParams userId]
+-[OSFocusCallParams emailUserId]
+-[OSFocusCallParams emailAuthToken]
+-[OSFocusCallParams netType]
+-[OSFocusCallParams influenceParams]
+-[OSFocusCallParams timeElapsed]
+-[OSFocusCallParams onSessionEnded]
+-[OSFocusCallParams .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSFocusCallParams
+__OBJC_$_INSTANCE_METHODS_OSFocusCallParams
+_OBJC_IVAR_$_OSFocusCallParams._onSessionEnded
+_OBJC_IVAR_$_OSFocusCallParams._appId
+_OBJC_IVAR_$_OSFocusCallParams._userId
+_OBJC_IVAR_$_OSFocusCallParams._emailUserId
+_OBJC_IVAR_$_OSFocusCallParams._emailAuthToken
+_OBJC_IVAR_$_OSFocusCallParams._netType
+_OBJC_IVAR_$_OSFocusCallParams._influenceParams
+_OBJC_IVAR_$_OSFocusCallParams._timeElapsed
+__OBJC_$_INSTANCE_VARIABLES_OSFocusCallParams
+__OBJC_$_PROP_LIST_OSFocusCallParams
+__OBJC_CLASS_RO_$_OSFocusCallParams
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSFocusCallParams.m
+Source/OSFocusCallParams.m
+Source/OSFocusCallParams.h
+-[OSInfluenceDataRepository cacheNotificationInfluenceType:]
+-[OSInfluenceDataRepository notificationCachedInfluenceType]
+-[OSInfluenceDataRepository cacheIAMInfluenceType:]
+-[OSInfluenceDataRepository iamCachedInfluenceType]
+-[OSInfluenceDataRepository cacheNotificationOpenId:]
+-[OSInfluenceDataRepository cachedNotificationOpenId]
+-[OSInfluenceDataRepository cacheIndirectNotifications:]
+-[OSInfluenceDataRepository cachedIndirectNotifications]
+-[OSInfluenceDataRepository saveNotifications:]
+-[OSInfluenceDataRepository lastNotificationsReceivedData]
+-[OSInfluenceDataRepository saveIAMs:]
+-[OSInfluenceDataRepository lastIAMsReceivedData]
+-[OSInfluenceDataRepository notificationLimit]
+-[OSInfluenceDataRepository iamLimit]
+-[OSInfluenceDataRepository notificationIndirectAttributionWindow]
+-[OSInfluenceDataRepository iamIndirectAttributionWindow]
+-[OSInfluenceDataRepository isDirectInfluenceEnabled]
+-[OSInfluenceDataRepository isIndirectInfluenceEnabled]
+-[OSInfluenceDataRepository isUnattributedInfluenceEnabled]
+-[OSInfluenceDataRepository saveInfluenceParams:]
+-[OSInfluenceDataRepository saveOutcomeEnabledFlag:dictionary:]
+__OBJC_METACLASS_RO_$_OSInfluenceDataRepository
+__OBJC_$_INSTANCE_METHODS_OSInfluenceDataRepository
+__OBJC_CLASS_RO_$_OSInfluenceDataRepository
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInfluenceDataRepository.m
+Source/OSInfluenceDataRepository.m
++[ReattemptRequest withRequest:successBlock:failureBlock:]
+-[ReattemptRequest request]
+-[ReattemptRequest setRequest:]
+-[ReattemptRequest successBlock]
+-[ReattemptRequest setSuccessBlock:]
+-[ReattemptRequest failureBlock]
+-[ReattemptRequest setFailureBlock:]
+-[ReattemptRequest .cxx_destruct]
+__OBJC_$_CLASS_METHODS_ReattemptRequest
+__OBJC_METACLASS_RO_$_ReattemptRequest
+__OBJC_$_INSTANCE_METHODS_ReattemptRequest
+_OBJC_IVAR_$_ReattemptRequest._request
+_OBJC_IVAR_$_ReattemptRequest._successBlock
+_OBJC_IVAR_$_ReattemptRequest._failureBlock
+__OBJC_$_INSTANCE_VARIABLES_ReattemptRequest
+__OBJC_$_PROP_LIST_ReattemptRequest
+__OBJC_CLASS_RO_$_ReattemptRequest
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/ReattemptRequest.m
+Source/ReattemptRequest.m
+Source/ReattemptRequest.h
+-[OneSignalNotificationSettingsIOS7 getNotificationPermissionState:]
+-[OneSignalNotificationSettingsIOS7 getNotificationPermissionState]
+___67-[OneSignalNotificationSettingsIOS7 getNotificationPermissionState]_block_invoke
+-[OneSignalNotificationSettingsIOS7 getNotificationTypes]
+-[OneSignalNotificationSettingsIOS7 promptForNotifications:]
+-[OneSignalNotificationSettingsIOS7 onNotificationPromptResponse:]
+-[OneSignalNotificationSettingsIOS7 registerForProvisionalAuthorization:]
+-[OneSignalNotificationSettingsIOS7 onAPNsResponse:]
+-[OneSignalNotificationSettingsIOS7 .cxx_destruct]
+__OBJC_CLASS_PROTOCOLS_$_OneSignalNotificationSettingsIOS7
+__OBJC_METACLASS_RO_$_OneSignalNotificationSettingsIOS7
+__OBJC_$_INSTANCE_METHODS_OneSignalNotificationSettingsIOS7
+_OBJC_IVAR_$_OneSignalNotificationSettingsIOS7.notificationPromptReponseCallback
+__OBJC_$_INSTANCE_VARIABLES_OneSignalNotificationSettingsIOS7
+__OBJC_$_PROP_LIST_OneSignalNotificationSettingsIOS7
+__OBJC_CLASS_RO_$_OneSignalNotificationSettingsIOS7
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalNotificationSettingsIOS7.m
+Source/OneSignalNotificationSettingsIOS7.m
+__67-[OneSignalNotificationSettingsIOS7 getNotificationPermissionState]_block_invoke
+-[OSInAppMessageViewController initWithMessage:delegate:]
+-[OSInAppMessageViewController viewDidLoad]
+-[OSInAppMessageViewController viewWillAppear:]
+-[OSInAppMessageViewController viewWillDisappear:]
+-[OSInAppMessageViewController applicationIsActive:]
+-[OSInAppMessageViewController applicationIsInBackground:]
+-[OSInAppMessageViewController addAppBecomeActiveObserver]
+-[OSInAppMessageViewController addAppEnterBackgroundObserver]
+-[OSInAppMessageViewController setupInitialMessageUI]
+___53-[OSInAppMessageViewController setupInitialMessageUI]_block_invoke
+___copy_helper_block_e8_20s
+___destroy_helper_block_e8_20s
+___53-[OSInAppMessageViewController setupInitialMessageUI]_block_invoke.104
+-[OSInAppMessageViewController displayMessage]
+-[OSInAppMessageViewController maxDisplayTimeTimerFinished]
+-[OSInAppMessageViewController messageContentOnSuccess]
+___55-[OSInAppMessageViewController messageContentOnSuccess]_block_invoke
+-[OSInAppMessageViewController loadMessageContent]
+___50-[OSInAppMessageViewController loadMessageContent]_block_invoke
+-[OSInAppMessageViewController loadPreviewMessageContent]
+___57-[OSInAppMessageViewController loadPreviewMessageContent]_block_invoke
+-[OSInAppMessageViewController encounteredErrorLoadingMessageContent:]
+-[OSInAppMessageViewController addConstraintsForMessage]
+-[OSInAppMessageViewController dismissCurrentInAppMessage]
+-[OSInAppMessageViewController dismissCurrentInAppMessage:]
+-[OSInAppMessageViewController dismissCurrentInAppMessage:withVelocity:]
+___72-[OSInAppMessageViewController dismissCurrentInAppMessage:withVelocity:]_block_invoke
+___72-[OSInAppMessageViewController dismissCurrentInAppMessage:withVelocity:]_block_invoke.263
+-[OSInAppMessageViewController animateAppearance]
+___49-[OSInAppMessageViewController animateAppearance]_block_invoke
+-[OSInAppMessageViewController beginPanAtLocation:]
+-[OSInAppMessageViewController setupGestureRecognizers]
+-[OSInAppMessageViewController panGestureRecognizerDidMove:]
+___60-[OSInAppMessageViewController panGestureRecognizerDidMove:]_block_invoke
+-[OSInAppMessageViewController tapGestureRecognizerDidTap:]
+-[OSInAppMessageViewController shouldDismissMessageWithPanGestureOffset:withVelocity:]
+-[OSInAppMessageViewController jsEventOccurredWithBody:]
+___56-[OSInAppMessageViewController jsEventOccurredWithBody:]_block_invoke
+-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]
+___83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+___83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.369
+___83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke_2
+-[OSInAppMessageViewController messageViewFailedToLoadMessageContent]
+-[OSInAppMessageViewController messageViewDidFailToProcessAction]
+-[OSInAppMessageViewController userContentController:didReceiveScriptMessage:]
+-[OSInAppMessageViewController delegate]
+-[OSInAppMessageViewController setDelegate:]
+-[OSInAppMessageViewController message]
+-[OSInAppMessageViewController setMessage:]
+-[OSInAppMessageViewController messageView]
+-[OSInAppMessageViewController setMessageView:]
+-[OSInAppMessageViewController initialYConstraint]
+-[OSInAppMessageViewController setInitialYConstraint:]
+-[OSInAppMessageViewController finalYConstraint]
+-[OSInAppMessageViewController setFinalYConstraint:]
+-[OSInAppMessageViewController heightConstraint]
+-[OSInAppMessageViewController setHeightConstraint:]
+-[OSInAppMessageViewController panGestureRecognizer]
+-[OSInAppMessageViewController setPanGestureRecognizer:]
+-[OSInAppMessageViewController tapGestureRecognizer]
+-[OSInAppMessageViewController setTapGestureRecognizer:]
+-[OSInAppMessageViewController previousOrientation]
+-[OSInAppMessageViewController setPreviousOrientation:]
+-[OSInAppMessageViewController orientationOnBackground]
+-[OSInAppMessageViewController setOrientationOnBackground:]
+-[OSInAppMessageViewController initialGestureRecognizerLocation]
+-[OSInAppMessageViewController setInitialGestureRecognizerLocation:]
+-[OSInAppMessageViewController panVerticalConstraint]
+-[OSInAppMessageViewController setPanVerticalConstraint:]
+-[OSInAppMessageViewController maxDisplayTime]
+-[OSInAppMessageViewController setMaxDisplayTime:]
+-[OSInAppMessageViewController dismissalTimer]
+-[OSInAppMessageViewController setDismissalTimer:]
+-[OSInAppMessageViewController didPageRenderingComplete]
+-[OSInAppMessageViewController setDidPageRenderingComplete:]
+-[OSInAppMessageViewController .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.35
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_CLASSLIST_REFERENCES_$_.75
+___block_descriptor_36_e8_20s_e5_v4?0l
+___block_descriptor_24_e4_20s_e7_v8?0c4l
+_OBJC_SELECTOR_REFERENCES_.120
+___block_descriptor_24_e4_20s_e16_v8?0"NSError"4l
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.182
+_OBJC_CLASSLIST_REFERENCES_$_.195
+_OBJC_SELECTOR_REFERENCES_.211
+_OBJC_CLASSLIST_REFERENCES_$_.222
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.242
+_OBJC_SELECTOR_REFERENCES_.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.271
+_OBJC_SELECTOR_REFERENCES_.275
+_OBJC_CLASSLIST_REFERENCES_$_.276
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_CLASSLIST_REFERENCES_$_.289
+_OBJC_CLASSLIST_REFERENCES_$_.312
+_OBJC_SELECTOR_REFERENCES_.320
+_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_CLASSLIST_REFERENCES_$_.331
+_OBJC_SELECTOR_REFERENCES_.341
+_OBJC_SELECTOR_REFERENCES_.343
+___block_descriptor_24_e4_20s_e55_v8?0"<UIViewControllerTransitionCoordinatorContext>"4l
+___block_descriptor_24_e4_20s_e17_v8?0"NSNumber"4l
+_OBJC_SELECTOR_REFERENCES_.384
+_OBJC_IVAR_$_OSInAppMessageViewController._delegate
+_OBJC_IVAR_$_OSInAppMessageViewController._message
+_OBJC_IVAR_$_OSInAppMessageViewController._messageView
+_OBJC_IVAR_$_OSInAppMessageViewController._initialYConstraint
+_OBJC_IVAR_$_OSInAppMessageViewController._finalYConstraint
+_OBJC_IVAR_$_OSInAppMessageViewController._heightConstraint
+_OBJC_IVAR_$_OSInAppMessageViewController._panGestureRecognizer
+_OBJC_IVAR_$_OSInAppMessageViewController._tapGestureRecognizer
+_OBJC_IVAR_$_OSInAppMessageViewController._previousOrientation
+_OBJC_IVAR_$_OSInAppMessageViewController._orientationOnBackground
+_OBJC_IVAR_$_OSInAppMessageViewController._initialGestureRecognizerLocation
+_OBJC_IVAR_$_OSInAppMessageViewController._panVerticalConstraint
+_OBJC_IVAR_$_OSInAppMessageViewController._maxDisplayTime
+_OBJC_IVAR_$_OSInAppMessageViewController._dismissalTimer
+_OBJC_IVAR_$_OSInAppMessageViewController._didPageRenderingComplete
+__OBJC_$_PROTOCOL_REFS_OSInAppMessageViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSInAppMessageViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSInAppMessageViewDelegate
+__OBJC_PROTOCOL_$_OSInAppMessageViewDelegate
+__OBJC_LABEL_PROTOCOL_$_OSInAppMessageViewDelegate
+__OBJC_$_PROTOCOL_REFS_WKScriptMessageHandler
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_WKScriptMessageHandler
+__OBJC_$_PROTOCOL_METHOD_TYPES_WKScriptMessageHandler
+__OBJC_PROTOCOL_$_WKScriptMessageHandler
+__OBJC_LABEL_PROTOCOL_$_WKScriptMessageHandler
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageViewController
+__OBJC_METACLASS_RO_$_OSInAppMessageViewController
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageViewController
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageViewController
+__OBJC_$_PROP_LIST_OSInAppMessageViewController
+__OBJC_CLASS_RO_$_OSInAppMessageViewController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageViewController.m
+Source/OSInAppMessageViewController.m
+Source/OSInAppMessageViewController.h
+__83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke_2
+__83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.369
+__83-[OSInAppMessageViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+__56-[OSInAppMessageViewController jsEventOccurredWithBody:]_block_invoke
+__60-[OSInAppMessageViewController panGestureRecognizerDidMove:]_block_invoke
+__49-[OSInAppMessageViewController animateAppearance]_block_invoke
+__72-[OSInAppMessageViewController dismissCurrentInAppMessage:withVelocity:]_block_invoke.263
+__72-[OSInAppMessageViewController dismissCurrentInAppMessage:withVelocity:]_block_invoke
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+__57-[OSInAppMessageViewController loadPreviewMessageContent]_block_invoke
+__50-[OSInAppMessageViewController loadMessageContent]_block_invoke
+__55-[OSInAppMessageViewController messageContentOnSuccess]_block_invoke
+__53-[OSInAppMessageViewController setupInitialMessageUI]_block_invoke.104
+__destroy_helper_block_e8_20s
+__copy_helper_block_e8_20s
+__53-[OSInAppMessageViewController setupInitialMessageUI]_block_invoke
+-[OSDynamicTriggerController init]
+-[OSDynamicTriggerController dynamicTriggerShouldFire:withMessageId:]
+-[OSDynamicTriggerController evaluateTimeInterval:withCurrentValue:forOperator:]
+-[OSDynamicTriggerController timerFiredForMessage:]
+-[OSDynamicTriggerController delegate]
+-[OSDynamicTriggerController setDelegate:]
+-[OSDynamicTriggerController timeSinceLastMessage]
+-[OSDynamicTriggerController setTimeSinceLastMessage:]
+-[OSDynamicTriggerController scheduledMessages]
+-[OSDynamicTriggerController setScheduledMessages:]
+-[OSDynamicTriggerController .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSDynamicTriggerController
+__OBJC_$_INSTANCE_METHODS_OSDynamicTriggerController
+_OBJC_IVAR_$_OSDynamicTriggerController._delegate
+_OBJC_IVAR_$_OSDynamicTriggerController._timeSinceLastMessage
+_OBJC_IVAR_$_OSDynamicTriggerController._scheduledMessages
+__OBJC_$_INSTANCE_VARIABLES_OSDynamicTriggerController
+__OBJC_$_PROP_LIST_OSDynamicTriggerController
+__OBJC_CLASS_RO_$_OSDynamicTriggerController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSDynamicTriggerController.m
+Source/OSDynamicTriggerController.m
+Source/OSDynamicTriggerController.h
++[OneSignalLocation locationListeners]
++[OneSignalLocation mutexObjectForLastLocation]
++[OneSignalLocation sharedInstance]
++[OneSignalLocation lastLocation]
++[OneSignalLocation started]
++[OneSignalLocation clearLastLocation]
++[OneSignalLocation getLocation:fallbackToSettings:withCompletionHandler:]
+___74+[OneSignalLocation getLocation:fallbackToSettings:withCompletionHandler:]_block_invoke
++[OneSignalLocation onFocus:]
++[OneSignalLocation beginTask]
+___30+[OneSignalLocation beginTask]_block_invoke
++[OneSignalLocation endTask]
++[OneSignalLocation sendAndClearLocationListener:]
++[OneSignalLocation sendCurrentAuthStatusToListeners]
++[OneSignalLocation internalGetLocation:fallbackToSettings:]
++[OneSignalLocation showLocationSettingsAlertController]
+___56+[OneSignalLocation showLocationSettingsAlertController]_block_invoke
+-[OneSignalLocation locationManager:didUpdateLocations:]
+-[OneSignalLocation locationManager:didFailWithError:]
++[OneSignalLocation resetSendTimer]
++[OneSignalLocation sendLocation]
+_locationManager
+_started
+_hasDelayed
+___block_descriptor_22_e5_v4?0l
+_fallbackToSettings
+_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_CLASSLIST_REFERENCES_$_.84
+_OBJC_CLASSLIST_REFERENCES_$_.103
+_OBJC_CLASSLIST_REFERENCES_$_.118
+___block_descriptor_20_e7_v8?0i4l
+___block_literal_global.131
+_OBJC_CLASSLIST_REFERENCES_$_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_CLASSLIST_REFERENCES_$_.202
+_OBJC_SELECTOR_REFERENCES_.206
+__OBJC_$_CLASS_METHODS_OneSignalLocation
+__OBJC_METACLASS_RO_$_OneSignalLocation
+__OBJC_$_INSTANCE_METHODS_OneSignalLocation
+__OBJC_CLASS_RO_$_OneSignalLocation
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalLocation.m
+Source/OneSignalLocation.m
+__56+[OneSignalLocation showLocationSettingsAlertController]_block_invoke
+__30+[OneSignalLocation beginTask]_block_invoke
+__74+[OneSignalLocation getLocation:fallbackToSettings:withCompletionHandler:]_block_invoke
++[OneSignalUserDefaults initStandard]
++[OneSignalUserDefaults initShared]
+-[OneSignalUserDefaults getStandardUserDefault]
+-[OneSignalUserDefaults getSharedUserDefault]
+-[OneSignalUserDefaults appGroupKey]
+-[OneSignalUserDefaults keyExists:]
+-[OneSignalUserDefaults removeValueForKey:]
+-[OneSignalUserDefaults getSavedBoolForKey:defaultValue:]
+-[OneSignalUserDefaults saveBoolForKey:withValue:]
+-[OneSignalUserDefaults getSavedStringForKey:defaultValue:]
+-[OneSignalUserDefaults saveStringForKey:withValue:]
+-[OneSignalUserDefaults getSavedIntegerForKey:defaultValue:]
+-[OneSignalUserDefaults saveIntegerForKey:withValue:]
+-[OneSignalUserDefaults getSavedDoubleForKey:defaultValue:]
+-[OneSignalUserDefaults saveDoubleForKey:withValue:]
+-[OneSignalUserDefaults getSavedSetForKey:defaultValue:]
+-[OneSignalUserDefaults saveSetForKey:withValue:]
+-[OneSignalUserDefaults getSavedDictionaryForKey:defaultValue:]
+-[OneSignalUserDefaults saveDictionaryForKey:withValue:]
+-[OneSignalUserDefaults getSavedObjectForKey:defaultValue:]
+-[OneSignalUserDefaults saveObjectForKey:withValue:]
+-[OneSignalUserDefaults getSavedCodeableDataForKey:defaultValue:]
+-[OneSignalUserDefaults saveCodeableDataForKey:withValue:]
+-[OneSignalUserDefaults userDefaults]
+-[OneSignalUserDefaults setUserDefaults:]
+-[OneSignalUserDefaults .cxx_destruct]
+__OBJC_$_CLASS_METHODS_OneSignalUserDefaults
+__OBJC_METACLASS_RO_$_OneSignalUserDefaults
+__OBJC_$_INSTANCE_METHODS_OneSignalUserDefaults
+_OBJC_IVAR_$_OneSignalUserDefaults._userDefaults
+__OBJC_$_INSTANCE_VARIABLES_OneSignalUserDefaults
+__OBJC_$_PROP_LIST_OneSignalUserDefaults
+__OBJC_CLASS_RO_$_OneSignalUserDefaults
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalUserDefaults.m
+Source/OneSignalUserDefaults.m
+Source/OneSignalUserDefaults.h
+-[OSInAppMessageTracker idTag]
+-[OSInAppMessageTracker channelType]
+-[OSInAppMessageTracker lastChannelObjectsReceivedByNewId:]
+-[OSInAppMessageTracker lastChannelObjects]
+-[OSInAppMessageTracker channelLimit]
+-[OSInAppMessageTracker indirectAttributionWindow]
+-[OSInAppMessageTracker saveChannelObjects:]
+-[OSInAppMessageTracker initInfluencedTypeFromCache]
+-[OSInAppMessageTracker cacheState]
+__OBJC_METACLASS_RO_$_OSInAppMessageTracker
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageTracker
+__OBJC_CLASS_RO_$_OSInAppMessageTracker
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageTracker.m
+Source/OSInAppMessageTracker.m
+-[NSString(OneSignal) one_substringAfter:]
+-[NSString(OneSignal) one_getVersionForRange:]
+-[NSString(OneSignal) one_getSemanticVersion]
+-[NSString(OneSignal) supportedFileExtension]
+-[NSString(OneSignal) fileExtensionForMimeType]
++[NSString(OneSignal) hexStringFromData:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSString_$_OneSignal
+__OBJC_$_CATEGORY_CLASS_METHODS_NSString_$_OneSignal
+__OBJC_$_CATEGORY_NSString_$_OneSignal
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/NSString+OneSignal.m
+Source/NSString+OneSignal.m
+-[OSSubscriptionState observable]
+-[OSSubscriptionState initAsToWithPermision:]
+-[OSSubscriptionState compare:]
+-[OSSubscriptionState initAsFrom]
+-[OSSubscriptionState persistAsFrom]
+-[OSSubscriptionState copyWithZone:]
+-[OSSubscriptionState onChanged:]
+-[OSSubscriptionState setUserId:]
+-[OSSubscriptionState setPushToken:]
+-[OSSubscriptionState setUserSubscriptionSetting:]
+-[OSSubscriptionState setAccepted:]
+-[OSSubscriptionState subscribed]
+-[OSSubscriptionState description]
+-[OSSubscriptionState toDictionary]
+-[OSSubscriptionState userSubscriptionSetting]
+-[OSSubscriptionState userId]
+-[OSSubscriptionState pushToken]
+-[OSSubscriptionState accpeted]
+-[OSSubscriptionState setAccpeted:]
+-[OSSubscriptionState delayedObserverUpdate]
+-[OSSubscriptionState setDelayedObserverUpdate:]
+-[OSSubscriptionState setObservable:]
+-[OSSubscriptionState .cxx_destruct]
+-[OSSubscriptionChangedInternalObserver onChanged:]
++[OSSubscriptionChangedInternalObserver fireChangesObserver:]
+-[OSSubscriptionStateChanges description]
+-[OSSubscriptionStateChanges toDictionary]
+-[OSSubscriptionStateChanges to]
+-[OSSubscriptionStateChanges setTo:]
+-[OSSubscriptionStateChanges from]
+-[OSSubscriptionStateChanges setFrom:]
+-[OSSubscriptionStateChanges .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.61
+__OBJC_CLASS_PROTOCOLS_$_OSSubscriptionState
+__OBJC_METACLASS_RO_$_OSSubscriptionState
+__OBJC_$_INSTANCE_METHODS_OSSubscriptionState
+_OBJC_IVAR_$_OSSubscriptionState._accpeted
+_OBJC_IVAR_$_OSSubscriptionState._delayedObserverUpdate
+_OBJC_IVAR_$_OSSubscriptionState._observable
+__OBJC_$_INSTANCE_VARIABLES_OSSubscriptionState
+__OBJC_$_PROP_LIST_OSSubscriptionState
+__OBJC_CLASS_RO_$_OSSubscriptionState
+_OBJC_CLASSLIST_REFERENCES_$_.172
+__OBJC_$_CLASS_METHODS_OSSubscriptionChangedInternalObserver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OSSubscriptionStateObserver
+__OBJC_$_PROTOCOL_METHOD_TYPES_OSSubscriptionStateObserver
+__OBJC_PROTOCOL_$_OSSubscriptionStateObserver
+__OBJC_LABEL_PROTOCOL_$_OSSubscriptionStateObserver
+__OBJC_CLASS_PROTOCOLS_$_OSSubscriptionChangedInternalObserver
+__OBJC_METACLASS_RO_$_OSSubscriptionChangedInternalObserver
+__OBJC_$_INSTANCE_METHODS_OSSubscriptionChangedInternalObserver
+__OBJC_CLASS_RO_$_OSSubscriptionChangedInternalObserver
+__OBJC_METACLASS_RO_$_OSSubscriptionStateChanges
+__OBJC_$_INSTANCE_METHODS_OSSubscriptionStateChanges
+_OBJC_IVAR_$_OSSubscriptionStateChanges._to
+_OBJC_IVAR_$_OSSubscriptionStateChanges._from
+__OBJC_$_INSTANCE_VARIABLES_OSSubscriptionStateChanges
+__OBJC_$_PROP_LIST_OSSubscriptionStateChanges
+__OBJC_CLASS_RO_$_OSSubscriptionStateChanges
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSSubscription.m
+Source/OSSubscription.m
+Source/OSSubscription.h
++[OneSignalTrackIAP canTrack]
+-[OneSignalTrackIAP init]
+-[OneSignalTrackIAP dealloc]
+-[OneSignalTrackIAP paymentQueue:updatedTransactions:]
+-[OneSignalTrackIAP getProductInfo:]
+-[OneSignalTrackIAP productsRequest:didReceiveResponse:]
+_skPaymentQueue
+_productsRequest
+_sKProductsRequestClass
+__OBJC_$_CLASS_METHODS_OneSignalTrackIAP
+__OBJC_METACLASS_RO_$_OneSignalTrackIAP
+__OBJC_$_INSTANCE_METHODS_OneSignalTrackIAP
+__OBJC_CLASS_RO_$_OneSignalTrackIAP
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalTrackIAP.m
+Source/OneSignalTrackIAP.m
++[OneSignalExtensionBadgeHandler handleBadgeCountWithNotificationRequest:withNotificationPayload:withMutableNotificationContent:]
++[OneSignalExtensionBadgeHandler currentCachedBadgeValue]
++[OneSignalExtensionBadgeHandler primaryBundleIdentifier]
++[OneSignalExtensionBadgeHandler updateCachedBadgeValue:]
++[OneSignalExtensionBadgeHandler appGroupName]
+_OBJC_CLASSLIST_REFERENCES_$_.12
+__OBJC_$_CLASS_METHODS_OneSignalExtensionBadgeHandler
+__OBJC_METACLASS_RO_$_OneSignalExtensionBadgeHandler
+__OBJC_CLASS_RO_$_OneSignalExtensionBadgeHandler
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalExtensionBadgeHandler.m
+Source/OneSignalExtensionBadgeHandler.m
+-[OneSignalReceiveReceiptsController isReceiveReceiptsEnabled]
+-[OneSignalReceiveReceiptsController sendReceiveReceiptWithNotificationId:]
+-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:]
+-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:successBlock:failureBlock:]
+___116-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:successBlock:failureBlock:]_block_invoke
+___116-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:successBlock:failureBlock:]_block_invoke.34
+__OBJC_METACLASS_RO_$_OneSignalReceiveReceiptsController
+__OBJC_$_INSTANCE_METHODS_OneSignalReceiveReceiptsController
+__OBJC_CLASS_RO_$_OneSignalReceiveReceiptsController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalReceiveReceiptsController.m
+__116-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:successBlock:failureBlock:]_block_invoke.34
+Source/OneSignalReceiveReceiptsController.m
+__116-[OneSignalReceiveReceiptsController sendReceiveReceiptWithPlayerId:notificationId:appId:successBlock:failureBlock:]_block_invoke
+-[OSAttributedFocusTimeProcessor init]
+-[OSAttributedFocusTimeProcessor beginDelayBackgroundTask]
+___58-[OSAttributedFocusTimeProcessor beginDelayBackgroundTask]_block_invoke
+-[OSAttributedFocusTimeProcessor endDelayBackgroundTask]
+-[OSAttributedFocusTimeProcessor getMinSessionTime]
+-[OSAttributedFocusTimeProcessor unsentActiveTimeUserDefaultsKey]
+-[OSAttributedFocusTimeProcessor sendOnFocusCall:]
+-[OSAttributedFocusTimeProcessor sendUnsentActiveTime:]
+-[OSAttributedFocusTimeProcessor sendOnFocusCallWithParams:totalTimeActive:]
+-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithNSTimer:]
+-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]
+___98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke
+___98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke_2
+___98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke.91
+-[OSAttributedFocusTimeProcessor cancelDelayedJob]
+-[OSAttributedFocusTimeProcessor .cxx_destruct]
+_OBJC_IVAR_$_OSAttributedFocusTimeProcessor.delayBackgroundTask
+_OBJC_IVAR_$_OSAttributedFocusTimeProcessor.restCallTimer
+__OBJC_METACLASS_RO_$_OSAttributedFocusTimeProcessor
+__OBJC_$_INSTANCE_METHODS_OSAttributedFocusTimeProcessor
+__OBJC_$_INSTANCE_VARIABLES_OSAttributedFocusTimeProcessor
+__OBJC_CLASS_RO_$_OSAttributedFocusTimeProcessor
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSAttributedFocusTimeProcessor.m
+Source/OSAttributedFocusTimeProcessor.m
+__98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke.91
+__98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke_2
+__98-[OSAttributedFocusTimeProcessor sendBackgroundAttributedFocusPingWithParams:withTotalTimeActive:]_block_invoke
+__58-[OSAttributedFocusTimeProcessor beginDelayBackgroundTask]_block_invoke
+-[OSInAppMessageView initWithMessage:withScriptMessageHandler:]
+-[OSInAppMessageView loadedHtmlContent:withBaseURL:]
+___52-[OSInAppMessageView loadedHtmlContent:withBaseURL:]_block_invoke
+-[OSInAppMessageView setupWebviewWithMessageHandler:]
+-[OSInAppMessageView resetWebViewToMaxBoundsAndResizeHeight:]
+___61-[OSInAppMessageView resetWebViewToMaxBoundsAndResizeHeight:]_block_invoke
+-[OSInAppMessageView extractHeightFromMetaDataPayload:]
+-[OSInAppMessageView setupWebViewConstraints]
+-[OSInAppMessageView removeScriptMessageHandler]
+-[OSInAppMessageView loadReplacementURL:]
+-[OSInAppMessageView webView:didFinishNavigation:]
+-[OSInAppMessageView viewForZoomingInScrollView:]
+-[OSInAppMessageView scrollViewWillBeginZooming:withView:]
+-[OSInAppMessageView delegate]
+-[OSInAppMessageView setDelegate:]
+-[OSInAppMessageView message]
+-[OSInAppMessageView setMessage:]
+-[OSInAppMessageView webView]
+-[OSInAppMessageView setWebView:]
+-[OSInAppMessageView loaded]
+-[OSInAppMessageView setLoaded:]
+-[OSInAppMessageView .cxx_destruct]
+___block_descriptor_28_e4_20s24bs_e33_v12?0"NSDictionary"4"NSError"8l
+_OBJC_IVAR_$_OSInAppMessageView._delegate
+_OBJC_IVAR_$_OSInAppMessageView._message
+_OBJC_IVAR_$_OSInAppMessageView._webView
+_OBJC_IVAR_$_OSInAppMessageView._loaded
+__OBJC_$_PROTOCOL_REFS_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIScrollViewDelegate
+__OBJC_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_REFS_WKUIDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_WKUIDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_WKUIDelegate
+__OBJC_PROTOCOL_$_WKUIDelegate
+__OBJC_LABEL_PROTOCOL_$_WKUIDelegate
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageView
+__OBJC_METACLASS_RO_$_OSInAppMessageView
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageView
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageView
+__OBJC_$_PROP_LIST_OSInAppMessageView
+__OBJC_CLASS_RO_$_OSInAppMessageView
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageView.m
+Source/OSInAppMessageView.m
+Source/OSInAppMessageView.h
+__61-[OSInAppMessageView resetWebViewToMaxBoundsAndResizeHeight:]_block_invoke
+__52-[OSInAppMessageView loadedHtmlContent:withBaseURL:]_block_invoke
++[OSRequestGetTags withUserId:appId:]
++[OSRequestGetIosParams withUserId:appId:]
+-[OSRequestGetIosParams missingAppId]
++[OSRequestSendTagsToServer withUserId:appId:tags:networkType:withEmailAuthHashToken:]
++[OSRequestPostNotification withAppId:withJson:]
++[OSRequestUpdateDeviceToken withUserId:appId:deviceToken:notificationTypes:withParentId:emailAuthToken:email:]
++[OSRequestCreateDevice withAppId:withDeviceType:withEmail:withPlayerId:withEmailAuthHash:]
++[OSRequestLogoutEmail withAppId:emailPlayerId:devicePlayerId:emailAuthHash:]
++[OSRequestUpdateNotificationTypes withUserId:appId:notificationTypes:]
++[OSRequestSendPurchases withUserId:appId:withPurchases:]
++[OSRequestSendPurchases withUserId:emailAuthToken:appId:withPurchases:]
++[OSRequestSubmitNotificationOpened withUserId:appId:wasOpened:messageId:withDeviceType:]
++[OSRequestRegisterUser withData:userId:]
++[OSRequestSyncHashedEmail withUserId:appId:email:networkType:]
++[OSRequestSendLocation withUserId:appId:location:networkType:backgroundState:emailAuthHashToken:]
++[OSRequestBadgeCount withUserId:appId:badgeCount:emailAuthToken:]
++[OSRequestOnFocus withUserId:appId:activeTime:netType:emailAuthToken:deviceType:]
++[OSRequestOnFocus withUserId:appId:activeTime:netType:emailAuthToken:deviceType:influenceParams:]
++[OSRequestInAppMessageViewed withAppId:withPlayerId:withMessageId:forVariantId:]
++[OSRequestInAppMessageClicked withAppId:withPlayerId:withMessageId:forVariantId:withAction:]
++[OSRequestLoadInAppMessageContent withAppId:withMessageId:withVariantId:]
++[OSRequestLoadInAppMessagePreviewContent withAppId:previewUUID:]
++[OSRequestUpdateExternalUserId withUserId:withOneSignalUserId:appId:]
++[OSRequestReceiveReceipts withPlayerId:notificationId:appId:]
++[OSRequestSendOutcomesV1ToServer directWithOutcome:appId:deviceType:]
++[OSRequestSendOutcomesV1ToServer indirectWithOutcome:appId:deviceType:]
++[OSRequestSendOutcomesV1ToServer unattributedWithOutcome:appId:deviceType:]
++[OSRequestSendOutcomesV2ToServer measureOutcomeEvent:appId:deviceType:]
+__OBJC_$_CLASS_METHODS_OSRequestGetTags
+__OBJC_METACLASS_RO_$_OSRequestGetTags
+__OBJC_CLASS_RO_$_OSRequestGetTags
+__OBJC_$_CLASS_METHODS_OSRequestGetIosParams
+__OBJC_METACLASS_RO_$_OSRequestGetIosParams
+__OBJC_$_INSTANCE_METHODS_OSRequestGetIosParams
+__OBJC_CLASS_RO_$_OSRequestGetIosParams
+__OBJC_$_CLASS_METHODS_OSRequestSendTagsToServer
+__OBJC_METACLASS_RO_$_OSRequestSendTagsToServer
+__OBJC_CLASS_RO_$_OSRequestSendTagsToServer
+__OBJC_$_CLASS_METHODS_OSRequestPostNotification
+__OBJC_METACLASS_RO_$_OSRequestPostNotification
+__OBJC_CLASS_RO_$_OSRequestPostNotification
+__OBJC_$_CLASS_METHODS_OSRequestUpdateDeviceToken
+__OBJC_METACLASS_RO_$_OSRequestUpdateDeviceToken
+__OBJC_CLASS_RO_$_OSRequestUpdateDeviceToken
+_OBJC_CLASSLIST_REFERENCES_$_.60
+__OBJC_$_CLASS_METHODS_OSRequestCreateDevice
+__OBJC_METACLASS_RO_$_OSRequestCreateDevice
+__OBJC_CLASS_RO_$_OSRequestCreateDevice
+__OBJC_$_CLASS_METHODS_OSRequestLogoutEmail
+__OBJC_METACLASS_RO_$_OSRequestLogoutEmail
+__OBJC_CLASS_RO_$_OSRequestLogoutEmail
+_OBJC_CLASSLIST_REFERENCES_$_.78
+__OBJC_$_CLASS_METHODS_OSRequestUpdateNotificationTypes
+__OBJC_METACLASS_RO_$_OSRequestUpdateNotificationTypes
+__OBJC_CLASS_RO_$_OSRequestUpdateNotificationTypes
+__OBJC_$_CLASS_METHODS_OSRequestSendPurchases
+__OBJC_METACLASS_RO_$_OSRequestSendPurchases
+__OBJC_CLASS_RO_$_OSRequestSendPurchases
+_OBJC_CLASSLIST_REFERENCES_$_.90
+__OBJC_$_CLASS_METHODS_OSRequestSubmitNotificationOpened
+__OBJC_METACLASS_RO_$_OSRequestSubmitNotificationOpened
+__OBJC_CLASS_RO_$_OSRequestSubmitNotificationOpened
+__OBJC_$_CLASS_METHODS_OSRequestRegisterUser
+__OBJC_METACLASS_RO_$_OSRequestRegisterUser
+__OBJC_CLASS_RO_$_OSRequestRegisterUser
+_OBJC_CLASSLIST_REFERENCES_$_.109
+__OBJC_$_CLASS_METHODS_OSRequestSyncHashedEmail
+__OBJC_METACLASS_RO_$_OSRequestSyncHashedEmail
+__OBJC_CLASS_RO_$_OSRequestSyncHashedEmail
+__OBJC_$_CLASS_METHODS_OSRequestSendLocation
+__OBJC_METACLASS_RO_$_OSRequestSendLocation
+__OBJC_CLASS_RO_$_OSRequestSendLocation
+__OBJC_$_CLASS_METHODS_OSRequestBadgeCount
+__OBJC_METACLASS_RO_$_OSRequestBadgeCount
+__OBJC_CLASS_RO_$_OSRequestBadgeCount
+__OBJC_$_CLASS_METHODS_OSRequestOnFocus
+__OBJC_METACLASS_RO_$_OSRequestOnFocus
+__OBJC_CLASS_RO_$_OSRequestOnFocus
+_OBJC_CLASSLIST_REFERENCES_$_.177
+__OBJC_$_CLASS_METHODS_OSRequestInAppMessageViewed
+__OBJC_METACLASS_RO_$_OSRequestInAppMessageViewed
+__OBJC_CLASS_RO_$_OSRequestInAppMessageViewed
+__OBJC_$_CLASS_METHODS_OSRequestInAppMessageClicked
+__OBJC_METACLASS_RO_$_OSRequestInAppMessageClicked
+__OBJC_CLASS_RO_$_OSRequestInAppMessageClicked
+_OBJC_CLASSLIST_REFERENCES_$_.199
+__OBJC_$_CLASS_METHODS_OSRequestLoadInAppMessageContent
+__OBJC_METACLASS_RO_$_OSRequestLoadInAppMessageContent
+__OBJC_CLASS_RO_$_OSRequestLoadInAppMessageContent
+_OBJC_CLASSLIST_REFERENCES_$_.204
+__OBJC_$_CLASS_METHODS_OSRequestLoadInAppMessagePreviewContent
+__OBJC_METACLASS_RO_$_OSRequestLoadInAppMessagePreviewContent
+__OBJC_CLASS_RO_$_OSRequestLoadInAppMessagePreviewContent
+_OBJC_CLASSLIST_REFERENCES_$_.213
+__OBJC_$_CLASS_METHODS_OSRequestUpdateExternalUserId
+__OBJC_METACLASS_RO_$_OSRequestUpdateExternalUserId
+__OBJC_CLASS_RO_$_OSRequestUpdateExternalUserId
+_OBJC_CLASSLIST_REFERENCES_$_.218
+__OBJC_$_CLASS_METHODS_OSRequestReceiveReceipts
+__OBJC_METACLASS_RO_$_OSRequestReceiveReceipts
+__OBJC_CLASS_RO_$_OSRequestReceiveReceipts
+_OBJC_CLASSLIST_REFERENCES_$_.227
+_OBJC_SELECTOR_REFERENCES_.233
+__OBJC_$_CLASS_METHODS_OSRequestSendOutcomesV1ToServer
+__OBJC_METACLASS_RO_$_OSRequestSendOutcomesV1ToServer
+__OBJC_CLASS_RO_$_OSRequestSendOutcomesV1ToServer
+_OBJC_CLASSLIST_REFERENCES_$_.246
+__OBJC_$_CLASS_METHODS_OSRequestSendOutcomesV2ToServer
+__OBJC_METACLASS_RO_$_OSRequestSendOutcomesV2ToServer
+__OBJC_CLASS_RO_$_OSRequestSendOutcomesV2ToServer
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/Requests.m
+Source/Requests.m
+-[OSSessionManager init:withTrackerFactory:]
+-[OSSessionManager getInfluences]
+-[OSSessionManager getSessionInfluences]
+-[OSSessionManager initSessionFromCache]
+-[OSSessionManager restartSessionIfNeeded:]
+-[OSSessionManager onInAppMessageReceived:]
+-[OSSessionManager onDirectInfluenceFromIAMClick:]
+-[OSSessionManager onDirectInfluenceFromIAMClickFinished]
+-[OSSessionManager onNotificationReceived:]
+-[OSSessionManager onDirectInfluenceFromNotificationOpen:withNotificationId:]
+-[OSSessionManager attemptSessionUpgrade:]
+-[OSSessionManager attemptSessionUpgrade:withDirectId:]
+-[OSSessionManager setSessionForChannel:withInfluenceType:directId:indirectIds:]
+-[OSSessionManager willChangeSessionForChannel:withInfluenceType:directId:indirectIds:]
+-[OSSessionManager sendSessionEndingWithInfluences:]
+-[OSSessionManager delegate]
+-[OSSessionManager setDelegate:]
+-[OSSessionManager trackerFactory]
+-[OSSessionManager setTrackerFactory:]
+-[OSSessionManager .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.113
+__OBJC_METACLASS_RO_$_OSSessionManager
+__OBJC_$_INSTANCE_METHODS_OSSessionManager
+_OBJC_IVAR_$_OSSessionManager._delegate
+_OBJC_IVAR_$_OSSessionManager._trackerFactory
+__OBJC_$_INSTANCE_VARIABLES_OSSessionManager
+__OBJC_$_PROP_LIST_OSSessionManager
+__OBJC_CLASS_RO_$_OSSessionManager
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSSessionManager.m
+Source/OSSessionManager.m
+Source/OSSessionManager.h
+-[OSTrackerFactory initWithRepository:]
+-[OSTrackerFactory saveInfluenceParams:]
+-[OSTrackerFactory initFromCache]
+-[OSTrackerFactory influences]
+-[OSTrackerFactory sessionInfluences]
+-[OSTrackerFactory iamChannelTracker]
+-[OSTrackerFactory notificationChannelTracker]
+-[OSTrackerFactory channelByEntryAction:]
+-[OSTrackerFactory channels]
+-[OSTrackerFactory channelsToResetByEntryAction:]
+-[OSTrackerFactory trackers]
+-[OSTrackerFactory setTrackers:]
+-[OSTrackerFactory dataRepository]
+-[OSTrackerFactory setDataRepository:]
+-[OSTrackerFactory .cxx_destruct]
+__OBJC_METACLASS_RO_$_OSTrackerFactory
+__OBJC_$_INSTANCE_METHODS_OSTrackerFactory
+_OBJC_IVAR_$_OSTrackerFactory._trackers
+_OBJC_IVAR_$_OSTrackerFactory._dataRepository
+__OBJC_$_INSTANCE_VARIABLES_OSTrackerFactory
+__OBJC_$_PROP_LIST_OSTrackerFactory
+__OBJC_CLASS_RO_$_OSTrackerFactory
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSTrackerFactory.m
+Source/OSTrackerFactory.m
++[OSInAppMessageAction instanceWithData:]
++[OSInAppMessageAction instanceWithJson:]
+-[OSInAppMessageAction jsonRepresentation]
+-[OSInAppMessageAction description]
+-[OSInAppMessageAction clickName]
+-[OSInAppMessageAction setClickName:]
+-[OSInAppMessageAction clickUrl]
+-[OSInAppMessageAction setClickUrl:]
+-[OSInAppMessageAction firstClick]
+-[OSInAppMessageAction setFirstClick:]
+-[OSInAppMessageAction closesMessage]
+-[OSInAppMessageAction setClosesMessage:]
+-[OSInAppMessageAction outcomes]
+-[OSInAppMessageAction setOutcomes:]
+-[OSInAppMessageAction tags]
+-[OSInAppMessageAction setTags:]
+-[OSInAppMessageAction clickType]
+-[OSInAppMessageAction setClickType:]
+-[OSInAppMessageAction clickId]
+-[OSInAppMessageAction setClickId:]
+-[OSInAppMessageAction promptActions]
+-[OSInAppMessageAction setPromptActions:]
+-[OSInAppMessageAction urlActionType]
+-[OSInAppMessageAction setUrlActionType:]
+-[OSInAppMessageAction .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.65
+__OBJC_$_CLASS_METHODS_OSInAppMessageAction
+__OBJC_CLASS_PROTOCOLS_$_OSInAppMessageAction
+__OBJC_METACLASS_RO_$_OSInAppMessageAction
+__OBJC_$_INSTANCE_METHODS_OSInAppMessageAction
+_OBJC_IVAR_$_OSInAppMessageAction._firstClick
+_OBJC_IVAR_$_OSInAppMessageAction._closesMessage
+_OBJC_IVAR_$_OSInAppMessageAction._clickName
+_OBJC_IVAR_$_OSInAppMessageAction._clickUrl
+_OBJC_IVAR_$_OSInAppMessageAction._outcomes
+_OBJC_IVAR_$_OSInAppMessageAction._tags
+_OBJC_IVAR_$_OSInAppMessageAction._clickType
+_OBJC_IVAR_$_OSInAppMessageAction._clickId
+_OBJC_IVAR_$_OSInAppMessageAction._promptActions
+_OBJC_IVAR_$_OSInAppMessageAction._urlActionType
+__OBJC_$_INSTANCE_VARIABLES_OSInAppMessageAction
+__OBJC_$_PROP_LIST_OSInAppMessageAction
+__OBJC_CLASS_RO_$_OSInAppMessageAction
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSInAppMessageAction.m
+Source/OSInAppMessageAction.m
+Source/OSInAppMessageAction.h
++[OneSignalDialogController sharedInstance]
+___43+[OneSignalDialogController sharedInstance]_block_invoke
+-[OneSignalDialogController getActionTitlesFromPayload:]
+-[OneSignalDialogController presentDialogWithMessageDict:]
+___58-[OneSignalDialogController presentDialogWithMessageDict:]_block_invoke
+-[OneSignalDialogController presentDialogWithTitle:withMessage:withActions:cancelTitle:withActionCompletion:]
+___109-[OneSignalDialogController presentDialogWithTitle:withMessage:withActions:cancelTitle:withActionCompletion:]_block_invoke
+___copy_helper_block_e4_20s24s28s32s36b40s
+___destroy_helper_block_e4_20s24s28s32s36s40s
+-[OneSignalDialogController displayDialog:]
+___43-[OneSignalDialogController displayDialog:]_block_invoke
+___43-[OneSignalDialogController displayDialog:]_block_invoke.117
+-[OneSignalDialogController alertView:clickedButtonAtIndex:]
+-[OneSignalDialogController delayResult:]
+___41-[OneSignalDialogController delayResult:]_block_invoke
+-[OneSignalDialogController clearQueue]
+-[OneSignalDialogController queue]
+-[OneSignalDialogController setQueue:]
+-[OneSignalDialogController .cxx_destruct]
+_sharedInstance.onceToken
+___block_descriptor_44_e4_20s24s28s32s36bs40s_e5_v4?0l
+___block_descriptor_24_e4_20s_e22_v8?0"UIAlertAction"4l
+___block_descriptor_28_e4_20s_e22_v8?0"UIAlertAction"4l
+___block_descriptor_28_e4_20s_e5_v4?0l
+__OBJC_$_CLASS_METHODS_OneSignalDialogController
+__OBJC_CLASS_PROTOCOLS_$_OneSignalDialogController
+__OBJC_METACLASS_RO_$_OneSignalDialogController
+__OBJC_$_INSTANCE_METHODS_OneSignalDialogController
+_OBJC_IVAR_$_OneSignalDialogController._queue
+__OBJC_$_INSTANCE_VARIABLES_OneSignalDialogController
+__OBJC_$_PROP_LIST_OneSignalDialogController
+__OBJC_CLASS_RO_$_OneSignalDialogController
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OneSignalDialogController.m
+Source/OneSignalDialogController.m
+__41-[OneSignalDialogController delayResult:]_block_invoke
+__43-[OneSignalDialogController displayDialog:]_block_invoke.117
+__43-[OneSignalDialogController displayDialog:]_block_invoke
+__destroy_helper_block_e4_20s24s28s32s36s40s
+__copy_helper_block_e4_20s24s28s32s36b40s
+__109-[OneSignalDialogController presentDialogWithTitle:withMessage:withActions:cancelTitle:withActionCompletion:]_block_invoke
+__58-[OneSignalDialogController presentDialogWithMessageDict:]_block_invoke
+__43+[OneSignalDialogController sharedInstance]_block_invoke
+-[OSOutcomeEvent initWithSession:notificationIds:name:timestamp:weight:]
+-[OSOutcomeEvent initFromOutcomeEventParams:]
+-[OSOutcomeEvent jsonRepresentation]
+-[OSOutcomeEvent session]
+-[OSOutcomeEvent setSession:]
+-[OSOutcomeEvent notificationIds]
+-[OSOutcomeEvent setNotificationIds:]
+-[OSOutcomeEvent name]
+-[OSOutcomeEvent setName:]
+-[OSOutcomeEvent timestamp]
+-[OSOutcomeEvent setTimestamp:]
+-[OSOutcomeEvent weight]
+-[OSOutcomeEvent setWeight:]
+-[OSOutcomeEvent .cxx_destruct]
+__OBJC_CLASS_PROTOCOLS_$_OSOutcomeEvent
+__OBJC_METACLASS_RO_$_OSOutcomeEvent
+__OBJC_$_INSTANCE_METHODS_OSOutcomeEvent
+_OBJC_IVAR_$_OSOutcomeEvent._session
+_OBJC_IVAR_$_OSOutcomeEvent._notificationIds
+_OBJC_IVAR_$_OSOutcomeEvent._name
+_OBJC_IVAR_$_OSOutcomeEvent._timestamp
+_OBJC_IVAR_$_OSOutcomeEvent._weight
+__OBJC_$_INSTANCE_VARIABLES_OSOutcomeEvent
+__OBJC_$_PROP_LIST_OSOutcomeEvent
+__OBJC_CLASS_RO_$_OSOutcomeEvent
+/Users/tass/Desktop/FindDevy/Carthage/Checkouts/OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Source/OSOutcomeEvent.m
+Source/OSOutcomeEvent.m
+__ZL15__ARCLite__loadv
+__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
+__ZL34__arclite_objc_autoreleasePoolPushv
+__ZL33__arclite_objc_autoreleasePoolPopPv
+__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
+__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
+__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
+__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
+__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
+__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL18add_image_hook_ARCPK11mach_headerl
+__ZL27__arclite_objc_loadClassrefPP10objc_class
+__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
+__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
+__ZL21__arclite_object_copyP11objc_objectm
+__ZL21__arclite_objc_retainP11objc_object
+__ZL26__arclite_objc_retainBlockP11objc_object
+__ZL22__arclite_objc_releaseP11objc_object
+__ZL26__arclite_objc_autoreleaseP11objc_object
+__ZL32__arclite_objc_retainAutoreleaseP11objc_object
+__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
+__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
+__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
+__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__ZL23NSAutoreleasePool_class
+__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
+__OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteIndexedSubscripting__
+__OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteIndexedSubscripting__
+__OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+__OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+__OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
+__OBJC_$_PROTOCOL_INSTANCE_METHODS___ARCLiteKeyedSubscripting__
+__OBJC_$_PROTOCOL_METHOD_TYPES___ARCLiteKeyedSubscripting__
+__OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+__OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+__OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=armv7s-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7s -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7s/arclite.o -Wno-objc-signed-char-bool-implicit-int-conversion -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=556.6 -march=armv7s
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
+fixStringForCoreData
+source/arclite.mm
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_objc_storeStrong
+__arclite_objc_release
+__arclite_objc_retain
+__arclite_objc_retainAutoreleasedReturnValue
+__arclite_objc_retainAutoreleaseReturnValue
+__arclite_objc_autoreleaseReturnValue
+__arclite_objc_retainAutorelease
+__arclite_objc_autorelease
+__arclite_objc_retainBlock
+__arclite_object_copy
+fixupCopiedReferences
+_class_getInstanceStart
+alignedInstanceStart
+__arclite_class_usesAutomaticRetainRelease
+classOrSuperClassesUseARR
+__arclite_object_setIvar
+isScannedOffset
+_ivar_getClass
+__arclite_object_setInstanceVariable
+__arclite_objc_loadClassref
+add_image_hook_ARC
+patch_t<void (id *, id)>
+patch_t<id (id)>
+patch_t<void (id)>
+patch_t<id (id, unsigned long)>
+patch_t<void (id, objc_ivar *, id)>
+patch_t<objc_ivar *(id, const char *, void *)>
+patch_t<Class (Class *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
+__arclite_NSOrderedSet_objectAtIndexedSubscript
+__arclite_NSDictionary_objectForKeyedSubscript
+__arclite_NSMutableArray_setObject_atIndexedSubscript
+__arclite_NSArray_objectAtIndexedSubscript
+patch_lazy_pointers
+__arclite_objc_autoreleasePoolPop
+__arclite_objc_autoreleasePoolPush
+add_image_hook_autoreleasepool
+patch_t<void (void *)>
+patch_t<void *()>
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_ARC
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
+install_subscripting
+addMethod
+indexedGetter
+install_autoreleasepool

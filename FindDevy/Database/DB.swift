@@ -13,6 +13,10 @@ protocol DBDelegate: class {
   func changeTodayValue(loc: LocData, terminated: Bool, paused: Bool)
 }
 
+enum ErrorType: Error {
+  case networkErr, noData, noKey
+}
+
 class DB {
   var ref: DatabaseReference?
   let fs = Firestore.firestore()
@@ -21,6 +25,22 @@ class DB {
   init() {
     self.ref = Database.database().reference()
 //    UserDefaults.otherKey = "3492414B-B182-4F9F-A77A-4C2568763D5F"
+  }
+  
+  func getOtherOneToken(completion: @escaping (String?) -> ()) {
+    guard let key = UserDefaults.otherKey else {
+      completion(nil)
+      return }
+    fs.collection("OneToken").document(key).getDocument { (snap, err) in
+      guard err == nil else {
+      completion(nil)
+      Isaac.toast("네트워크 오류발생!")
+      return }
+      guard let snap = snap?.data(), let token = snap["token"] as? String else {
+      completion(nil)
+      return }
+      completion(token)
+    }
   }
   
   func getTodayLocations() {
@@ -32,19 +52,19 @@ class DB {
     })
   }
   
-  func getTargetLocation(date: String, completion: @escaping ([LocData]) -> ()) {
-    guard let key = UserDefaults.otherKey else { return }
+  func getTargetLocation(date: String, completion: @escaping (Result<[LocData], ErrorType>) -> ()) {
+    guard let key = UserDefaults.otherKey else {
+      completion(.failure(.noKey))
+      return }
     fs.collection("Location").document(key).collection(date).getDocuments { (snap, err) in
       guard err == nil else {
-        completion([])
-        Isaac.toast("네트워크 오류발생!")
+        completion(.failure(.networkErr))
         return }
       guard let snap = snap else {
-        completion([])
+        completion(.failure(.noData))
         return }
       let temp = snap.documents.compactMap{LocData(data: $0.data())}.sorted{$0.date ?? Date() < $1.date ?? Date()}
-      completion(temp)
-      temp.count == 0 ? Isaac.toast("\(date)에 위치기록이 없어요!") : ()
+      completion(.success(temp))
     }
   }
   

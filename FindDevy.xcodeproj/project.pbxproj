@@ -28,8 +28,34 @@
 		52C7C6F924BF3675004A49EA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6F824BF3675004A49EA /* StringExtension.swift */; };
 		52C7C6FB24BF3F8A004A49EA /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */; };
 		52C7C6FD24BF3FB5004A49EA /* Issac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7C6FC24BF3FB5004A49EA /* Issac.swift */; };
+		52DE60AE24C1FD0E007052FE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE60AD24C1FD0E007052FE /* NotificationService.swift */; };
+		52DE60B224C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52DE60AB24C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CE42853BFFE701B58C79D54 /* Pods_FindDevy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52DE60B024C1FD0E007052FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526EA3A924BA05F40044EBE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DE60AA24C1FD0E007052FE;
+			remoteInfo = FindDevyNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52DE60B324C1FD0E007052FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52DE60B224C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		526EA3B124BA05F40044EBE2 /* FindDevy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDevy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +82,10 @@
 		52C7C6F824BF3675004A49EA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
 		52C7C6FC24BF3FB5004A49EA /* Issac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issac.swift; sourceTree = "<group>"; };
+		52DE60AB24C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FindDevyNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DE60AD24C1FD0E007052FE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		52DE60AF24C1FD0E007052FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DE60B724C1FF4E007052FE /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Carthage/Build/iOS/OneSignal.framework; sourceTree = "<group>"; };
 		556ABD857C85CF309C0B9454 /* Pods-FindDevy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.debug.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.debug.xcconfig"; sourceTree = "<group>"; };
 		AC86175FC57ADD162CA91FEA /* Pods_FindDevy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDevy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89664CB803BACDB191844CB /* Pods-FindDevy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDevy.release.xcconfig"; path = "Target Support Files/Pods-FindDevy/Pods-FindDevy.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52DE60A824C1FD0E007052FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				526EA3B324BA05F40044EBE2 /* FindDevy */,
+				52DE60AC24C1FD0E007052FE /* FindDevyNotificationServiceExtension */,
 				526EA3B224BA05F40044EBE2 /* Products */,
 				7D39D378DE2607C5393C3D2E /* Pods */,
 				A05697E3AC64F2A19FC856AB /* Frameworks */,
@@ -91,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				526EA3B124BA05F40044EBE2 /* FindDevy.app */,
+				52DE60AB24C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +296,15 @@
 			path = LocationModel;
 			sourceTree = "<group>";
 		};
+		52DE60AC24C1FD0E007052FE /* FindDevyNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				52DE60AD24C1FD0E007052FE /* NotificationService.swift */,
+				52DE60AF24C1FD0E007052FE /* Info.plist */,
+			);
+			path = FindDevyNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		7D39D378DE2607C5393C3D2E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +317,7 @@
 		A05697E3AC64F2A19FC856AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52DE60B724C1FF4E007052FE /* OneSignal.framework */,
 				529B916924BF722500B2EE03 /* SwiftyRSA.framework */,
 				52C7C6FA24BF3F8A004A49EA /* ToastSwiftFramework.framework */,
 				52C7C6EE24BE00A2004A49EA /* Lottie.framework */,
@@ -291,15 +340,34 @@
 				526EA3AF24BA05F40044EBE2 /* Resources */,
 				EE5732BCBCDCA544D29E7E68 /* [CP] Embed Pods Frameworks */,
 				52C7C6F024BE00C1004A49EA /* Carthage Run Script */,
+				52DE60B324C1FD0E007052FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52DE60B124C1FD0E007052FE /* PBXTargetDependency */,
 			);
 			name = FindDevy;
 			productName = FindDevy;
 			productReference = 526EA3B124BA05F40044EBE2 /* FindDevy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		52DE60AA24C1FD0E007052FE /* FindDevyNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DE60B624C1FD0E007052FE /* Build configuration list for PBXNativeTarget "FindDevyNotificationServiceExtension" */;
+			buildPhases = (
+				52DE60A724C1FD0E007052FE /* Sources */,
+				52DE60A824C1FD0E007052FE /* Frameworks */,
+				52DE60A924C1FD0E007052FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindDevyNotificationServiceExtension;
+			productName = FindDevyNotificationServiceExtension;
+			productReference = 52DE60AB24C1FD0E007052FE /* FindDevyNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -312,6 +380,9 @@
 				ORGANIZATIONNAME = "hyeoktae kwon";
 				TargetAttributes = {
 					526EA3B024BA05F40044EBE2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					52DE60AA24C1FD0E007052FE = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -330,6 +401,7 @@
 			projectRoot = "";
 			targets = (
 				526EA3B024BA05F40044EBE2 /* FindDevy */,
+				52DE60AA24C1FD0E007052FE /* FindDevyNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +414,13 @@
 				526EA3C124BA05F50044EBE2 /* LaunchScreen.storyboard in Resources */,
 				526EA3BE24BA05F50044EBE2 /* Assets.xcassets in Resources */,
 				526EA3C924BA08FD0044EBE2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DE60A924C1FD0E007052FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +512,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52DE60A724C1FD0E007052FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DE60AE24C1FD0E007052FE /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52DE60B124C1FD0E007052FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52DE60AA24C1FD0E007052FE /* FindDevyNotificationServiceExtension */;
+			targetProxy = 52DE60B024C1FD0E007052FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		526EA3BF24BA05F50044EBE2 /* LaunchScreen.storyboard */ = {
@@ -565,10 +660,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556ABD857C85CF309C0B9454 /* Pods-FindDevy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FindDevy/FindDevy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.4;
+				CURRENT_PROJECT_VERSION = 0.0.5;
 				DEVELOPMENT_TEAM = 5W72YMDK56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,9 +677,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -592,10 +690,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C89664CB803BACDB191844CB /* Pods-FindDevy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FindDevy/FindDevy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.0.4;
+				CURRENT_PROJECT_VERSION = 0.0.5;
 				DEVELOPMENT_TEAM = 5W72YMDK56;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -607,9 +707,66 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52DE60B424C1FD0E007052FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.5;
+				DEVELOPMENT_TEAM = 5W72YMDK56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FindDevyNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy.FindDevyNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52DE60B524C1FD0E007052FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.5;
+				DEVELOPMENT_TEAM = 5W72YMDK56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FindDevyNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = hyeoktae.com.FindDevy.FindDevyNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -632,6 +789,15 @@
 			buildConfigurations = (
 				526EA3C624BA05F50044EBE2 /* Debug */,
 				526EA3C724BA05F50044EBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DE60B624C1FD0E007052FE /* Build configuration list for PBXNativeTarget "FindDevyNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DE60B424C1FD0E007052FE /* Debug */,
+				52DE60B524C1FD0E007052FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

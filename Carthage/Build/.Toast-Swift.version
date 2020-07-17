@@ -2,7 +2,7 @@
   "commitish" : "5.0.1",
   "iOS" : [
     {
-      "hash" : "e76422ca38b4f089be7e5054489f079526830d44dfc4d1b59d171dbc550b56ed",
+      "hash" : "9da1ef13fa3262110f39dd68d29092accb354325a31658818394e88346391013",
       "name" : "ToastSwiftFramework",
       "linking" : "dynamic",
       "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"

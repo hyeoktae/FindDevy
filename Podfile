@@ -7,8 +7,7 @@ target 'FindDevy' do
 
 pod 'Firebase/Database'
 pod 'Firebase/Firestore'
-pod 'Firebase/Messaging'
-pod 'Firebase/Analytics'
+pod 'OneSignal', '>= 2.11.2', '< 3.0'
 
   # Pods for FindDevy
 

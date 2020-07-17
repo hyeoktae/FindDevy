@@ -2,7 +2,7 @@
   "commitish" : "eebcf80fa5c502159f9f61cbf84551766d8e2832",
   "iOS" : [
     {
-      "hash" : "f92df16a204eacf3b169f6876bd5167fd51e3d0b24a2c9a45b16d7788f9035c8",
+      "hash" : "8ae96237160376a5bb52143e713585fdf488672ff8a2dc7720e130b79670b705",
       "name" : "Lottie",
       "linking" : "dynamic",
       "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"

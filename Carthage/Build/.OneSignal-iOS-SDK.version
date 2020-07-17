@@ -1,0 +1,10 @@
+{
+  "commitish" : "2.14.3",
+  "iOS" : [
+    {
+      "name" : "OneSignal",
+      "hash" : "67ad8d56288391873e32b904a40e4a737c0d2510cad304945216098a523d89b4",
+      "linking" : "dynamic"
+    }
+  ]
+}

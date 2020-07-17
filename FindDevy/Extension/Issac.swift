@@ -14,6 +14,7 @@ final class Isaac {
   
   private init() {
     ToastManager.shared.position = .bottom
+    
   }
   
   static var windows: UIView? {
@@ -21,7 +22,11 @@ final class Isaac {
   }
   
   class func toast(_ text: String, view: UIView? = nil) {
+    guard view == nil else {
+      view?.makeToast(" " + text + " ", duration: 2.0, position: .bottom)
+      windows?.makeToast(" " + text + " ", duration: 2.0, position: .bottom)
+      return }
     guard let view = windows else { return }
-    view.makeToast(" " + text + " ")
+    view.makeToast(" " + text + " ", duration: 2.0, position: .bottom)
   }
 }

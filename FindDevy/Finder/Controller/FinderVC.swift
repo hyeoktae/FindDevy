@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import MapKit
+import OneSignal
 
 class FinderVC: UIViewController {
   
@@ -25,6 +26,7 @@ class FinderVC: UIViewController {
     
     finderView.dateTextField.text = Date().toYear()
     finderView.searchBtn.addTarget(self, action: #selector(didTapSearchBtn(_:)), for: .touchUpInside)
+    finderView.locRequestBtn.addTarget(self, action: #selector(didTapLocRequestBtn(_:)), for: .touchUpInside)
     db.delegate = self
     AppDelegate.instance.delegate = self
     self.finderView.mapView.delegate = self
@@ -47,34 +49,49 @@ class FinderVC: UIViewController {
   private func getTargetLoc(date: String, completion: @escaping () -> ()) {
     self.removeOverlays()
     db.getTargetLocation(date: date) {
-      guard $0.count != 0 else {
+      switch $0 {
+      case .success(let loc):
+        guard loc.count != 0 else {
+          Isaac.toast("\(date)에 새로운 위치가 없어요!", view: self.view)
+          return }
+        
+        let locs = loc.enumerated().map{ (i, l) -> MKPointAnnotation in
+          let anno = MKPointAnnotation()
+          anno.coordinate = CLLocationCoordinate2D(latitude: l.coor.0, longitude: l.coor.1)
+          anno.title = "\(i + 1)"
+          return anno
+        }
+        
+        if let last = locs.last {
+          self.setRegion(point: last.coordinate)
+        }
+        
+        self.model.annotations = locs
+        
+        self.setOverlays(annotations: locs)
+        
         completion()
-        return }
-      
-      let locs = $0.enumerated().map{ (i, l) -> MKPointAnnotation in
-        let anno = MKPointAnnotation()
-        anno.coordinate = CLLocationCoordinate2D(latitude: l.coor.0, longitude: l.coor.1)
-        anno.title = "\(i + 1)"
-        return anno
+      case .failure(let err):
+        switch err {
+        case .networkErr:
+          Isaac.toast("네트워크 에러 발생!!!", view: self.view)
+        case .noData:
+          Isaac.toast("\(date)에 새로운 위치가 없어요!", view: self.view)
+        case .noKey:
+          Isaac.toast("등록된 토큰이 없어요!", view: self.view)
+        }
+        completion()
       }
       
-      if let last = locs.last {
-        self.setRegion(point: last.coordinate)
-      }
       
-      self.model.annotations = locs
-      
-      self.setOverlays(annotations: locs)
-      
-      completion()
     }
   }
   
   private func removeOverlays() {
-    self.finderView.mapView.removeOverlays(self.model.lineArr)
     self.finderView.mapView.removeAnnotations(self.model.annotations)
-    self.model.annotations = []
+    self.finderView.mapView.removeOverlays(self.model.lineArr)
     self.model.lineArr = []
+    self.model.annotations = []
   }
   
   private func setRegion(point: CLLocationCoordinate2D) {
@@ -101,14 +118,38 @@ class FinderVC: UIViewController {
         getTargetLoc(date: Date().toYear()) {
           self.db.getTodayLocations()
         }
-        Isaac.toast("코드 등록 완료!")
+        Isaac.toast("코드 등록 완료!", view: self.view)
         return
       }
     }
     guard let now = self.finderView.dateTextField.text, now.isValidateDate() else {
-      Isaac.toast("날짜를 확인해주세요!")
+      Isaac.toast("날짜를 확인해주세요!", view: self.view)
+      return }
+    guard now.isLessThanToday() else {
+      Isaac.toast("미래는 알 수 없어요!", view: self.view)
       return }
     now == Date().toYear() ? getTargetLoc(date: now) { self.db.getTodayLocations() } : getTargetLoc(date: now){}
+  }
+  
+  @objc private func didTapLocRequestBtn(_ sender: UIButton) {
+    getOtherToken {
+      guard let token = $0 else {
+        Isaac.toast("등록된 토큰이 없어요!", view: self.view)
+        return }
+//      OneSignal.postNotification(["contents": ["en": "Test Message"], "include_player_ids": ["3009e210-3166-11e5-bc1b-db44eb02b120"]])
+      OneSignal.postNotification(["include_player_ids": [token], "content_available": true], onSuccess: { (info) in
+        print("success!!!: ", info)
+        // recipients
+        Isaac.toast("요청 성공!!!", view: self.view)
+      }) {
+        Isaac.toast($0?.localizedDescription ?? "요청 실패!!!", view: self.view)
+      }
+    }
+    
+  }
+  
+  private func getOtherToken(completion: @escaping (String?) -> ()) {
+    db.getOtherOneToken(completion: completion)
   }
   
 }
@@ -157,6 +198,7 @@ extension FinderVC: DBDelegate {
         self.finderView.mapView.addAnnotation(beforeAnnotation)
       }
       self.finderView.mapView.addAnnotation(lastAnnotaion)
+      self.finderView.mapView.selectAnnotation(lastAnnotaion, animated: true)
       self.model.currentAnnotation = lastAnnotaion
     }
     

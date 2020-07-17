@@ -24,6 +24,13 @@ class FinderView: UIView {
     return btn
   }()
   
+  let locRequestBtn: UIButton = {
+    let btn = UIButton()
+    btn.setTitle("요청", for: .normal)
+    btn.setTitleColor(.black, for: .normal)
+    return btn
+  }()
+  
   let mapView: MKMapView = {
     let map = MKMapView()
     return map
@@ -41,7 +48,7 @@ class FinderView: UIView {
   }
   
   private func addSubviews() {
-    [dateTextField, searchBtn, mapView].forEach {
+    [dateTextField, searchBtn, locRequestBtn, mapView].forEach {
       self.addSubview($0)
     }
   }
@@ -56,6 +63,12 @@ class FinderView: UIView {
     searchBtn.snp.makeConstraints {
       $0.leading.equalTo(dateTextField.snp.trailing).offset(5)
       $0.top.equalTo(self.snp.topMargin)
+      $0.width.height.equalTo(50)
+    }
+    
+    locRequestBtn.snp.makeConstraints {
+      $0.top.equalTo(self.snp.topMargin)
+      $0.leading.equalTo(searchBtn.snp.trailing).offset(5)
       $0.trailing.equalToSuperview()
       $0.width.height.equalTo(50)
     }
