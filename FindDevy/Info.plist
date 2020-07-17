@@ -4,8 +4,8 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
+		<string>hyeoktae.com.FindDevy</string>
 		<string>hyeoktae.com.FindDevy.FindDevyNotificationServiceExtension</string>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

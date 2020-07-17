@@ -2,7 +2,7 @@
   "commitish" : "1.6.0",
   "iOS" : [
     {
-      "hash" : "d611e4d6cc1a663780809e1c6341bdd4db0266fd4867fc527f0962a17afec25f",
+      "hash" : "8ce62a851e5bb690903000dffcd9fe2687b104d76588d301fbdb5f2f7b2c690c",
       "name" : "SwiftyRSA",
       "linking" : "dynamic",
       "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
