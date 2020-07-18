@@ -132,11 +132,23 @@ class FinderVC: UIViewController {
   }
   
   @objc private func didTapLocRequestBtn(_ sender: UIButton) {
-    let alertController = UIAlertController(title: "위치 갱신이 안되나요?", message: "그러면 메세지와 함께 위치를 요청해서, 앱을 키도록 해야해요!\n조용히 전달 누르면 푸시가 없어요!", preferredStyle: .actionSheet)
-
-    alertController.addAction(UIAlertAction(title: "메세지와 함께 전달", style: .default, handler: { (action) in
-      self.setParam(true)
-    }))
+    let alertController = UIAlertController(title: "위치 갱신이 안되나요?", message: "그러면 메세지와 함께 위치를 요청해서, 앱을 키도록 해야해요!\n조용히 전달 누르면 푸시가 없어요!", preferredStyle: .alert)
+    
+    alertController.addTextField { (tf) in
+      tf.placeholder = "제목"
+    }
+    
+    alertController.addTextField { (tf) in
+      tf.placeholder = "내용"
+    }
+    
+    let withMessageBtn = UIAlertAction(title: "메세지와 함께 전달", style: .default, handler: { (action) in
+      let title = alertController.textFields?.first?.text ?? "앱이 죽었다!!!"
+      let content = alertController.textFields?.last?.text ?? "이거 눌러서 살려주세요!!!"
+      self.setParam(true, content: (title, content))
+    })
+    
+    alertController.addAction(withMessageBtn)
 
     alertController.addAction(UIAlertAction(title: "조용히 전달", style: .default, handler: { (action) in
       self.setParam(false)
@@ -146,9 +158,11 @@ class FinderVC: UIViewController {
 
     self.present(alertController, animated: true, completion: nil)
     
+    
+    
   }
   
-  private func setParam(_ message: Bool) {
+  private func setParam(_ message: Bool, content: (String, String) = ("", "")) {
     
     getOtherToken {
       guard let token = $0 else {
@@ -159,8 +173,8 @@ class FinderVC: UIViewController {
       if !message {
         self.sendPush(param)
       } else {
-        param.updateValue(["ko": "이거 눌러서 살려주세요!!!"], forKey: "contents")
-        param.updateValue(["ko": "앱이 죽었다!!!"], forKey: "headings")
+        param.updateValue(["ko": content.1], forKey: "contents")
+        param.updateValue(["ko": content.0], forKey: "headings")
         self.sendPush(param)
       }
       
