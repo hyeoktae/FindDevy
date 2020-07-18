@@ -132,19 +132,52 @@ class FinderVC: UIViewController {
   }
   
   @objc private func didTapLocRequestBtn(_ sender: UIButton) {
+    let alertController = UIAlertController(title: "위치 갱신이 안되나요?", message: "그러면 메세지와 함께 위치를 요청해서, 앱을 키도록 해야해요!\n조용히 전달 누르면 푸시가 없어요!", preferredStyle: .actionSheet)
+
+    alertController.addAction(UIAlertAction(title: "메세지와 함께 전달", style: .default, handler: { (action) in
+      self.setParam(true)
+    }))
+
+    alertController.addAction(UIAlertAction(title: "조용히 전달", style: .default, handler: { (action) in
+      self.setParam(false)
+    }))
+    
+    alertController.addAction(UIAlertAction(title: "안해유", style: .cancel, handler: { _ in }))
+
+    self.present(alertController, animated: true, completion: nil)
+    
+  }
+  
+  private func setParam(_ message: Bool) {
+    
     getOtherToken {
       guard let token = $0 else {
         Isaac.toast("등록된 토큰이 없어요!", view: self.view)
         return }
-//      OneSignal.postNotification(["contents": ["en": "Test Message"], "include_player_ids": ["3009e210-3166-11e5-bc1b-db44eb02b120"]])
-      OneSignal.postNotification(["include_player_ids": [token], "content_available": true], onSuccess: { (info) in
-        print("success!!!: ", info)
-        // recipients
-        Isaac.toast("요청 성공!!!", view: self.view)
-      }) {
-        Isaac.toast($0?.localizedDescription ?? "요청 실패!!!", view: self.view)
+      var param: [String : Any] = ["include_player_ids": [token], "content_available": true, "priority": 10]
+      //      OneSignal.postNotification(["contents": ["en": "Test Message"], "include_player_ids": ["3009e210-3166-11e5-bc1b-db44eb02b120"]])
+      if !message {
+        self.sendPush(param)
+      } else {
+        param.updateValue(["ko": "이거 눌러서 살려주세요!!!"], forKey: "contents")
+        param.updateValue(["ko": "앱이 죽었다!!!"], forKey: "headings")
+        self.sendPush(param)
       }
+      
     }
+  }
+  
+  private func sendPush(_ param: [String: Any]) {
+    OneSignal.postNotification(param, onSuccess: { (info) in
+      //          print("success!!!: ", info)
+      // recipients
+      Isaac.toast("요청 성공!!!", view: self.view)
+    }) {
+      Isaac.toast($0?.localizedDescription ?? "요청 실패!!!", view: self.view)
+    }
+  }
+  
+  @objc private func showPushNotiBtn(_ sender: UIButton) {
     
   }
   

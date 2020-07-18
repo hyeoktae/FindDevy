@@ -98,6 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
     
     OneSignal.promptForPushNotifications(userResponse: { _ in })
+    OneSignal.register { (_) in }
     
     return true
   }
@@ -172,8 +173,8 @@ extension AppDelegate {
     let status = CLLocationManager.authorizationStatus()
     guard status == .authorizedAlways || status == .authorizedWhenInUse, CLLocationManager.locationServicesEnabled() else { return }
     locaManager?.delegate = self
-    locaManager?.pausesLocationUpdatesAutomatically = true
-    locaManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters // 정확도
+    locaManager?.pausesLocationUpdatesAutomatically = false
+    locaManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters // 정확도
     locaManager?.allowsBackgroundLocationUpdates = true
     locaManager?.distanceFilter = 500 // x 미터마다 체크 5미터 마다 위치 업데이트
     locaManager?.activityType = .other
@@ -185,46 +186,46 @@ extension AppDelegate {
 }
 
 extension AppDelegate: CLLocationManagerDelegate {
-  func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true, withCompletionBlock: { (err, _) in
-      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
-    })
-    
-    guard let center = manager.location?.coordinate else { return }
-    let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
-    region.notifyOnExit = true
-    region.notifyOnEntry = false
-    let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
-    
-    let content = UNMutableNotificationContent()
-    content.title = "움직였네?"
-    content.body = "이거 눌러라"
-    content.sound = UNNotificationSound.default
-    
-    let request = UNNotificationRequest(identifier: "lastLoc", content: content, trigger: trigger)
-    
-    let noti = UNUserNotificationCenter.current()
-    noti.add(request, withCompletionHandler: { (_) in
-//         if let error = error {
-//              self.ref?.child(UserDefaults.myKey ?? "err").child("notiError").setValue(error)
-//         } else {
-//          self.ref?.child(UserDefaults.myKey ?? "err").child("notiSuccess").setValue(request)
-//         }
-    })
-    
-  }
+//  func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+//    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true, withCompletionBlock: { (err, _) in
+//      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
+//    })
+//
+//    guard let center = manager.location?.coordinate else { return }
+//    let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
+//    region.notifyOnExit = true
+//    region.notifyOnEntry = false
+//    let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
+//
+//    let content = UNMutableNotificationContent()
+//    content.title = "움직였네?"
+//    content.body = "이거 눌러라"
+//    content.sound = UNNotificationSound.default
+//
+//    let request = UNNotificationRequest(identifier: "lastLoc", content: content, trigger: trigger)
+//
+//    let noti = UNUserNotificationCenter.current()
+//    noti.add(request, withCompletionHandler: { (_) in
+////         if let error = error {
+////              self.ref?.child(UserDefaults.myKey ?? "err").child("notiError").setValue(error)
+////         } else {
+////          self.ref?.child(UserDefaults.myKey ?? "err").child("notiSuccess").setValue(request)
+////         }
+//    })
+//
+//  }
   
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
-    guard let temp = locations.first else { return }
-    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false, withCompletionBlock: { (err, _) in
-      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
-    })
+    guard let temp = locations.last else { return }
+//    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false, withCompletionBlock: { (err, _) in
+//      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
+//    })
     
     saveLocationToServer(temp)
     
-    manager.desiredAccuracy = kCLLocationAccuracyHundredMeters // 정확도
-    manager.distanceFilter = 500 // x 미터마다 체크 5미터 마다 위치 업데이트
+    locaManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters // 정확도
+    locaManager?.distanceFilter = 500 // x 미터마다 체크 5미터 마다 위치 업데이트
   }
   
   private func saveLocationToServer(_ temp: CLLocation) {

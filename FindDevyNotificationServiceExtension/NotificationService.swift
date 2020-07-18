@@ -20,6 +20,10 @@ class NotificationService: UNNotificationServiceExtension {
     self.contentHandler = contentHandler
     bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
     
+//    bestAttemptContent?.title = NSString.localizedUserNotificationString(forKey: "앱이 죽어따!", arguments: nil)
+//    bestAttemptContent?.body = NSString.localizedUserNotificationString(forKey: "이거 눌러서 앱을 살려주세여!!!", arguments: nil)
+//    bestAttemptContent?.sound = UNNotificationSound.default
+    
     if let bestAttemptContent = bestAttemptContent {
       // Modify the notification content here...
       OneSignal.didReceiveNotificationExtensionRequest(self.receivedRequest, with: self.bestAttemptContent)
