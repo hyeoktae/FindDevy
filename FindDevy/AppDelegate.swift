@@ -28,11 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   lazy var notificationReceivedBlock: OSHandleNotificationReceivedBlock = { notification in
     print("Received Notification - \(notification?.payload.notificationID) - \(notification?.payload.title)")
     DispatchQueue.global(qos: .background).async {
-      self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-      self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
       let state = CLLocationManager.authorizationStatus()
       if state == .authorizedAlways || state == .authorizedWhenInUse {
-        self.startUpdatingLocation()
+        self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
+        self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+//        self.startUpdatingLocation()
+        notification?.payload.threadId
       }
     }
   }
@@ -45,11 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     print("Message = \(fullMessage)")
     if payload.contentAvailable {
       DispatchQueue.global(qos: .background).async {
-        self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-        self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
         let state = CLLocationManager.authorizationStatus()
         if state == .authorizedAlways || state == .authorizedWhenInUse {
-          self.startUpdatingLocation()
+          self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
+          self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+//          self.startUpdatingLocation()
         }
       }
     }
@@ -122,8 +123,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func applicationDidBecomeActive(_ application: UIApplication) {
-    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(false)
     delegate?.viewDidBecomeActive()
+    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(false, withCompletionBlock: { (err, _) in
+      self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").removeAllObservers()
+    })
   }
   
   func applicationDidEnterBackground(_ application: UIApplication) {
@@ -131,7 +134,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func applicationWillTerminate(_ application: UIApplication) {
-    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(true)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").setValue(true, withCompletionBlock: { (err, _) in
+      self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").removeAllObservers()
+    })
+    
   }
   
 }
@@ -180,7 +186,10 @@ extension AppDelegate {
 
 extension AppDelegate: CLLocationManagerDelegate {
   func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(true, withCompletionBlock: { (err, _) in
+      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
+    })
+    
     guard let center = manager.location?.coordinate else { return }
     let region = CLCircularRegion(center: center, radius: 300.0, identifier: "lastLoc")
     region.notifyOnExit = true
@@ -195,12 +204,12 @@ extension AppDelegate: CLLocationManagerDelegate {
     let request = UNNotificationRequest(identifier: "lastLoc", content: content, trigger: trigger)
     
     let noti = UNUserNotificationCenter.current()
-    noti.add(request, withCompletionHandler: { (error) in
-         if let error = error {
-              self.ref?.child(UserDefaults.myKey ?? "err").child("notiError").setValue(error)
-         } else {
-          self.ref?.child(UserDefaults.myKey ?? "err").child("notiSuccess").setValue(request)
-         }
+    noti.add(request, withCompletionHandler: { (_) in
+//         if let error = error {
+//              self.ref?.child(UserDefaults.myKey ?? "err").child("notiError").setValue(error)
+//         } else {
+//          self.ref?.child(UserDefaults.myKey ?? "err").child("notiSuccess").setValue(request)
+//         }
     })
     
   }
@@ -208,7 +217,9 @@ extension AppDelegate: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
     guard let temp = locations.first else { return }
-    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("paused").setValue(false, withCompletionBlock: { (err, _) in
+      self.ref?.child(UserDefaults.myKey ?? "err").child("paused").removeAllObservers()
+    })
     
     saveLocationToServer(temp)
     
@@ -230,10 +241,15 @@ extension AppDelegate: CLLocationManagerDelegate {
       "accuracy": Int(temp.horizontalAccuracy)
       ] as [String : Any]
     
-    self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").setValue(param)
+    self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").setValue(param, withCompletionBlock: { (err, _) in
+      self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").removeAllObservers()
+    })
     
     param.updateValue(temp.timestamp, forKey: "date")
-    self.fs?.collection("Location").document(UserDefaults.myKey ?? "err").collection(currentDate).document(currentHour).setData(param)
+    self.fs?.collection("Location").document(UserDefaults.myKey ?? "err").collection(currentDate).document(currentHour).setData(param, completion: { (_) in
+//      UIApplication.shared.endBackgroundTask(<#T##identifier: UIBackgroundTaskIdentifier##UIBackgroundTaskIdentifier#>)
+      
+    })
   }
 }
 

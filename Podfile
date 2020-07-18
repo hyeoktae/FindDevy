@@ -6,6 +6,8 @@ target 'FindDevy' do
   use_frameworks!
 pod 'Firebase/Database'
 pod 'Firebase/Firestore'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
 pod 'OneSignal', '>= 2.11.2', '< 3.0'
   # Pods for FindDevy
 
