@@ -96,6 +96,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     OneSignal.promptForPushNotifications(userResponse: { _ in })
     OneSignal.register { (_) in }
     
+    NotificationCenter.default.addObserver(self, selector: #selector(changeLowPower(_:)), name: Notification.Name.NSProcessInfoPowerStateDidChange, object: nil)
+    
     return true
   }
   
@@ -135,6 +137,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       self.ref?.child(UserDefaults.myKey ?? "err").child("terminated").removeAllObservers()
     })
     
+  }
+  
+  @objc private func changeLowPower(_ noti: Notification) {
+    self.fs?.collection("LowPower").document(UserDefaults.myKey ?? "err").setData(["isLowPower": ProcessInfo.processInfo.isLowPowerModeEnabled])
   }
   
 }

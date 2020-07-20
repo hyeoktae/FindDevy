@@ -91,7 +91,7 @@ class FinderVC: UIViewController {
     self.finderView.mapView.removeAnnotations(self.model.annotations)
     self.finderView.mapView.removeOverlays(self.model.lineArr)
     self.model.lineArr = []
-    self.model.annotations = []
+//    self.model.annotations = []
   }
   
   private func setRegion(point: CLLocationCoordinate2D) {
