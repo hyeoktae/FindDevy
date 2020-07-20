@@ -30,8 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     DispatchQueue.global(qos: .background).async {
       let state = CLLocationManager.authorizationStatus()
       if state == .authorizedAlways || state == .authorizedWhenInUse {
-        self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-        self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+        self.locaManager?.distanceFilter = kCLDistanceFilterNone // x 미터마다 체크 5미터 마다 위치 업데이트
 //        self.startUpdatingLocation()
         notification?.payload.threadId
       }
@@ -48,8 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       DispatchQueue.global(qos: .background).async {
         let state = CLLocationManager.authorizationStatus()
         if state == .authorizedAlways || state == .authorizedWhenInUse {
-          self.locaManager?.desiredAccuracy = kCLLocationAccuracyBestForNavigation // 정확도
-          self.locaManager?.distanceFilter = 1 // x 미터마다 체크 5미터 마다 위치 업데이트
+          self.locaManager?.distanceFilter = kCLDistanceFilterNone // x 미터마다 체크 5미터 마다 위치 업데이트
 //          self.startUpdatingLocation()
         }
       }
