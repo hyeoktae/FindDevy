@@ -26,13 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   lazy var notificationReceivedBlock: OSHandleNotificationReceivedBlock = { notification in
-    print("Received Notification - \(notification?.payload.notificationID) - \(notification?.payload.title)")
     DispatchQueue.global(qos: .background).async {
       let state = CLLocationManager.authorizationStatus()
       if state == .authorizedAlways || state == .authorizedWhenInUse {
         self.locaManager?.distanceFilter = kCLDistanceFilterNone // x 미터마다 체크 5미터 마다 위치 업데이트
 //        self.startUpdatingLocation()
-        notification?.payload.threadId
       }
     }
   }
@@ -42,7 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let payload: OSNotificationPayload = result!.notification.payload
     
     var fullMessage = payload.body
-    print("Message = \(fullMessage)")
     if payload.contentAvailable {
       DispatchQueue.global(qos: .background).async {
         let state = CLLocationManager.authorizationStatus()
@@ -73,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+    UIDevice.current.isBatteryMonitoringEnabled = true
     guard UserDefaults.myKey == nil else { return true }
     UserDefaults.myKey = UUID.init().uuidString
     return true
@@ -222,6 +220,7 @@ extension AppDelegate: CLLocationManagerDelegate {
     
     saveLocationToServer(temp)
     
+    
     locaManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters // 정확도
     locaManager?.distanceFilter = 500 // x 미터마다 체크 5미터 마다 위치 업데이트
   }
@@ -237,7 +236,8 @@ extension AppDelegate: CLLocationManagerDelegate {
       "altitude": Int(temp.altitude),
       "speed": Int(temp.speed),
       "course": Int(temp.course),
-      "accuracy": Int(temp.horizontalAccuracy)
+      "accuracy": Int(temp.horizontalAccuracy),
+      "battery": Int(UIDevice.current.batteryLevel * 100.0)
       ] as [String : Any]
     
     self.ref?.child(UserDefaults.myKey ?? "err").child("currentLoc").setValue(param, withCompletionBlock: { (err, _) in
